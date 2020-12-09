@@ -1,7 +1,13 @@
 
 <h1 align="center">Hi 👋, I'm Rabyâ</h1>
 
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=rabraghib" alt="rabraghib" /> </p>
+<p align="center"> 
+  <a target="blank" href="https://github.com/rabraghib"><img src="https://komarev.com/ghpvc/?username=rabraghib&style=flat-square" alt="rabraghib-pv"/></a>
+  <br>
+  <a target="blank" href="https://twitter.com/intent/follow?screen_name=rabraghib">
+    <img height="30" src="https://img.shields.io/badge/@rabraghib--blue?logo=twitter&style=for-the-badge" alt="twitter"/>
+  </a>
+</p>
 
 - 🔭 I’m currently working on [Current Project][CurrentProject]
 
