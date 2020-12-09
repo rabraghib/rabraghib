@@ -11,18 +11,20 @@
 
 - 📫 How to reach me **rabraghib@gmail.com**
 <br> <br>
-<p align="center">
-  <img src="https://devicons.github.io/devicon/devicon.git/icons/angularjs/angularjs-original.svg" alt="angularjs" width="40" height="40"/>
-  <img src="https://devicons.github.io/devicon/devicon.git/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>  
-  <img src="https://devicons.github.io/devicon/devicon.git/icons/php/php-original.svg" alt="php" width="40" height="40"/> 
-  <img src="https://symfony.com/logos/symfony_black_03.svg" alt="symfony" width="40" height="40"/> 
-  <img src="https://devicons.github.io/devicon/devicon.git/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
+## Languages and Tools:
+
+<p align="left">
+  <img src="https://devicons.github.io/devicon/devicon.git/icons/php/php-original.svg" alt="PHP" width="40" height="40"/> 
+  <img src="https://devicons.github.io/devicon/devicon.git/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40"/>
+  <img src="https://devicons.github.io/devicon/devicon.git/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" height="40"/>
+  <img src="https://symfony.com/logos/symfony_black_03.svg" alt="Symfony" width="40" height="40"/> 
+  <img src="https://devicons.github.io/devicon/devicon.git/icons/angularjs/angularjs-original.svg" alt="Angular" width="40" height="40"/>
+  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" width="40" height="40"/>  
 </p>
 
 ---
- ## GitHub Stats
- 
+
+ ## :zap: GitHub Stats
  <a href="https://github.com/rabraghib">
  <img alt="rabraghib's GitHub Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=rabraghib&show_icons=true" />
  </a>
