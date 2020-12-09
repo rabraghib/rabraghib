@@ -23,6 +23,7 @@
 ---
 
  <img alt="rabraghib's GitHub Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=rabraghib&show_icons=true" />
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=rabraghib&repo=rabraghib)](https://github.com/anuraghazra/github-readme-stats)
 
 ---
 
