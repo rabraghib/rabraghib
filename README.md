@@ -1,9 +1,9 @@
 
 <h1 align="center">Hi 👋, I'm Rabyâ</h1>
 
-<p> <img src="https://komarev.com/ghpvc/?username=rabraghib" alt="rabraghib" /> </p>
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=rabraghib" alt="rabraghib" /> </p>
 
-  <img align="right" alt="rabraghib's GitHub Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=rabraghib&show_icons=true" />
+ <img align="right" alt="rabraghib's GitHub Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=rabraghib&show_icons=true" />
 
 - 🔭 I’m currently working on [Current Project][CurrentProject]
 
@@ -12,9 +12,8 @@
 - 📝 I regulary write articles on [my blog][blog]
 
 - 📫 How to reach me **rabraghib@gmail.com**
-
-<br>
-<p align="left">
+<br> <br>
+<p align="center">
   <img src="https://devicons.github.io/devicon/devicon.git/icons/angularjs/angularjs-original.svg" alt="angularjs" width="40" height="40"/>
   <img src="https://devicons.github.io/devicon/devicon.git/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
   <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>  
@@ -25,7 +24,6 @@
 
 ---
 
-<br>
 <p align="center">
 <a href="https://twitter.com/rabraghib" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="rabraghib" height="30" width="30" /></a>
 <a href="https://linkedin.com/in/rabraghib" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="rabraghib" height="30" width="30" /></a>
@@ -33,7 +31,6 @@
 <a href="https://fb.com/rabraghib" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="rabraghib" height="30" width="30" /></a>
 <a href="https://instagram.com/rabraghib" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="rabraghib" height="30" width="30" /></a>
 </p>
-
 
 
 
