@@ -3,8 +3,6 @@
 
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=rabraghib" alt="rabraghib" /> </p>
 
- <img align="right" alt="rabraghib's GitHub Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=rabraghib&show_icons=true" />
-
 - 🔭 I’m currently working on [Current Project][CurrentProject]
 
 - 👨‍💻 All of my projects are available at [my portfolio][portfolio]
@@ -21,6 +19,10 @@
   <img src="https://symfony.com/logos/symfony_black_03.svg" alt="symfony" width="40" height="40"/> 
   <img src="https://devicons.github.io/devicon/devicon.git/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
 </p>
+
+---
+
+ <img alt="rabraghib's GitHub Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=rabraghib&show_icons=true" />
 
 ---
 
