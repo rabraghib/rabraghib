@@ -11,7 +11,7 @@
 
 - 📫 How to reach me **rabraghib@gmail.com**
 <br> <br>
-## Languages and Tools:
+### Languages and Tools:
 
 <p align="center">
   <img src="https://devicon.dev/devicon.git/icons/angularjs/angularjs-original.svg" alt="Angular" width="40" height="40"/> 
@@ -30,9 +30,9 @@
 
 ---
 
- ## :zap: GitHub Stats
+ ### :zap: GitHub Stats
  <a href="https://github.com/rabraghib">
- <img alt="rabraghib's GitHub Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=rabraghib&show_icons=true" />
+ <img alt="rabraghib's GitHub Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=rabraghib&show_icons=true&hide=prs,issues" />
  </a>
  <a href="https://github.com/rabraghib/rabraghib">
  <img alt="rabraghib" src="https://github-readme-stats.vercel.app/api/pin/?username=rabraghib&repo=rabraghib&show_owner=true" />
