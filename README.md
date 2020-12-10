@@ -5,7 +5,19 @@
   <a target="blank" href="https://github.com/rabraghib"><img src="https://komarev.com/ghpvc/?username=rabraghib&style=flat-square" alt="rabraghib-pv"/></a>
   <br>
   <a target="blank" href="https://twitter.com/intent/follow?screen_name=rabraghib">
-    <img height="30" src="https://img.shields.io/badge/@rabraghib--blue?logo=twitter&style=for-the-badge" alt="twitter"/>
+    <img height="30" src="https://img.shields.io/badge/@rabraghib--blue?logo=twitter&style=for-the-badge" alt="Twitter"/>
+  </a>
+  <a target="blank" href="https://stackoverflow.com/users/13775195">
+    <img height="30" src="https://img.shields.io/badge/Rabyâ Raghib--orange?logo=stackoverflow&style=for-the-badge" alt="Stack Overflow"/>
+  </a>
+  <a target="blank" href="https://linkedin.com/in/rabraghib">
+    <img height="30" src="https://img.shields.io/badge/@rabraghib--lightgrey?logo=linkedin&style=for-the-badge" alt="Linkedin"/>
+  </a>
+  <a target="blank" href="https://instagram.com/rabraghib">
+    <img height="30" src="https://img.shields.io/badge/@rabraghib--red?logo=instagram&style=for-the-badge" alt="Instagram"/>
+  </a>
+  <a target="blank" href="https://facebook.com/rabraghib">
+    <img height="30" src="https://img.shields.io/badge/Rabyâ Raghib--blue?logo=facebook&style=for-the-badge" alt="Facebook"/>
   </a>
 </p>
 
