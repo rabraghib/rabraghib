@@ -2,21 +2,21 @@
 <h1 align="center">Hi 👋, I'm Rabyâ</h1>
 
 <p align="center"> 
-  <a target="blank" href="https://github.com/rabraghib"><img src="https://komarev.com/ghpvc/?username=rabraghib&style=flat-square" alt="rabraghib-pv"/></a>
+  <a target="_blank" href="https://github.com/rabraghib"><img src="https://komarev.com/ghpvc/?username=rabraghib&style=flat-square" alt="rabraghib-pv"/></a>
   <br>
-  <a target="blank" href="https://twitter.com/intent/follow?screen_name=rabraghib">
+  <a target="_blank" href="https://twitter.com/intent/follow?screen_name=rabraghib">
     <img height="30" src="https://img.shields.io/badge/@rabraghib--blue?logo=twitter&style=for-the-badge" alt="Twitter"/>
   </a>
-  <a target="blank" href="https://stackoverflow.com/users/13775195">
+  <a target="_blank" href="https://stackoverflow.com/users/13775195">
     <img height="30" src="https://img.shields.io/badge/Rabyâ Raghib--orange?logo=stackoverflow&style=for-the-badge" alt="Stack Overflow"/>
   </a>
-  <a target="blank" href="https://linkedin.com/in/rabraghib">
+  <a target="_blank" href="https://linkedin.com/in/rabraghib">
     <img height="30" src="https://img.shields.io/badge/@rabraghib--lightgrey?logo=linkedin&style=for-the-badge" alt="Linkedin"/>
   </a>
-  <a target="blank" href="https://instagram.com/rabraghib">
+  <a target="_blank" href="https://instagram.com/rabraghib">
     <img height="30" src="https://img.shields.io/badge/@rabraghib--red?logo=instagram&style=for-the-badge" alt="Instagram"/>
   </a>
-  <a target="blank" href="https://facebook.com/rabraghib">
+  <a target="_blank" href="https://facebook.com/rabraghib">
     <img height="30" src="https://img.shields.io/badge/Rabyâ Raghib--blue?logo=facebook&style=for-the-badge" alt="Facebook"/>
   </a>
 </p>
@@ -59,11 +59,11 @@
 ---
 
 <p align="center">
-<a href="https://twitter.com/rabraghib" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="rabraghib" height="30" width="30" /></a>
-<a href="https://linkedin.com/in/rabraghib" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="rabraghib" height="30" width="30" /></a>
-<a href="https://stackoverflow.com/users/13775195" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg" alt="13775195" height="30" width="30" /></a>
-<a href="https://fb.com/rabraghib" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="rabraghib" height="30" width="30" /></a>
-<a href="https://instagram.com/rabraghib" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="rabraghib" height="30" width="30" /></a>
+<a href="https://twitter.com/rabraghib" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="rabraghib" height="30" width="30" /></a>
+<a href="https://linkedin.com/in/rabraghib" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="rabraghib" height="30" width="30" /></a>
+<a href="https://stackoverflow.com/users/13775195" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg" alt="13775195" height="30" width="30" /></a>
+<a href="https://fb.com/rabraghib" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="rabraghib" height="30" width="30" /></a>
+<a href="https://instagram.com/rabraghib" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="rabraghib" height="30" width="30" /></a>
 </p>
 
 
