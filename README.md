@@ -49,12 +49,16 @@
 ---
 
  ### :zap: GitHub Stats
+ <p  align="center">
+  
  <a href="https://github.com/rabraghib">
- <img alt="rabraghib's GitHub Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=rabraghib&show_icons=true&hide=prs,issues" />
+ <img valign="middle" alt="rabraghib's GitHub Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=rabraghib&show_icons=true" />
  </a>
  <a href="https://github.com/rabraghib/rabraghib">
- <img alt="rabraghib" src="https://github-readme-stats.vercel.app/api/pin/?username=rabraghib&repo=rabraghib&show_owner=true" />
+ <img valign="middle" alt="rabraghib" src="https://github-readme-stats.vercel.app/api/pin/?username=rabraghib&repo=rabraghib&show_owner=true" />
  </a>
+ 
+ </p>
  
 ---
 
