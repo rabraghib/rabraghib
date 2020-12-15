@@ -73,6 +73,6 @@
 
 
 
-[CurrentProject]: chaospad.herokuapp.com
-[portfolio]: rabraghib.github.io
-[blog]: rabraghib.github.io/blogs
+[CurrentProject]: https://rabraghib.github.io
+[portfolio]: https://rabraghib.github.io
+[blog]: https://rabraghib.github.io/blogs
