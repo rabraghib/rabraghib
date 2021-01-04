@@ -32,18 +32,18 @@
 ### Languages and Tools:
 
 <p align="center">
-  <img src="https://devicon.dev/devicon.git/icons/angularjs/angularjs-original.svg" alt="Angular" width="40" height="40"/> 
-  <img src="https://devicon.dev/devicon.git/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40"/>
-  <img src="https://devicon.dev/devicon.git/icons/php/php-original.svg" alt="PHP" width="40" height="40"/> 
-  <img src="https://devicon.dev/devicon.git/icons/symfony/symfony-original.svg" alt="Symfony" width="40" height="40"/> 
-  <img src="https://devicon.dev/devicon.git/icons/git/git-original.svg" alt="Git" width="40" height="40"/> 
-  <img src="https://devicon.dev/devicon.git/icons/github/github-original.svg" alt="Git" width="40" height="40"/> 
-  <img src="https://devicon.dev/devicon.git/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" height="40"/> 
-  <img src="https://devicon.dev/devicon.git/icons/html5/html5-original-wordmark.svg" alt="Html5" width="40" height="40"/> 
-  <img src="https://devicon.dev/devicon.git/icons/css3/css3-original-wordmark.svg" alt="CSS" width="40" height="40"/> 
-  <img src="https://devicon.dev/devicon.git/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/>
-  <img src="https://devicon.dev/devicon.git/icons/sass/sass-original.svg" alt="Sass" width="40" height="40"/>
-  <img src="https://devicon.dev/devicon.git/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg" alt="Angular" width="40" height="40"/> 
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP" width="40" height="40"/> 
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/symfony/symfony-original.svg" alt="Symfony" width="40" height="40"/> 
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git" width="40" height="40"/> 
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="Git" width="40" height="40"/> 
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" height="40"/> 
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="Html5" width="40" height="40"/> 
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS" width="40" height="40"/> 
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="Sass" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="40" height="40"/>
 </p>
 
 ---
