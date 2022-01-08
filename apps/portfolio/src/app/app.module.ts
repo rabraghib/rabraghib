@@ -8,6 +8,6 @@ import { NxWelcomeComponent } from './nx-welcome.component';
   declarations: [AppComponent, NxWelcomeComponent],
   imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
