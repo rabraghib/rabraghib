@@ -8,8 +8,8 @@
     "packageManager": "yarn"
   },
   "workspaceLayout": {
-    "appsDir": "apps",
-    "libsDir": "apps/_libs"
+    "appsDir": "projects",
+    "libsDir": "projects/_libs"
   },
   "implicitDependencies": {
     "package.json": {

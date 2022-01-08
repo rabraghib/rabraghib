@@ -1,6 +1,6 @@
 {
   "version": 2,
   "projects": {
-    "portfolio": "apps/portfolio"
+    "portfolio": "projects/portfolio"
   }
 }

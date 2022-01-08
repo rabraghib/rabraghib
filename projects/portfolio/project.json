@@ -1,24 +1,24 @@
 {
   "projectType": "application",
-  "root": "apps/portfolio",
-  "sourceRoot": "apps/portfolio/src",
+  "root": "projects/portfolio",
+  "sourceRoot": "projects/portfolio/src",
   "prefix": "rabraghib",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/portfolio",
-        "index": "apps/portfolio/src/index.html",
-        "main": "apps/portfolio/src/main.ts",
-        "polyfills": "apps/portfolio/src/polyfills.ts",
-        "tsConfig": "apps/portfolio/tsconfig.app.json",
+        "outputPath": "dist/projects/portfolio",
+        "index": "projects/portfolio/src/index.html",
+        "main": "projects/portfolio/src/main.ts",
+        "polyfills": "projects/portfolio/src/polyfills.ts",
+        "tsConfig": "projects/portfolio/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/portfolio/src/favicon.ico",
-          "apps/portfolio/src/assets"
+          "projects/portfolio/src/favicon.ico",
+          "projects/portfolio/src/assets"
         ],
-        "styles": ["apps/portfolio/src/styles.scss"],
+        "styles": ["projects/portfolio/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -37,8 +37,8 @@
           ],
           "fileReplacements": [
             {
-              "replace": "apps/portfolio/src/environments/environment.ts",
-              "with": "apps/portfolio/src/environments/environment.prod.ts"
+              "replace": "projects/portfolio/src/environments/environment.ts",
+              "with": "projects/portfolio/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all"
@@ -76,8 +76,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "apps/portfolio/src/**/*.ts",
-          "apps/portfolio/src/**/*.html"
+          "projects/portfolio/src/**/*.ts",
+          "projects/portfolio/src/**/*.html"
         ]
       }
     }
