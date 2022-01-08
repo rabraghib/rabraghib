@@ -7,6 +7,10 @@
     "defaultCollection": "@nrwl/angular",
     "packageManager": "yarn"
   },
+  "workspaceLayout": {
+    "appsDir": "apps",
+    "libsDir": "apps/_libs"
+  },
   "implicitDependencies": {
     "package.json": {
       "dependencies": "*",
