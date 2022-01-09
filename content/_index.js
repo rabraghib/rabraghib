@@ -3,10 +3,21 @@
 const brand = require('./brand.json');
 const about = require('./about.json');
 
+const ReadmeIncludedProfiles = ['twitter', 'instagram', 'linkedin'];
+
 module.exports = {
   about: about,
   blog: require('./blog.json'),
   brand: brand,
+  ReadmeSocialBadges: about.profiles
+    .filter(p => ReadmeIncludedProfiles.includes(p.platform))
+    .map(p => {
+      return {
+        badge: getBadgeUrl(p.platform),
+        url: p.url,
+        alt: `${about.name} ${p.platform} profile`
+      };
+    }),
   GithubStatsUrls: [
     `https://github-readme-streak-stats.herokuapp.com/?${getQueryParamsOf(
       'streak-stats'
@@ -17,6 +28,13 @@ module.exports = {
 
 function getColor(colorName) {
   return brand.colors[colorName].replace('#', '');
+}
+function getBadgeUrl(platform) {
+  return `https://img.shields.io/badge/${platform}--${getColor(
+    'primary'
+  )}?style=for-the-badge&logo=${platform}&logoColor=${getColor(
+    'slate-50'
+  )}&logoWidth=25&labelColor=${getColor('slate-900')}`;
 }
 function getQueryParamsOf(type) {
   const statsCardsParams = {

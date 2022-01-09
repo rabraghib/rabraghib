@@ -6,26 +6,26 @@
   "banner": "content/assets/banner.png",
   "email": "hello@rabraghib.me",
   "addresses": [],
-  "socialProfiles": [
+  "profiles": [
     {
       "platform": "twitter",
-      "profile": "https://twitter.com/rabraghib"
+      "url": "https://twitter.com/rabraghib"
     },
     {
       "platform": "github",
-      "profile": "https://www.github.com/rabraghib"
+      "url": "https://www.github.com/rabraghib"
     },
     {
       "platform": "instagram",
-      "profile": "https://www.instagram.com/rabraghib"
+      "url": "https://www.instagram.com/rabraghib"
     },
     {
       "platform": "facebook",
-      "profile": "https://www.facebook.com/rabraghib"
+      "url": "https://www.facebook.com/rabraghib"
     },
     {
       "platform": "linkedin",
-      "profile": "https://www.linkedin.com/in/rabraghib"
+      "url": "https://www.linkedin.com/in/rabraghib"
     }
   ]
 }

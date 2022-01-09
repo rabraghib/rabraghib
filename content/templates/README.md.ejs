@@ -4,7 +4,15 @@
 
 # Hi, I am <%= about.name %> 👋
 
-<img width='100%' src='<%= about.banner %> ' />
+<p align="right">
+<% ReadmeSocialBadges.forEach(function(profile) { -%>
+<a href="<%= profile.url %>" target="_blank">
+  <img src="<%= profile.badge %>" alt="<%= profile.alt %>" />
+</a>
+<% }); -%>
+</p>
+
+<img width='100%' src='<%= about.banner %>' />
 
 <%= about.bio %>
 
