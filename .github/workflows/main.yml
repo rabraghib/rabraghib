@@ -1,0 +1,26 @@
+name: 🧿 Continuous Delivery
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: nrwl/nx-set-shas@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '16'
+      - name: 🛠 Install dependencies
+        run: yarn --frozen-lockfile
+      - name: ⚡ Build ejs templates
+        run: |
+          yarn build:ejs-templates
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "docs: :memo: Build templates" || true
+          git push
