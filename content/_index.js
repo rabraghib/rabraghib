@@ -3,22 +3,32 @@
 const about = require('./about.json');
 const blog = require('./blog.json');
 const brand = require('./brand.json');
+const projects = require('./projects.json');
 
 const ReadmeIncludedProfiles = ['twitter', 'instagram', 'linkedin'];
+const mailBadge = {
+  badge: getBadgeUrl('Mail me!', 'mail'),
+  url: `mailto:${about.email}`,
+  alt: 'Mail me!'
+};
 
 module.exports = {
   about: about,
   blog: blog,
   brand: brand,
-  ReadmeSocialBadges: about.profiles
-    .filter(p => ReadmeIncludedProfiles.includes(p.platform))
-    .map(p => {
-      return {
-        badge: getBadgeUrl(p.platform),
-        url: p.url,
-        alt: `${about.name} ${p.platform} profile`
-      };
-    }),
+  projects: projects,
+  ReadmeSocialBadges: [
+    mailBadge,
+    ...about.profiles
+      .filter(p => ReadmeIncludedProfiles.includes(p.platform))
+      .map(p => {
+        return {
+          badge: getBadgeUrl(p.platform),
+          url: p.url,
+          alt: `${about.name} ${p.platform} profile`
+        };
+      })
+  ],
   GithubStatsUrls: [
     `https://github-readme-streak-stats.herokuapp.com/?${getQueryParamsOf(
       'streak-stats'
@@ -30,10 +40,10 @@ module.exports = {
 function getColor(colorName) {
   return brand.colors[colorName].replace('#', '');
 }
-function getBadgeUrl(platform) {
-  return `https://img.shields.io/badge/${platform}--${getColor(
+function getBadgeUrl(label, logo = label) {
+  return `https://img.shields.io/badge/${encodeURI(label)}--${getColor(
     'primary'
-  )}?style=for-the-badge&logo=${platform}&logoColor=${getColor(
+  )}?style=for-the-badge&logo=${encodeURI(logo)}&logoColor=${getColor(
     'slate-50'
   )}&logoWidth=25&labelColor=${getColor('slate-900')}`;
 }

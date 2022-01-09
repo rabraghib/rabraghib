@@ -18,7 +18,7 @@
 
 ---
 
-## 📈 Github Stats
+## 📊 Github Stats
 
 <p align='center'><% GithubStatsUrls.forEach(function(url) { %>
 <img width='47%' src='<%= url %>'/>
@@ -30,5 +30,10 @@
 
 <% blog.posts.forEach(function(post) { -%>
 - [<%= post.title %>](<%= post.url %>)
-<% });} -%>
+<% }); -%>
+-  **➡️ [more articles...](<%= blog.website %>)**
+<% } -%>
 
+---
+
+<p align="center">Made with ❤️ by <a href="<%= about.website %>"><%= about.name %></a></p>

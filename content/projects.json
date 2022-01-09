@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Project 1",
+    "thumbnail": "https://picsum.photos/seed/1/1600/900",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit assumenda est sed a ullam quia, molestiae fuga. Omnis ex explicabo, fugiat, consequuntur sit aspernatur, necessitatibus totam nulla cumque vitae aut?",
+    "topics": ["Angular", "Symfony", "Docker"],
+    "liveUrl": "https://github.com/rabraghib/",
+    "sourceUrl": "https://github.com/rabraghib/"
+  },
+  {
+    "name": "Cool Project 2",
+    "thumbnail": "https://picsum.photos/seed/2/1600/900",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit assumenda est sed a ullam quia, molestiae fuga. Omnis ex explicabo, fugiat, consequuntur sit aspernatur, necessitatibus totam nulla cumque vitae aut?",
+    "topics": ["HTML", "CSS", "JS"],
+    "liveUrl": "https://github.com/rabraghib/",
+    "sourceUrl": "https://github.com/rabraghib/"
+  }
+]
