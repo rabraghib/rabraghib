@@ -1,0 +1,26 @@
+<!--
+<%= DONT_EDIT_WARNING %>
+-->
+
+# Hi, I am <%= about.name %> 👋
+
+<img width='100%' src='<%= about.banner %> ' />
+
+<%= about.bio %>
+
+---
+
+## 📈 Github Stats
+
+<p align='center'><% GithubStatsUrls.forEach(function(url) { %>
+<img width='47%' src='<%= url %>'/>
+<% }) -%></p>
+
+
+<% if (blog.posts && blog.posts.length > 0) { -%>
+## 📰 Latest Articles
+
+<% blog.posts.forEach(function(post) { -%>
+- [<%= post.title %>](<%= post.url %>)
+<% });} -%>
+
