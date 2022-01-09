@@ -1,0 +1,31 @@
+{
+  "name": "Rabyâ Raghib",
+  "handle": "rabraghib",
+  "bio": "I'm a Morocco-based, self-taught software developer who specializes in building and designing special digital experiences. I am always passionate about learning new things and gaining more knowledge...",
+  "picture": "assets/picture.png",
+  "banner": "assets/banner.png",
+  "email": "hello@rabraghib.me",
+  "addresses": [],
+  "socialProfiles": [
+    {
+      "platform": "twitter",
+      "profile": "https://twitter.com/rabraghib"
+    },
+    {
+      "platform": "github",
+      "profile": "https://www.github.com/rabraghib"
+    },
+    {
+      "platform": "instagram",
+      "profile": "https://www.instagram.com/rabraghib"
+    },
+    {
+      "platform": "facebook",
+      "profile": "https://www.facebook.com/rabraghib"
+    },
+    {
+      "platform": "linkedin",
+      "profile": "https://www.linkedin.com/in/rabraghib"
+    }
+  ]
+}
