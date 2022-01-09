@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@rabraghib/content": ["content/_index.js"]
+      "@rabraghib/content": ["content/index"]
     }
   },
   "exclude": ["node_modules", "tmp"]

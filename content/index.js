@@ -1,13 +1,14 @@
 // Content entry point
 // Accessible in TS via: @rabraghib/content
-const brand = require('./brand.json');
 const about = require('./about.json');
+const blog = require('./blog.json');
+const brand = require('./brand.json');
 
 const ReadmeIncludedProfiles = ['twitter', 'instagram', 'linkedin'];
 
 module.exports = {
   about: about,
-  blog: require('./blog.json'),
+  blog: blog,
   brand: brand,
   ReadmeSocialBadges: about.profiles
     .filter(p => ReadmeIncludedProfiles.includes(p.platform))
