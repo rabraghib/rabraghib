@@ -18,7 +18,7 @@ jobs:
         run: yarn --frozen-lockfile
       - name: ⚡ Build ejs templates
         run: |
-          yarn build:ejs-templates
+          yarn build content
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .

@@ -4,13 +4,9 @@
   "projectType": "library",
   "targets": {
     "build": {
-      "executor": "@nrwl/js:tsc",
-      "outputs": ["{options.outputPath}"],
+      "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "outputPath": "dist/content",
-        "main": "content/src/index.ts",
-        "tsConfig": "content/tsconfig.lib.json",
-        "assets": ["content/*.md"]
+        "commands": ["node tools/build-ejs-templates.js -o {args.outputPath}"]
       }
     },
     "lint": {
