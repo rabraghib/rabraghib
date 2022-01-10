@@ -1,0 +1,33 @@
+{
+  "root": "projects/cli-card",
+  "sourceRoot": "projects/cli-card/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/projects/cli-card",
+        "tsConfig": "projects/cli-card/tsconfig.lib.json",
+        "packageJson": "projects/cli-card/package.json",
+        "main": "projects/cli-card/src/index.ts",
+        "assets": [
+          "projects/cli-card/*.md",
+          {
+            "glob": "**/*",
+            "input": "projects/cli-card/bin",
+            "output": "bin"
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["projects/cli-card/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

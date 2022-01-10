@@ -1,0 +1,23 @@
+{
+  "name": "rabraghib",
+  "version": "0.0.1",
+  "description": "A personal card for Rabyâ Raghib (@rabraghib)",
+  "bin": {
+    "rabraghib": "./bin/cli.js"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npx"
+  ],
+  "license": "MIT",
+  "author": "Rabyâ Raghib <rabraghib@gmail.com> (https://rabraghib.me/)",
+  "bugs": {
+    "url": "https://github.com/rabraghib/rabraghib/issues"
+  },
+  "homepage": "https://github.com/rabraghib/rabraghib/tree/main/projects/cli-card",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rabraghib/rabraghib.git"
+  }
+}

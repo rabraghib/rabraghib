@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "cli-card": "projects/cli-card",
     "content": "content",
     "portfolio": "projects/portfolio"
   }
