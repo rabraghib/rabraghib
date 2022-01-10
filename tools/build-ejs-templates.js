@@ -1,12 +1,21 @@
 const ejs = require('ejs');
 const fs = require('fs-extra');
 const path = require('path');
-const TEMPLATES_PATH = path.resolve(__dirname, '../content/templates');
-const OUTPUT_PATH = path.resolve(__dirname, '../');
-
+const yargs = require('yargs');
 const DATA = require('../content/data/_index');
 
-// TODO: refactor this to be an nx executor
+const argv = yargs
+  .option('output-path', {
+    alias: 'o',
+    description:
+      'The full path for the new output directory, relative to the workspace root. By default, writes output to the root folder /',
+    type: 'string'
+  })
+  .help()
+  .alias('help', 'h').argv;
+
+const TEMPLATES_PATH = path.resolve(__dirname, '../content/templates');
+const OUTPUT_PATH = path.resolve(__dirname, '../', argv.outputPath || '.');
 
 const templates = getAllFiles(TEMPLATES_PATH)
   .map(file => path.relative(TEMPLATES_PATH, file))
@@ -21,6 +30,7 @@ templates.forEach(async template => {
       .relative(path.dirname(outputPath), templatePath)
       .replace(/\\/g, '/')}\`.`
   });
+  fs.ensureDirSync(path.dirname(outputPath), output);
   fs.writeFileSync(outputPath, output);
 });
 
