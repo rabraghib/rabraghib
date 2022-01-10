@@ -8,10 +8,11 @@ const DATA = require('../content/data/_index');
 
 // TODO: refactor this to be an nx executor
 
-const templates = fs
-  .readdirSync(TEMPLATES_PATH)
+const templates = getAllFiles(TEMPLATES_PATH)
+  .map(file => path.relative(TEMPLATES_PATH, file))
   .filter(file => file.endsWith('.ejs'));
 templates.forEach(async template => {
+  console.log(`Building ${template}`);
   const templatePath = path.resolve(TEMPLATES_PATH, template);
   const outputPath = path.resolve(OUTPUT_PATH, template.replace(/\.ejs$/, ''));
   const output = await ejs.renderFile(templatePath, {
@@ -22,3 +23,16 @@ templates.forEach(async template => {
   });
   fs.writeFileSync(outputPath, output);
 });
+
+function getAllFiles(root, dir = root, results = []) {
+  fs.readdirSync(dir).forEach(filePath => {
+    filePath = dir + '/' + filePath;
+    const stat = fs.statSync(filePath);
+    if (stat && stat.isDirectory()) {
+      results = [...results, ...getAllFiles(root, filePath, [...results])];
+    } else {
+      results.push(filePath);
+    }
+  });
+  return results;
+}
