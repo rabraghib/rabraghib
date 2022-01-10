@@ -29,7 +29,7 @@ module.exports = {
         };
       })
   ],
-  GithubStatsUrls: [
+  GithubStatsCardsUrls: [
     `https://github-readme-streak-stats.herokuapp.com/?${getQueryParamsOf(
       'streak-stats'
     )}`,

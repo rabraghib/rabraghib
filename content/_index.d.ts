@@ -2,7 +2,7 @@ export const about: IAbout;
 export const blog: IBlog;
 export const brand: IBrand;
 export const projects: IProject[];
-export const GithubStatsUrls: string[];
+export const GithubStatsCardsUrls: string[];
 export const ReadmeSocialBadges: ISocialBadge[];
 
 export interface IAbout {
@@ -30,7 +30,10 @@ type IPublishedOn = {
 };
 export interface IPost {
   title: string;
-  url: string;
+  slug: string;
+  thumbnail: string;
+  date: string;
+  tags: string[];
   publishedOn: IPublishedOn;
   contentFile: string;
 }
