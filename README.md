@@ -34,6 +34,10 @@ I&#39;m a Morocco-based, self-taught software developer who specializes in build
 <img width='47%' src='https://github-readme-stats.vercel.app/api?username=rabraghib&amp;custom_title=Overall Stats&amp;line_height=30&amp;show_icons=true&amp;hide_border=true&amp;hide=stars&amp;bg_color=0F172A&amp;icon_color=2D9CDB&amp;title_color=2D9CDB&amp;border_color =e2e8f0&amp;text_color=e2e8f0'/>
 </p>
 
+<!--
+TODO: implement this
+ -->
+
 ---
 
 <p align="center">Made with ❤️ by <a href="https://rabraghib.me">Rabyâ Raghib</a></p>
