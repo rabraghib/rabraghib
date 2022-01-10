@@ -4,7 +4,9 @@ const path = require('path');
 const TEMPLATES_PATH = path.resolve(__dirname, '../content/templates');
 const OUTPUT_PATH = path.resolve(__dirname, '../');
 
-const DATA = require('../content/_index');
+const DATA = require('../content/data/_index');
+
+// TODO: refactor this to be an nx executor
 
 const templates = fs
   .readdirSync(TEMPLATES_PATH)

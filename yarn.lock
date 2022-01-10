@@ -1834,6 +1834,22 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
+"@nrwl/js@13.4.3":
+  version "13.4.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/js/-/js-13.4.3.tgz#47e3e1a3821f5c1ae20c9faf1c27e5f9509775eb"
+  integrity sha512-wqbeuM+yJwUvgjL04qxfMQSGtpX57fjNGxjDi7YroTZijh0afVhw6KOoxkAm8QQraqSkN7vMzqJJ3h/xeSwHog==
+  dependencies:
+    "@nrwl/devkit" "13.4.3"
+    "@nrwl/jest" "13.4.3"
+    "@nrwl/linter" "13.4.3"
+    "@nrwl/workspace" "13.4.3"
+    chalk "4.1.0"
+    js-tokens "^4.0.0"
+    rxjs "^6.5.4"
+    rxjs-for-await "0.0.2"
+    source-map-support "0.5.19"
+    tree-kill "1.2.2"
+
 "@nrwl/linter@13.4.3":
   version "13.4.3"
   resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-13.4.3.tgz#c8e5ad52f0aa927b765a7916ab548ae2ea5385b8"

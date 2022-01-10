@@ -37,6 +37,7 @@
     "@commitlint/config-conventional": "^16.0.0",
     "@nrwl/cli": "13.4.3",
     "@nrwl/eslint-plugin-nx": "13.4.3",
+    "@nrwl/js": "13.4.3",
     "@nrwl/linter": "13.4.3",
     "@nrwl/node": "^13.4.3",
     "@nrwl/nx-cloud": "latest",

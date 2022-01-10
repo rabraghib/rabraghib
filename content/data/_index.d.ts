@@ -20,7 +20,16 @@ export interface IBlog {
   website: string;
   posts: IPost[];
 }
-export interface IBrand {}
+export interface IBrand {
+  colors: string[];
+}
+// export interface IBrandColors {
+//   primary: string;
+//   secondary: string;
+//   tertiary: string;
+//   quaternary: string;
+//   quinary: string;
+// }
 export interface IProfile {
   platform: string;
   url: string;
