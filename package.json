@@ -68,6 +68,9 @@
   "standard-version": {
     "scripts": {
       "prebump": "node ./tools/get-new-version.js"
+    },
+    "skip": {
+      "tag": true
     }
   },
   "lint-staged": {

@@ -13,11 +13,23 @@ jobs:
         with:
           node-version: '16'
           cache: 'yarn'
+      - run: |
+          yarn --frozen-lockfile
+          git config user.name github-actions
+          git config user.email github-actions@github.com
       - name: 📃 Changelogs and versions & git tag
         run: yarn release
-      - name: Create Github release
+      - id: post-release
         run: |
-          gh release create $(node ./tools/get-new-version.js --current) --generate-notes
+          git push
+          echo "::set-output name=version::$(node ./tools/get-new-version.js --current)"
+      - name: Create Github release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: "🎉 I'm ${{ steps.post-release.outputs.version }} old "
+          tag_name: v${{ steps.post-release.outputs.version }}
+          generate_release_notes: true
+
   deploy:
     needs: release
     runs-on: ubuntu-latest
