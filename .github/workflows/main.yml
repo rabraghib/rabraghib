@@ -1,4 +1,4 @@
-name: 🧿 Continuous Delivery
+name: 🧿 Main workflow
 on:
   push:
     branches:
@@ -11,9 +11,10 @@ jobs:
         with:
           fetch-depth: 0
       - uses: nrwl/nx-set-shas@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
           node-version: '16'
+          cache: 'yarn'
       - name: 🛠 Install dependencies
         run: yarn --frozen-lockfile
       - name: ⚡ Build ejs templates

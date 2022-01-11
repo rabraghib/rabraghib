@@ -27,6 +27,12 @@
       "options": {
         "lintFilePatterns": ["projects/cli-card/**/*.ts"]
       }
+    },
+    "deploy-package": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "public"
+      }
     }
   },
   "tags": []

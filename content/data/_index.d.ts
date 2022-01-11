@@ -8,6 +8,7 @@ export interface IAbout {
   handle: string;
   website: string;
   headline: string;
+  birthday: string;
   bio: string;
   avatar: string;
   banner: string;

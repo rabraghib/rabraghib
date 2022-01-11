@@ -1,0 +1,53 @@
+name: 🚀 Deploy monorepo
+on:
+  workflow_dispatch:
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: nrwl/nx-set-shas@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'yarn'
+      - name: 📃 Changelogs and versions & git tag
+        run: yarn release
+      - name: Create Github release
+        run: |
+          gh release create $(node ./tools/get-new-version.js --current) --generate-notes
+  deploy:
+    needs: release
+    runs-on: ubuntu-latest
+    if: ${{ success() }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: nrwl/nx-set-shas@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'yarn'
+          registry-url: 'https://registry.npmjs.org'
+      - run: yarn --frozen-lockfile && yarn nx-all build
+      - uses: actions/setup-node@v2
+        with:
+          registry-url: 'https://npm.pkg.github.com'
+      - name: 🎉 Publish Packages to Github Packages
+        run: yarn nx-all deploy-package
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-node@v2
+        with:
+          registry-url: 'https://registry.npmjs.org'
+      - name: 🎉 Publish Packages to npm
+        run: |
+          yarn nx-all deploy-package
+          yarn json -I -f dist/projects/cli-card/package.json -e "this.name='rabraghib'"
+          cd dist/projects/cli-card
+          yarn publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: 🚀 Deploy all projects
+        run: yarn nx-all deploy

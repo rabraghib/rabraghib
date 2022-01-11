@@ -2,11 +2,12 @@ const ejs = require('ejs');
 const fs = require('fs-extra');
 const path = require('path');
 const DATA = require('./prepare-data');
+const { getAllFilesInTree } = require('../helpers');
 
 const TEMPLATES_PATH = path.resolve(__dirname, '../../content/templates');
 const OUTPUT_PATH = path.resolve(__dirname, '../../');
 
-const templates = getAllFiles(TEMPLATES_PATH)
+const templates = getAllFilesInTree(TEMPLATES_PATH)
   .map(file => path.relative(TEMPLATES_PATH, file))
   .filter(file => file.endsWith('.ejs'));
 templates.forEach(async template => {
@@ -22,16 +23,3 @@ templates.forEach(async template => {
   fs.ensureDirSync(path.dirname(outputPath));
   fs.writeFileSync(outputPath, output);
 });
-
-function getAllFiles(root, dir = root, results = []) {
-  fs.readdirSync(dir).forEach(filePath => {
-    filePath = dir + '/' + filePath;
-    const stat = fs.statSync(filePath);
-    if (stat && stat.isDirectory()) {
-      results = [...results, ...getAllFiles(root, filePath, [...results])];
-    } else {
-      results.push(filePath);
-    }
-  });
-  return results;
-}
