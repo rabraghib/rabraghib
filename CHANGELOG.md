@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [17.8.30](https://github.com/rabraghib/rabraghib/compare/v17.8.29...v17.8.30) (2022-01-11)
+
+### Features
+
+- add build phase to release workflow & setup dependabot ([919a6e5](https://github.com/rabraghib/rabraghib/commit/919a6e582a7fd6ef6330ee3e7307d399d98e703b))
+- count private contributions in stats card ([c5cf7ae](https://github.com/rabraghib/rabraghib/commit/c5cf7ae2db4f8a41627916d96b184b70f86d1a45))
+
+### Bug Fixes
+
+- content no built due to nx cache ([fc158aa](https://github.com/rabraghib/rabraghib/commit/fc158aaf978b324e84c375f3638ce3e6717c3913))
+
 ### 17.8.29 (2022-01-11)
 
 ### ⚠ BREAKING CHANGES
