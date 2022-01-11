@@ -1,10 +1,16 @@
 const birthday = require('../content/data/_index').AboutData.birthday;
 
 const fullAge = calculateAge(birthday);
-const version = `${fullAge.years}.${fullAge.months}.${fullAge.days}`;
+const currentVersion = require('../package.json').version;
+const versionMajorMinor = `${fullAge.years}.${fullAge.months}.`;
+const version = `${versionMajorMinor}${
+  currentVersion.startsWith(versionMajorMinor)
+    ? 1 + parseInt(currentVersion.slice(versionMajorMinor.length))
+    : 0
+}`;
 const isCurrent = process.argv.slice(2)[0] === '--current';
 
-console.log(isCurrent ? require('../package.json').version : version);
+console.log(isCurrent ? currentVersion : version);
 
 function calculateAge(birthday) {
   birthday = new Date(birthday);
