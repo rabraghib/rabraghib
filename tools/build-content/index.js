@@ -1,21 +1,10 @@
 const ejs = require('ejs');
 const fs = require('fs-extra');
 const path = require('path');
-const yargs = require('yargs');
-const DATA = require('../content/data/_index');
+const DATA = require('./prepare-data');
 
-const argv = yargs
-  .option('output-path', {
-    alias: 'o',
-    description:
-      'The full path for the new output directory, relative to the workspace root. By default, writes output to the root folder /',
-    type: 'string'
-  })
-  .help()
-  .alias('help', 'h').argv;
-
-const TEMPLATES_PATH = path.resolve(__dirname, '../content/templates');
-const OUTPUT_PATH = path.resolve(__dirname, '../', argv.outputPath || '.');
+const TEMPLATES_PATH = path.resolve(__dirname, '../../content/templates');
+const OUTPUT_PATH = path.resolve(__dirname, '../../');
 
 const templates = getAllFiles(TEMPLATES_PATH)
   .map(file => path.relative(TEMPLATES_PATH, file))
@@ -30,7 +19,7 @@ templates.forEach(async template => {
       .relative(path.dirname(outputPath), templatePath)
       .replace(/\\/g, '/')}\`.`
   });
-  fs.ensureDirSync(path.dirname(outputPath), output);
+  fs.ensureDirSync(path.dirname(outputPath));
   fs.writeFileSync(outputPath, output);
 });
 

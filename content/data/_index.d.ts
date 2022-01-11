@@ -1,14 +1,13 @@
-export const about: IAbout;
-export const blog: IBlog;
-export const brand: IBrand;
-export const projects: IProject[];
-export const GithubStatsCardsUrls: string[];
-export const ReadmeSocialBadges: ISocialBadge[];
+export const AboutData: IAbout;
+export const BlogData: IBlog;
+export const BrandData: IBrand;
+export const ProjectsData: IProject[];
 
 export interface IAbout {
   name: string;
   handle: string;
   website: string;
+  headline: string;
   bio: string;
   avatar: string;
   banner: string;
@@ -23,13 +22,6 @@ export interface IBlog {
 export interface IBrand {
   colors: string[];
 }
-// export interface IBrandColors {
-//   primary: string;
-//   secondary: string;
-//   tertiary: string;
-//   quaternary: string;
-//   quinary: string;
-// }
 export interface IProfile {
   platform: string;
   url: string;

@@ -2,7 +2,7 @@
 <%= DONT_EDIT_WARNING %>
 -->
 
-# Hi, I am <%= about.name %> 👋
+# Hi, I am <%= AboutData.name %> 👋
 
 <p align="right">
 <% ReadmeSocialBadges.forEach(function(profile) { -%>
@@ -12,9 +12,9 @@
 <% }); -%>
 </p>
 
-<img width='100%' src='<%= about.banner %>' />
+<img width='100%' src='<%= AboutData.banner %>' />
 
-<%= about.bio %>
+<%= AboutData.bio %>
 
 ---
 
@@ -24,18 +24,17 @@
 <img width='47%' src='<%= url %>'/>
 <% }) -%></p>
 
-
 <!--
 TODO: implement this
-<% if (blog.posts && blog.posts.length > 0) { -%>
+<% if (BlogData.posts && BlogData.posts.length > 0) { -%>
 ## 📰 Latest Articles
 
-<% blog.posts.forEach(function(post) { -%>
+<% BlogData.posts.forEach(function(post) { -%>
 - [<%= post.title %>](<%= post.url %>)
 <% }); -%>
--  **➡️ [more articles...](<%= blog.website %>)**
+-  **➡️ [more articles...](<%= BlogData.website %>)**
 <% } -%> -->
 
 ---
 
-<p align="center">Made with ❤️ by <a href="<%= about.website %>"><%= about.name %></a></p>
+<p align="center">Made with ❤️ by <a href="<%= AboutData.website %>"><%= AboutData.name %></a></p>

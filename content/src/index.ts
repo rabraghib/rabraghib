@@ -1,3 +1,1 @@
-export const getArticleUrl = (slug: string): string => {
-  return `/blog/${slug}`;
-};
+export * from '../data/_index';

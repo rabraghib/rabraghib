@@ -6,7 +6,7 @@
     "build": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "commands": ["node tools/build-ejs-templates.js -o {args.outputPath}"]
+        "commands": ["node tools/build-content"]
       }
     },
     "lint": {
