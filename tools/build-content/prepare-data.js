@@ -71,6 +71,7 @@ function getQueryParamsOf(type) {
     statsCardsParams.hide_border = 'true';
     statsCardsParams.hide = 'stars';
     statsCardsParams.bg_color = getColor('slate-900');
+    statsCardsParams.count_private = true;
     setValue(
       statsCardsParams,
       ['title_color', 'icon_color'],

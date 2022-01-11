@@ -26,10 +26,9 @@ jobs:
       - name: Create Github release
         uses: softprops/action-gh-release@v1
         with:
-          name: "🎉 I'm ${{ steps.post-release.outputs.version }} old "
+          name: 'v${{ steps.post-release.outputs.version }} 🎉'
           tag_name: v${{ steps.post-release.outputs.version }}
           generate_release_notes: true
-
   deploy:
     needs: release
     runs-on: ubuntu-latest
