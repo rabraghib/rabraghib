@@ -1,11 +1,14 @@
 {
   "name": "@rabraghib/src",
-  "version": "0.0.0",
+  "version": "17.8.29",
   "license": "MIT",
   "scripts": {
     "ng": "nx",
+    "nx-all": "nx run-many --all --target",
     "start": "nx serve",
     "build": "nx build",
+    "release": "standard-version",
+    "get-new-version": "node ./tools/get-new-version.js",
     "postinstall": "node ./tools/decorate-angular-cli.js && ngcc --properties es2015 browser module main",
     "prepare": "husky install tools/.husky"
   },
@@ -55,9 +58,17 @@
     "eslint-config-prettier": "8.1.0",
     "fs-extra": "^10.0.0",
     "husky": "^7.0.4",
+    "json": "^11.0.0",
     "lint-staged": "^12.1.5",
+    "ngx-deploy-npm": "^3.0.10",
     "prettier": "^2.3.1",
+    "standard-version": "^9.3.2",
     "typescript": "~4.4.3"
+  },
+  "standard-version": {
+    "scripts": {
+      "prebump": "node ./tools/get-new-version.js"
+    }
   },
   "lint-staged": {
     "*.{js,ts}": [
