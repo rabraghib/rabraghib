@@ -37,7 +37,7 @@ jobs:
       - name: 📃 Changelogs and versions & git tag
         run: |
           yarn release && mkdir dist
-          yarn extract-changelog-release > dist/RELEASE_BODY.md
+          npx extract-changelog-release > dist/RELEASE_BODY.md
       - uses: actions/download-artifact@v2
         with:
           name: projects-dist
@@ -59,7 +59,7 @@ jobs:
           tag_name: v${{ steps.post-release.outputs.version }}
           files: dist/*.zip
           body_path: dist/RELEASE_BODY.md
-  deploy:
+  deploy-packages:
     needs: release
     runs-on: ubuntu-latest
     if: ${{ success() }}
@@ -71,6 +71,15 @@ jobs:
           cache: 'yarn'
           registry-url: 'https://registry.npmjs.org'
       - run: yarn --frozen-lockfile && yarn nx-all build
+      - name: 🎉 Publish Packages to npm
+        run: |
+          yarn nx-all deploy-package
+          yarn json -I -f dist/projects/cli-card/package.json -e "this.name='rabraghib'"
+          cd dist/projects/cli-card
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: yarn nx-all build cli-card --skip-nx-cache
       - uses: actions/setup-node@v2
         with:
           registry-url: 'https://npm.pkg.github.com'
@@ -78,16 +87,11 @@ jobs:
         run: yarn nx-all deploy-package
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: actions/setup-node@v2
-        with:
-          registry-url: 'https://registry.npmjs.org'
-      - name: 🎉 Publish Packages to npm
-        run: |
-          yarn nx-all deploy-package
-          yarn json -I -f dist/projects/cli-card/package.json -e "this.name='rabraghib'"
-          cd dist/projects/cli-card
-          yarn publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: 🚀 Deploy all projects
-        run: yarn nx-all deploy
+  deploy:
+    needs: release
+    runs-on: ubuntu-latest
+    if: ${{ success() }}
+    steps:
+      - uses: actions/checkout@v2
+      # - name: 🚀 Deploy all projects
+      #   run: yarn nx-all deploy
