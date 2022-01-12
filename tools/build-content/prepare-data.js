@@ -28,7 +28,12 @@ module.exports = {
     )}`,
     `https://github-readme-stats.vercel.app/api?${getQueryParamsOf('stats')}`
   ],
-  CLICardContent: cliCardContent(DATA)
+  CLICardContent: cliCardContent(DATA),
+  Helpers: {
+    getGithubFileRawUrl: (filePath, branch = 'main') => {
+      return `https://raw.githubusercontent.com/rabraghib/rabraghib/${branch}/${filePath}`;
+    }
+  }
 };
 
 function getColor(colorName) {

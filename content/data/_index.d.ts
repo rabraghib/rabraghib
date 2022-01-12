@@ -9,6 +9,11 @@ export interface IAbout {
   website: string;
   headline: string;
   birthday: string;
+  cli: {
+    packageName: string;
+    scopedPackageName: string;
+    screenshot: string;
+  };
   bio: string;
   avatar: string;
   banner: string;

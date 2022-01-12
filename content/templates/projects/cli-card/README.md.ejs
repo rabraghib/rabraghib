@@ -1,0 +1,27 @@
+<!--
+<%= DONT_EDIT_WARNING %>
+-->
+
+# <%= AboutData.name %> Cli Card
+
+<img width='100%' src='<%= Helpers.getGithubFileRawUrl(AboutData.cli.screenshot) %>'/>
+
+## Usage via npm registry
+
+```
+npx <%= AboutData.cli.packageName %>
+```
+
+## GitHub Packages Registry
+
+```
+npx <%= AboutData.cli.scopedPackageName %>
+```
+
+**PS: this also works with npm**
+
+## Thanks to
+
+- [@chihab](https://github.com/chihab) for mention it.
+- [@bnb](https://github.com/bnb) for the initial idea.
+- [@swyx](https://github.com/sw-yx) for talking about it.
