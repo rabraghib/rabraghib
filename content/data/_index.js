@@ -4,6 +4,7 @@ const about = require('./about.json');
 const blog = require('./blog.json');
 const brand = require('./brand.json');
 const projects = require('./projects.json');
+const referencedBrands = require('./referenced-brands.json');
 
 module.exports = {
   AboutData: about,
@@ -15,5 +16,6 @@ module.exports = {
     }))
   },
   BrandData: brand,
-  ProjectsData: projects
+  ProjectsData: projects,
+  ReferencedBrandsData: referencedBrands
 };
