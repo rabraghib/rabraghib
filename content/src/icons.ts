@@ -1,6 +1,6 @@
 import { SvgIcon } from '@ngaox/icons';
 
-export const AppIcons: SvgIcon[] = [
+export const AppNgaoxIcons: SvgIcon[] = [
   {
     name: 'arrows:right',
     svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M430.982 273.314L236.638 467.657C227.265 477.03 212.069 477.03 202.697 467.657L180.03 444.99C170.673 435.633 170.655 420.468 179.99 411.089L334.011 256.343L179.99 101.598C170.655 92.2187 170.673 77.0537 180.03 67.6967L202.697 45.0297C212.07 35.6567 227.266 35.6567 236.638 45.0297L430.981 239.373C440.354 248.745 440.354 263.941 430.982 273.314Z"/></svg>'

@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { IconsModule } from '@ngaox/icons';
-import { AppIcons } from './icons';
+import { AppNgaoxIcons } from '@rabraghib/content';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -12,7 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     HttpClientModule,
-    IconsModule.forRoot('', AppIcons),
+    IconsModule.forRoot('', AppNgaoxIcons),
     SharedModule
   ],
   providers: [],
