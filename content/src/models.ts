@@ -25,6 +25,7 @@ export interface IBrand {
 }
 export interface IProfile {
   platform: string;
+  brand: IBrandInfo;
   url: string;
 }
 type IPublishedOn = {

@@ -23,7 +23,7 @@
   "linkedin": {
     "name": "LinkedIn",
     "website": "https://linkedin.com",
-    "icon": "social:linkedin",
+    "icon": "social:linkedin-in",
     "SimpleIconsIconName": "linkedin",
     "labels": ["social"]
   },

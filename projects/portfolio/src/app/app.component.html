@@ -1,10 +1,10 @@
-<!-- <div
+<div
   class="sticky col-span-full row-[1/2] z-50 top-2 mt-4 md:mt-5 hidden md:block"
 >
-  <rabraghib-sidebar [links]="data.about.socialLinks"></rabraghib-sidebar>
+  <rabraghib-navbar [links]="data.about.profiles"></rabraghib-navbar>
 </div>
 <main class="app_container col-span-full row-span-full" #pageTop>
-  <rabraghib-overview
+  <!-- <rabraghib-overview
     [data]="data.about"
     (TakeAction)="TakeAction(CTAContainer)"
   ></rabraghib-overview>
@@ -18,9 +18,9 @@
         [links]="data.about.socialLinks"
       ></rabraghib-contact>
     </div>
-  </div>
+  </div> -->
   <rabraghib-footer
     (TakeAction)="TakeAction(pageTop)"
     [name]="data.about.name"
   ></rabraghib-footer>
-</main> -->
+</main>

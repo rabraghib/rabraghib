@@ -1,5 +1,5 @@
 import { Component, HostBinding } from '@angular/core';
-import { AboutData, ProjectsData } from '@rabraghib/content';
+import { AboutData, getBrandInfo, ProjectsData } from '@rabraghib/content';
 
 @Component({
   selector: 'rabraghib-root',
@@ -11,7 +11,13 @@ export class AppComponent {
     return `grid grid-rows-[auto,1fr] h-screen w-full overflow-x-hidden overflow-y-auto relative bg-gray-900 text-gray-200`;
   }
   readonly data = {
-    about: AboutData,
+    about: {
+      ...AboutData,
+      profiles: AboutData.profiles.map(profile => ({
+        ...profile,
+        brand: getBrandInfo(profile.platform)
+      }))
+    },
     projects: ProjectsData
   };
   TakeAction(el: HTMLElement) {
