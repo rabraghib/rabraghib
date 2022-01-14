@@ -1,0 +1,29 @@
+<div
+  #ImgContainer
+  class="relative w-full min-w-[15rem] max-w-xs sm:max-w-sm md:max-w-none col-span-full md:col-span-2 ml-auto -top-16 -mb-16 -right-16 md:m-0 md:top-0 md:right-0"
+>
+  <div
+    class="w-full bg-dark-gray bg-center bg-cover relative z-10 rounded-tr-none md:rounded-tr-full rounded-full shadow-lg pt-[100%]"
+    [ngStyle]="{ 'background-image': 'url(' + data.avatar + ')' }"
+  ></div>
+</div>
+<div class="grid gap-3 z-10 col-span-full md:col-span-3" #ContentContainer>
+  <span class="text-gray-400 font-medium" *ngIf="false">Hello there,</span>
+  <h1 class="w-2/3">
+    <span class="md:text-[0.75em] md:block">
+      <span class="text-gray-400">Hi,</span> I am
+    </span>
+    <span class="highlight whitespace-nowrap">{{ data.name }}</span>
+  </h1>
+  <p class="max-w-prose text-gray-300 leading-7">{{ data.bio }}</p>
+  <a
+    (click)="OnCTAClicked()"
+    class="flex items-center group cursor-pointer shadow-lg bg-dark-gray relative mt-4 h-12 lg:h-14 py-2 pl-3 pr-14 lg:py-3 lg:pl-5 lg:pr-20 rounded-full font-bold uppercase border-4 border-primary w-max text-sm lg:text-base hover:bg-dark-primary"
+  >
+    <span class="align-middle">get in touch</span>
+    <ngaox-icon
+      name="arrows:right"
+      class="absolute p-4 h-12 w-12 lg:h-14 lg:w-14 rounded-full -top-1 -right-1 bg-primary text-gray-900 transition-transform duration-300 group-hover:text-dark-primary group-hover:rotate-90"
+    ></ngaox-icon>
+  </a>
+</div>

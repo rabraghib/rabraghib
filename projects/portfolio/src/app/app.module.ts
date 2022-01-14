@@ -1,17 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
-import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { IconsModule } from '@ngaox/icons';
 import { AppNgaoxIcons } from '@rabraghib/content';
-import { HttpClientModule } from '@angular/common/http';
+import { LayoutModule } from '@angular/cdk/layout';
+
+import { AppComponent } from './app.component';
+import { OverviewComponent } from './overview/overview.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, OverviewComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
+    LayoutModule,
     IconsModule.forRoot('', AppNgaoxIcons),
     SharedModule
   ],

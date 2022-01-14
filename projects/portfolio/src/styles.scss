@@ -14,16 +14,16 @@
     @apply font-black text-white;
   }
 }
-// @layer components {
-//   .app_container {
-//     @apply max-w-7xl mx-auto;
-//   }
-// }
+@layer components {
+  .app_container {
+    @apply max-w-7xl mx-auto;
+  }
+}
 
-// .highlight {
-//   @apply text-primary;
-// }
-// svg {
-//   height: 100%;
-//   width: 100%;
-// }
+.highlight {
+  @apply text-primary;
+}
+svg {
+  height: 100%;
+  width: 100%;
+}
