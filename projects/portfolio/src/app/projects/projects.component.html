@@ -1,0 +1,9 @@
+<h1 class="text-center uppercase">
+  my <span class="highlight">projects</span>
+</h1>
+
+<rabraghib-project-card
+  *ngFor="let item of projects; let i = index"
+  [project]="item"
+  [switchDirection]="i % 2 === 1"
+></rabraghib-project-card>

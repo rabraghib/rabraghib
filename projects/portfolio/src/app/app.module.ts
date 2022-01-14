@@ -9,9 +9,18 @@ import { LayoutModule } from '@angular/cdk/layout';
 
 import { AppComponent } from './app.component';
 import { OverviewComponent } from './overview/overview.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ProjectCardComponent } from './projects/card/card.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-  declarations: [AppComponent, OverviewComponent],
+  declarations: [
+    AppComponent,
+    OverviewComponent,
+    ProjectsComponent,
+    ProjectCardComponent,
+    ContactComponent
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,
