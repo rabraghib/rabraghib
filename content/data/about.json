@@ -13,6 +13,17 @@
   "avatar": "content/assets/avatar.png",
   "banner": "content/assets/banner.png",
   "email": "hello@rabraghib.me",
+  "stack": [
+    "Nx",
+    "Docker",
+    "Angular",
+    "Symfony",
+    "TailwindCSS",
+    "Firebase",
+    "Figma",
+    "TypeScript",
+    "PHP"
+  ],
   "addresses": [],
   "profiles": [
     {

@@ -16,24 +16,44 @@
 
 <%= AboutData.bio %>
 
----
+<br />
+
+## 🐱‍🏍 Tech Stack
+
+<p align="center">Here are some of my favorites technologies that I'am comfortable with!</p>
+<p align="center">
+<% ReadmeTechStackBadges.forEach(function(tech) { -%>
+  <img height="30" src="<%= tech.badge %>" alt="<%= tech.alt %>" />
+<% }); -%>
+</p>
+
+<% if (BlogData.posts && BlogData.posts.length > 0) { -%>
+<br />
+
+## 📕 Latest Blog Posts
+
+<% BlogData.posts.sort(function(a,b){
+  return new Date(b.date) - new Date(a.date);
+}).slice(0,5).forEach(function(post) { -%>
+- [<%= post.title %>](<%= post.url %>)
+<% }); -%>
+
+<br />
+
+<p align="right"> 
+  <a href="<%= BlogData.website %>">
+    <strong>➡️ READ MORE...</strong>
+  </a>
+</p>
+<% } -%>
+
+<br />
 
 ## 📊 Github Stats
 
 <p align='center'><% GithubStatsCardsUrls.forEach(function(url) { %>
 <img width='47%' src='<%= url %>'/>
 <% }) -%></p>
-
-<!--
-TODO: implement this
-<% if (BlogData.posts && BlogData.posts.length > 0) { -%>
-## 📰 Latest Articles
-
-<% BlogData.posts.forEach(function(post) { -%>
-- [<%= post.title %>](<%= post.url %>)
-<% }); -%>
--  **➡️ [more articles...](<%= BlogData.website %>)**
-<% } -%> -->
 
 ---
 

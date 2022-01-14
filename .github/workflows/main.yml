@@ -23,5 +23,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -m "docs: :memo: Build templates" || true
+          git commit -m "docs: :memo: build content (ejs templates)" || true
           git push
