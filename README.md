@@ -7,16 +7,16 @@ To edit this file, make an edit to its template in `content/templates/README.md.
 
 <p align="right">
 <a href="mailto:hello@rabraghib.me" target="_blank">
-  <img src="https://img.shields.io/badge/Mail%20me!--2D9CDB?style=for-the-badge&amp;logo=mail&amp;logoColor=f8fafc&amp;logoWidth=25&amp;labelColor=0F172A" alt="Mail me!" />
+  <img src="https://img.shields.io/badge/Mail%20me!--2D9CDB?style=for-the-badge&amp;logo=mail&amp;logoColor=f8fafc&amp;labelColor=0F172A" alt="Mail me!" />
 </a>
 <a href="https://twitter.com/rabraghib" target="_blank">
-  <img src="https://img.shields.io/badge/twitter--2D9CDB?style=for-the-badge&amp;logo=twitter&amp;logoColor=f8fafc&amp;logoWidth=25&amp;labelColor=0F172A" alt="Rabyâ Raghib twitter profile" />
+  <img src="https://img.shields.io/badge/twitter--2D9CDB?style=for-the-badge&amp;logo=twitter&amp;logoColor=f8fafc&amp;labelColor=0F172A" alt="Rabyâ Raghib twitter profile" />
 </a>
 <a href="https://www.instagram.com/rabraghib" target="_blank">
-  <img src="https://img.shields.io/badge/instagram--2D9CDB?style=for-the-badge&amp;logo=instagram&amp;logoColor=f8fafc&amp;logoWidth=25&amp;labelColor=0F172A" alt="Rabyâ Raghib instagram profile" />
+  <img src="https://img.shields.io/badge/instagram--2D9CDB?style=for-the-badge&amp;logo=instagram&amp;logoColor=f8fafc&amp;labelColor=0F172A" alt="Rabyâ Raghib instagram profile" />
 </a>
 <a href="https://www.linkedin.com/in/rabraghib" target="_blank">
-  <img src="https://img.shields.io/badge/linkedin--2D9CDB?style=for-the-badge&amp;logo=linkedin&amp;logoColor=f8fafc&amp;logoWidth=25&amp;labelColor=0F172A" alt="Rabyâ Raghib linkedin profile" />
+  <img src="https://img.shields.io/badge/linkedin--2D9CDB?style=for-the-badge&amp;logo=linkedin&amp;logoColor=f8fafc&amp;labelColor=0F172A" alt="Rabyâ Raghib linkedin profile" />
 </a>
 </p>
 
@@ -24,7 +24,24 @@ To edit this file, make an edit to its template in `content/templates/README.md.
 
 I&#39;m a Morocco-based, self-taught software developer who specializes in building and designing special digital experiences. I am always passionate about learning new things and gaining more knowledge...
 
----
+<br />
+
+## 🐱‍🏍 Tech Stack
+
+<p align="center">Here are some of my favorites technologies that I'am comfortable with!</p>
+<p align="center">
+  <img height="30" src="https://img.shields.io/badge/Nx--0F172A?style=for-the-badge&amp;logo=Nx&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="Nx" />
+  <img height="30" src="https://img.shields.io/badge/Docker--0F172A?style=for-the-badge&amp;logo=Docker&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="Docker" />
+  <img height="30" src="https://img.shields.io/badge/Angular--0F172A?style=for-the-badge&amp;logo=Angular&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="Angular" />
+  <img height="30" src="https://img.shields.io/badge/Symfony--0F172A?style=for-the-badge&amp;logo=Symfony&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="Symfony" />
+  <img height="30" src="https://img.shields.io/badge/TailwindCSS--0F172A?style=for-the-badge&amp;logo=TailwindCSS&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="TailwindCSS" />
+  <img height="30" src="https://img.shields.io/badge/Firebase--0F172A?style=for-the-badge&amp;logo=Firebase&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="Firebase" />
+  <img height="30" src="https://img.shields.io/badge/Figma--0F172A?style=for-the-badge&amp;logo=Figma&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="Figma" />
+  <img height="30" src="https://img.shields.io/badge/TypeScript--0F172A?style=for-the-badge&amp;logo=TypeScript&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="TypeScript" />
+  <img height="30" src="https://img.shields.io/badge/PHP--0F172A?style=for-the-badge&amp;logo=PHP&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="PHP" />
+</p>
+
+<br />
 
 ## 📊 Github Stats
 
@@ -33,10 +50,6 @@ I&#39;m a Morocco-based, self-taught software developer who specializes in build
 
 <img width='47%' src='https://github-readme-stats.vercel.app/api?username=rabraghib&amp;custom_title=Overall Stats&amp;line_height=30&amp;show_icons=true&amp;hide_border=true&amp;hide=stars&amp;bg_color=0F172A&amp;count_private=true&amp;icon_color=2D9CDB&amp;title_color=2D9CDB&amp;border_color =e2e8f0&amp;text_color=e2e8f0'/>
 </p>
-
-<!--
-TODO: implement this
- -->
 
 ---
 

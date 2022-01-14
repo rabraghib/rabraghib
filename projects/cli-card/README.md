@@ -23,6 +23,6 @@ npx @rabraghib/cli-card
 
 ## Thanks to
 
-- [@chihab](https://github.com/chihab) for mention it.
+- [@chihab](https://github.com/chihab) for mentioning it.
 - [@bnb](https://github.com/bnb) for the initial idea.
 - [@swyx](https://github.com/sw-yx) for talking about it.
