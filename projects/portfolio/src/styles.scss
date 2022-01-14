@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+  }
+  h1 {
+    @apply leading-tight text-[2rem] md:text-[2.5rem] lg:text-[3rem];
+    @apply font-black text-white;
+  }
+}
+// @layer components {
+//   .app_container {
+//     @apply max-w-7xl mx-auto;
+//   }
+// }
+
+// .highlight {
+//   @apply text-primary;
+// }
+// svg {
+//   height: 100%;
+//   width: 100%;
+// }

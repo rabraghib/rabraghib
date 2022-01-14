@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
+import { AboutData, ProjectsData } from '@rabraghib/content';
 
 @Component({
   selector: 'rabraghib-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styles: []
 })
 export class AppComponent {
-  title = 'portfolio';
+  @HostBinding('class') get HostClasses() {
+    return `grid grid-rows-[auto,1fr] h-screen w-full overflow-x-hidden overflow-y-auto relative bg-gray-900 text-gray-200`;
+  }
+  readonly data = {
+    about: AboutData,
+    projects: ProjectsData
+  };
+  TakeAction(el: HTMLElement) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
 }
