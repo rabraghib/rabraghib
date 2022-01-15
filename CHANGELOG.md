@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.9.0](https://github.com/rabraghib/rabraghib/compare/v17.8.30...v17.9.0) (2022-01-15)
+
+### Features
+
+- :art: add screenshot to cli-card README ([70b5009](https://github.com/rabraghib/rabraghib/commit/70b50094976ff20d77255de97927f9c9575e587d))
+- :rocket: add `Tech Stack` section in the README ([516231e](https://github.com/rabraghib/rabraghib/commit/516231ed8ebb9cb2da0324bdba0d4b9d5df41fad))
+- implement portfolio application ([#16](https://github.com/rabraghib/rabraghib/issues/16)) ([81c2422](https://github.com/rabraghib/rabraghib/commit/81c2422cd7430a9d459ac73706d7ceae28e722f9))
+
+### Bug Fixes
+
+- :bug: correct where tech stack badges are linking to ([f6b534d](https://github.com/rabraghib/rabraghib/commit/f6b534dbbaaf659ab703fff144e1a98c719e67b4))
+- :bug: using wring regitery when publishing to npm ([a518c12](https://github.com/rabraghib/rabraghib/commit/a518c121baaa0755f960f0d3ad9c91127be08bf9))
+
 ### [17.8.30](https://github.com/rabraghib/rabraghib/compare/v17.8.29...v17.8.30) (2022-01-11)
 
 ### Features

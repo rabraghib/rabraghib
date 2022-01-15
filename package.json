@@ -1,6 +1,6 @@
 {
   "name": "@rabraghib/src",
-  "version": "17.8.30",
+  "version": "17.9.0",
   "license": "MIT",
   "scripts": {
     "ng": "nx",
