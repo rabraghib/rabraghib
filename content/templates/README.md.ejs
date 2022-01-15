@@ -23,7 +23,9 @@
 <p align="center">Here are some of my favorites technologies that I'am comfortable with!</p>
 <p align="center">
 <% ReadmeTechStackBadges.forEach(function(tech) { -%>
-  <img height="30" src="<%= tech.badge %>" alt="<%= tech.alt %>" />
+  <a href="<%= tech.url %>" target="_blank">
+    <img height="30" src="<%= tech.badge %>" alt="<%= tech.alt %>" />
+  </a>
 <% }); -%>
 </p>
 

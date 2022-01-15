@@ -75,7 +75,7 @@ export function getQueryParamsOf(
     );
     setValue(
       statsCardsParams,
-      ['text_color', 'border_color '],
+      ['text_color', 'border_color'],
       getColor('slate-200')
     );
   }

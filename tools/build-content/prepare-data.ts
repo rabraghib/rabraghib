@@ -1,4 +1,5 @@
 import * as DATA from '@rabraghib/content';
+import { getBrandInfo } from '@rabraghib/content';
 import { createCLICard } from './cli-card-content';
 import { getBadgeUrl, getColor, getQueryParamsOf } from './helpers';
 
@@ -19,9 +20,11 @@ module.exports = {
     ...DATA.AboutData.profiles
       .filter(p => ReadmeIncludedProfiles.includes(p.platform))
       .map(p => {
+        const brand = getBrandInfo(p.platform);
         return {
           badge: getBadgeUrl({
-            label: p.platform
+            label: brand?.name ?? p.platform,
+            logo: brand?.SimpleIconsIconName ?? p.platform
           }),
           url: p.url,
           alt: `${DATA.AboutData.name} ${p.platform} profile`
@@ -29,13 +32,16 @@ module.exports = {
       })
   ],
   ReadmeTechStackBadges: DATA.AboutData.stack.map(tech => {
+    const brand = getBrandInfo(tech);
     return {
       badge: getBadgeUrl({
-        label: tech,
+        label: brand?.name ?? tech,
+        logo: brand?.SimpleIconsIconName ?? tech,
         color: getColor('slate-900'),
         logoColor: getColor('slate-50'),
         labelColor: getColor('primary')
       }),
+      url: brand?.website,
       alt: `${tech}`
     };
   }),

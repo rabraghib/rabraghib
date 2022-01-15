@@ -14,15 +14,15 @@
   "banner": "content/assets/banner.png",
   "email": "hello@rabraghib.me",
   "stack": [
-    "Nx",
-    "Docker",
-    "Angular",
-    "Symfony",
-    "TailwindCSS",
-    "Firebase",
-    "Figma",
-    "TypeScript",
-    "PHP"
+    "nx",
+    "docker",
+    "angular",
+    "symfony",
+    "tailwindcss",
+    "firebase",
+    "figma",
+    "typeScript",
+    "php"
   ],
   "addresses": [],
   "profiles": [
