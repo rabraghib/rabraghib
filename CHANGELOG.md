@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [17.9.1](https://github.com/rabraghib/rabraghib/compare/v17.9.0...v17.9.1) (2022-01-15)
+
 ## [17.9.0](https://github.com/rabraghib/rabraghib/compare/v17.8.30...v17.9.0) (2022-01-15)
 
 ### Features
