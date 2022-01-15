@@ -1,27 +1,32 @@
-<h1 class="text-center uppercase">
-  Get in <span class="highlight">touch!</span>
-</h1>
+<div class="grid gap-8">
+  <h1 class="uppercase">Get in <span class="highlight">touch!</span></h1>
 
-<rabraghib-social-links
-  [links]="links"
-  class="w-full max-w-prose px-4 my-4 md:my-6 mx-auto bg-opacity-25 rounded-xl md:justify-around"
-></rabraghib-social-links>
+  <p class="text-gray-400 tracking-wide leading-7 max-w-prose">
+    My inbox is always open! Feel free to get in touch with me. Whether to
+    discuss new projects/opportunities, creative ideas or just to say Hi! I will
+    definitely respond back to you.
+  </p>
 
-<p
-  class="text-gray-400 tracking-wide leading-7 text-center max-w-prose mx-auto my-4 md:my-6"
+  <a
+    class="group block w-max rounded-sm leading-relaxed py-2 px-4 transition-colors sm:py-3 sm:px-8 text-base md:text-lg border-2 border-primary hover:bg-primary hover:text-gray-900 font-bold"
+    [href]="email"
+  >
+    <ngaox-icon
+      name="inbox"
+      class="w-5 align-middle mr-3 text-primary group-hover:text-gray-900"
+    ></ngaox-icon>
+    <span class="inline-block align-middle">MAIL ME!</span>
+  </a>
+</div>
+<rabraghib-profile-card
+  class="hidden md:grid"
+  [name]="name"
+  [avatar]="avatar"
+  [handle]="handle"
+  [cliPackageName]="cliPackageName"
 >
-  My inbox is always open! Feel free to get in touch with me. Whether to discuss
-  new projects/opportunities, creative ideas or just to say Hi! I will
-  definitely respond back to you.
-</p>
-
-<a
-  class="group block w-max rounded-sm leading-relaxed py-2 px-4 my-6 transition-colors sm:py-3 sm:px-8 mx-auto text-base md:text-lg border-2 border-primary hover:bg-primary hover:text-gray-900 font-bold"
-  [href]="email"
->
-  <ngaox-icon
-    name="inbox"
-    class="w-5 align-middle mr-3 text-primary group-hover:text-gray-900"
-  ></ngaox-icon>
-  <span class="inline-block align-middle">MAIL ME!</span>
-</a>
+  <rabraghib-social-links
+    [links]="links"
+    linkColor="text-slate-50 hover:text-slate-400"
+  ></rabraghib-social-links>
+</rabraghib-profile-card>

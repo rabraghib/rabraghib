@@ -1,7 +1,7 @@
 <div
   class="sticky col-span-full row-[1/2] z-50 top-2 mt-4 md:mt-5 hidden md:block"
 >
-  <rabraghib-navbar [links]="data.about.profiles"></rabraghib-navbar>
+  <rabraghib-navbar [links]="SocialProfiles"></rabraghib-navbar>
 </div>
 <main class="app_container col-span-full row-span-full" #pageTop>
   <rabraghib-overview
@@ -15,7 +15,11 @@
     <div #CTAContainer class="py-10">
       <rabraghib-contact
         [email]="data.about.email"
-        [links]="data.about.profiles"
+        [links]="SocialProfiles"
+        [name]="data.about.name"
+        [avatar]="data.about.avatar"
+        [handle]="data.about.handle"
+        [cliPackageName]="data.about.cli.packageName"
       ></rabraghib-contact>
     </div>
   </div>

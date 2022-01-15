@@ -9,10 +9,11 @@ import { IProfile } from '@rabraghib/content';
 export class SocialLinksComponent {
   @Input() links!: IProfile[];
   @Input() allowTitleForContacts = false;
+  @Input() linkColor = 'hover:text-white text-gray-400';
   _hostClasses = `
     flex flex-wrap
     content-center
-    bg-dark-gray
+    bg-black
     justify-center
   `;
   @Input() set class(value: string) {

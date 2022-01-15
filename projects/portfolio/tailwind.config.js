@@ -1,6 +1,8 @@
 const { createGlobPatternsForDependencies } = require('@nrwl/angular/tailwind');
 const { join } = require('path');
 
+const { BrandData } = require('../../content/data/_index');
+
 module.exports = {
   content: [
     join(__dirname, 'src/**/*.{html,ts}'),
@@ -9,9 +11,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'dark-gray': '#0b101a',
-        'dark-primary': '#092433',
-        primary: '#2d9cdb'
+        ...BrandData.colors
       }
     }
   },

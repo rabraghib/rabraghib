@@ -32,7 +32,7 @@
     "website": "https://www.facebook.com",
     "icon": "social:facebook",
     "SimpleIconsIconName": "facebook",
-    "labels": ["social"]
+    "labels": []
   },
   "nx": {
     "name": "NX",

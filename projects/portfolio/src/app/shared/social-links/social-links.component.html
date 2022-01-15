@@ -1,6 +1,6 @@
 <a
   *ngFor="let link of links"
-  class="text-center p-4 text-white hover:text-gray-400 whitespace-nowrap"
+  class="text-center p-2 whitespace-nowrap {{ linkColor }}"
   style="font-size: 0px"
   [title]="link.brand.name"
   [href]="link.url"

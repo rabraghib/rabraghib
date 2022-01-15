@@ -17,7 +17,7 @@ export class FooterComponent {
   @HostBinding('class') get HostClasses() {
     return `
       block relative text-gray-300 font-medium text-xl p-6 px-10 text-center
-      sm:rounded-t-full bg-dark-gray
+      sm:rounded-t-full bg-black
     `;
   }
 
