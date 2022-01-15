@@ -1,11 +1,12 @@
-const boxen = require('boxen');
-const chalk = require('chalk');
-const align = require('align-text');
+import boxen from 'boxen';
+import chalk from 'chalk';
+import align from 'align-text';
+import { IAbout, IBrand } from '@rabraghib/content';
 
-module.exports = data => {
-  return chalk.hex(data.BrandData.colors.primary)(
+export function createCLICard(AboutData: IAbout, BrandData: IBrand) {
+  return chalk.hex(BrandData.colors['primary'])(
     boxen(
-      getCardContentSections(data)
+      getCardContentSections(AboutData, BrandData)
         .map(item => {
           return `${item.section}${'\n'.repeat(item.newLinesNum ?? 1)}`;
         })
@@ -17,27 +18,27 @@ module.exports = data => {
       }
     )
   );
-};
-
-function getCardContentSections(data) {
-  const cardItems = getCLICardItems(data);
+}
+function getCardContentSections(AboutData: IAbout, BrandData: IBrand) {
+  const cardItems = getCLICardItems(AboutData, BrandData);
   const labelLength = Math.max(...cardItems.map(item => item.label.length + 1));
   return [
     {
       tag: 'to-center',
       section: Highlight(
         '/',
-        data.BrandData.colors.primary,
-        `${data.AboutData.name} `,
-        ` ${data.AboutData.handle}`,
-        data.BrandData.colors['slate-300']
+        BrandData.colors['primary'],
+        `${AboutData.name} `,
+        ` ${AboutData.handle}`,
+        BrandData.colors['slate-300']
       ),
       newLinesNum: 2
     },
     ...cardItems.map(item => {
       return {
         section: cardSection(item.label, item.value, labelLength),
-        newLinesNum: item.newLinesNum
+        newLinesNum: item.newLinesNum,
+        tag: ''
       };
     })
   ].map((item, i, arr) => {
@@ -64,42 +65,44 @@ function getCardContentSections(data) {
     };
   });
 }
-function getCLICardItems(data) {
+function getCLICardItems(AboutData: IAbout, BrandData: IBrand) {
   return [
     {
       label: 'Headline',
       value: Highlight(
         '',
-        data.BrandData.colors.primary,
-        data.AboutData.headline,
+        BrandData.colors['primary'],
+        AboutData.headline,
         '',
-        data.BrandData.colors['slate-300']
-      )
+        BrandData.colors['slate-300']
+      ),
+      newLinesNum: 1
     },
-    ...data.AboutData.profiles.map(p => {
+    ...AboutData.profiles.map(p => {
       return {
         label: toTitleCase(p.platform),
         value: HighlightUrl(
           p.url,
-          data.AboutData.handle,
-          data.BrandData.colors.primary,
-          data.BrandData.colors['slate-300']
-        )
+          AboutData.handle,
+          BrandData.colors['primary'],
+          BrandData.colors['slate-300']
+        ),
+        newLinesNum: 1
       };
     }),
     {
       label: 'Web',
-      value: Highlight(data.AboutData.website, data.BrandData.colors.primary),
+      value: Highlight(AboutData.website, BrandData.colors['primary']),
       newLinesNum: 2
     },
     {
       label: 'Card',
       value: Highlight(
         'rabraghib',
-        data.BrandData.colors.primary,
+        BrandData.colors['primary'],
         'npx ',
         '',
-        data.BrandData.colors['slate-300']
+        BrandData.colors['slate-300']
       ),
       newLinesNum: 0
     }
@@ -110,8 +113,8 @@ function HighlightUrl(url, handle, highlightColor, color) {
   const parts = url.split(substr);
   return Highlight(substr, highlightColor, parts[0], parts[1], color);
 }
-function Highlight(text, highlightColor, prefix = '', suffix = '', color) {
-  const colorize = chalk.hex(color + '');
+function Highlight(text, highlightColor, prefix = '', suffix = '', color = '') {
+  const colorize = chalk.hex(color);
   return `${prefix && colorize(prefix)}${chalk.hex(highlightColor)(text)}${
     suffix && colorize(suffix)
   }`;

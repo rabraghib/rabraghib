@@ -13,6 +13,7 @@ export interface IAbout {
   avatar: string;
   banner: string;
   email: string;
+  stack: string[];
   addresses: string[];
   profiles: IProfile[];
 }

@@ -2096,6 +2096,11 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.2.tgz#423c77877d0569db20e1fc80885ac4118314010e"
   integrity sha512-eZxlbI8GZscaGS7kkc/trHTT5xgrjH3/1n2JDwusC9iahPKWMRvRjJSAN5mCXviuTGQ/lHnhvv8Q1YTpnfz9gA==
 
+"@types/align-text@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@types/align-text/-/align-text-1.0.1.tgz#f843b2c76b55d120aab76b2f32911c11574c9dbf"
+  integrity sha512-RInGyJH6EtEcO9/dAZBRPD95cjC/aZzEupTvIjzxhkwQPQbwTORuZmmJjZ9LkpwlEWT2f8tKzaJ31iBO1XIZig==
+
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.14":
   version "7.1.18"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.18.tgz#1a29abcc411a9c05e2094c98f9a1b7da6cdf49f8"
@@ -9367,7 +9372,7 @@ tsconfig-paths-webpack-plugin@3.4.1:
     enhanced-resolve "^5.7.0"
     tsconfig-paths "^3.9.0"
 
-tsconfig-paths@^3.9.0:
+tsconfig-paths@^3.12.0, tsconfig-paths@^3.9.0:
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.12.0.tgz#19769aca6ee8f6a1a341e38c8fa45dd9fb18899b"
   integrity sha512-e5adrnOYT6zqVnWqZu7i/BQ3BnhzvGbjEjejFXO20lKIKpwTaupkCPgEfv4GZK1IBciJUEhYs3J3p75FdaTFVg==
