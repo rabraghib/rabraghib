@@ -2,8 +2,6 @@
 <%= DONT_EDIT_WARNING %>
 -->
 
-# Hi, I am <%= AboutData.name %> 👋
-
 <p align="right">
 <% ReadmeSocialBadges.forEach(function(profile) { -%>
 <a href="<%= profile.url %>" target="_blank">
@@ -12,13 +10,15 @@
 <% }); -%>
 </p>
 
-<img width='100%' src='<%= AboutData.banner %>' />
+# Hi, I am <%= AboutData.name %> 👋
+
+<img width='100%' src='<%= Helpers.getGithubFileRawUrl(AboutData.banner) %>' />
 
 <%= AboutData.bio %>
 
 <br />
 
-## 🐱‍🏍 Tech Stack
+# 🐱‍🏍 Tech Stack
 
 <p align="center">Here are some of my favorites technologies that I'am comfortable with!</p>
 <p align="center">
@@ -32,7 +32,7 @@
 <% if (BlogData.posts && BlogData.posts.length > 0) { -%>
 <br />
 
-## 📕 Latest Blog Posts
+# 📕 Latest Blog Posts
 
 <% BlogData.posts.sort(function(a,b){
   return new Date(b.date) - new Date(a.date);
@@ -51,7 +51,7 @@
 
 <br />
 
-## 📊 Github Stats
+# 📊 Github Stats
 
 <p align='center'><% GithubStatsCardsUrls.forEach(function(url) { %>
 <img width='47%' src='<%= url %>'/>
