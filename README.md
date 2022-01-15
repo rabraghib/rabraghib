@@ -3,8 +3,6 @@
 To edit this file, make an edit to its template in `content/templates/README.md.ejs`.
 -->
 
-# Hi, I am Rabyâ Raghib 👋
-
 <p align="right">
 <a href="mailto:hello@rabraghib.me" target="_blank">
   <img src="https://img.shields.io/badge/Mail%20me!--2D9CDB?style=for-the-badge&amp;logo=mail&amp;logoColor=f8fafc&amp;labelColor=0F172A" alt="Mail me!" />
@@ -20,13 +18,15 @@ To edit this file, make an edit to its template in `content/templates/README.md.
 </a>
 </p>
 
-<img width='100%' src='content/assets/banner.png' />
+# Hi, I am Rabyâ Raghib 👋
+
+<img width='100%' src='https://raw.githubusercontent.com/rabraghib/rabraghib/main/content/assets/banner.png' />
 
 I&#39;m a Morocco-based, self-taught software developer who specializes in building and designing special digital experiences. I am always passionate about learning new things and gaining more knowledge...
 
 <br />
 
-## 🐱‍🏍 Tech Stack
+# 🐱‍🏍 Tech Stack
 
 <p align="center">Here are some of my favorites technologies that I'am comfortable with!</p>
 <p align="center">
@@ -61,7 +61,7 @@ I&#39;m a Morocco-based, self-taught software developer who specializes in build
 
 <br />
 
-## 📊 Github Stats
+# 📊 Github Stats
 
 <p align='center'>
 <img width='47%' src='https://github-readme-streak-stats.herokuapp.com/?user=rabraghib&amp;currStreakLabel=2D9CDB&amp;ring=2D9CDB&amp;fire=2D9CDB&amp;sideLabels=e2e8f0&amp;sideNums=e2e8f0&amp;currStreakNum=e2e8f0&amp;border=e2e8f0&amp;stroke=e2e8f0&amp;dates=94a3b8&amp;background=0F172A&amp;hide_border=true'/>
