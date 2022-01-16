@@ -55,10 +55,5 @@ module.exports = {
       DATA.AboutData.handle
     )}`
   ],
-  CLICardContent: createCLICard(DATA.AboutData, DATA.BrandData),
-  Helpers: {
-    getGithubFileRawUrl: (filePath, branch = 'main') => {
-      return `https://raw.githubusercontent.com/rabraghib/rabraghib/${branch}/${filePath}`;
-    }
-  }
+  CLICardContent: createCLICard(DATA.AboutData, DATA.BrandData)
 };
