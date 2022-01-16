@@ -61,7 +61,7 @@ I&#39;m a Morocco-based, self-taught software developer who specializes in build
 
 <br />
 
-# 📊 Github Stats
+# 📊 GitHub Stats
 
 <p align='center'>
 <img width='47%' src='https://github-readme-streak-stats.herokuapp.com/?user=rabraghib&amp;currStreakLabel=2D9CDB&amp;ring=2D9CDB&amp;fire=2D9CDB&amp;sideLabels=e2e8f0&amp;sideNums=e2e8f0&amp;currStreakNum=e2e8f0&amp;border=e2e8f0&amp;stroke=e2e8f0&amp;dates=94a3b8&amp;background=0F172A&amp;hide_border=true'/>
