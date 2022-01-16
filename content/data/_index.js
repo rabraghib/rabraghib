@@ -16,6 +16,7 @@ module.exports = {
   AboutData: {
     ...about,
     avatar: getRawFileUrl(about.avatar),
+    picture: getRawFileUrl(about.picture),
     banner: getRawFileUrl(about.banner),
     cli: {
       ...about.cli,

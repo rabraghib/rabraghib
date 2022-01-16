@@ -74,7 +74,7 @@ jobs:
       - run: yarn --frozen-lockfile && yarn nx-all build
       - name: 🎉 Publish Packages to npm
         run: |
-          yarn nx-all publish
+          yarn nx-all publish --access public
           yarn json -I -f dist/projects/cli-card/package.json -e "this.name='rabraghib'"
           cd dist/projects/cli-card
           npm publish --access public
@@ -86,7 +86,7 @@ jobs:
         with:
           registry-url: 'https://npm.pkg.github.com'
       - name: 🎉 Publish Packages to Github Packages
-        run: yarn nx-all publish
+        run: yarn nx-all publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   deploy:

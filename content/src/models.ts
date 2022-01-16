@@ -11,6 +11,7 @@ export interface IAbout {
   };
   bio: string;
   avatar: string;
+  picture: string;
   banner: string;
   email: string;
   stack: string[];
