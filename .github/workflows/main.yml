@@ -25,3 +25,9 @@ jobs:
           git add .
           git commit -m "docs: :memo: build content (ejs templates)" || true
           git push
+      - run: yarn nx-all build
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_RABRAGHIB }}'
+          projectId: rabraghib

@@ -95,5 +95,11 @@ jobs:
     if: ${{ success() }}
     steps:
       - uses: actions/checkout@v2
-      # - name: 🚀 Deploy all projects
-      #   run: yarn nx-all deploy
+      - name: 🚀 Deploy all projects
+        run: yarn && yarn nx-all build
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_RABRAGHIB }}'
+          channelId: live
+          projectId: rabraghib
