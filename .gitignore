@@ -40,4 +40,6 @@ Thumbs.db
 
 .angular
 
+# Firebase
+**/.firebase
 firebase-debug.log
