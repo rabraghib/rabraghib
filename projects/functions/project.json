@@ -46,7 +46,9 @@
     "deploy": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "commands": ["firebase deploy --only functions"]
+        "commands": [
+          "npx firebase deploy --only functions --token {args.firebaseToken}"
+        ]
       }
     }
   },

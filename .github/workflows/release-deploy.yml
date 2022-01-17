@@ -104,4 +104,4 @@ jobs:
           channelId: live
           projectId: rabraghib
       - name: 🚀 Deploy other projects
-        run: yarn nx-all deploy
+        run: yarn nx-all deploy --firebaseToken='${{ secrets.FIREBASE_TOKEN }}'
