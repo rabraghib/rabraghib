@@ -103,3 +103,5 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_RABRAGHIB }}'
           channelId: live
           projectId: rabraghib
+      - name: 🚀 Deploy other projects
+        run: yarn nx-all deploy

@@ -1,0 +1,54 @@
+{
+  "root": "projects/functions",
+  "sourceRoot": "projects/functions/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/projects/functions",
+        "main": "projects/functions/src/main.ts",
+        "tsConfig": "projects/functions/tsconfig.app.json",
+        "assets": ["projects/functions/src/assets"],
+        "generatePackageJson": true,
+        "extractLicenses": false
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "projects/functions/src/environments/environment.ts",
+              "with": "projects/functions/src/environments/environment.prod.ts"
+            }
+          ]
+        },
+        "development": {}
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@nrwl/node:execute",
+      "options": {
+        "buildTarget": "functions:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["projects/functions/**/*.ts"]
+      }
+    },
+    "deploy": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": ["firebase deploy --only functions"]
+      }
+    }
+  },
+  "tags": []
+}
