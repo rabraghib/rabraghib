@@ -15,8 +15,7 @@ jobs:
         with:
           node-version: '16'
           cache: 'yarn'
-      - name: 🛠 Install dependencies
-        run: yarn --frozen-lockfile
+      - run: yarn --frozen-lockfile
       - name: ⚡ Build ejs templates
         run: |
           yarn build content --skip-nx-cache

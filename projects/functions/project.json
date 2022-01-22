@@ -42,14 +42,6 @@
       "options": {
         "lintFilePatterns": ["projects/functions/**/*.ts"]
       }
-    },
-    "deploy": {
-      "executor": "@nrwl/workspace:run-commands",
-      "options": {
-        "commands": [
-          "npx firebase deploy --only functions --token {args.firebaseToken}"
-        ]
-      }
     }
   },
   "tags": []

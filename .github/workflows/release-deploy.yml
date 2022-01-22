@@ -10,7 +10,8 @@ jobs:
         with:
           node-version: '16'
           cache: 'yarn'
-      - run: |
+      - name: ⚒ Build (Prepare artifacts)
+        run: |
           yarn --frozen-lockfile
           yarn nx-all build
       - uses: actions/upload-artifact@v2
@@ -26,6 +27,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - uses: nrwl/nx-set-shas@v2
       - uses: actions/setup-node@v2
         with:
           node-version: '16'
@@ -95,13 +97,20 @@ jobs:
     if: ${{ success() }}
     steps:
       - uses: actions/checkout@v2
-      - name: 🚀 Deploy all projects
-        run: yarn && yarn nx-all build
+      - run: yarn --frozen-lockfile
+      - uses: actions/download-artifact@v2
+        with:
+          name: projects-dist
+          path: dist/projects
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_RABRAGHIB }}'
           channelId: live
           projectId: rabraghib
-      - name: 🚀 Deploy other projects
-        run: yarn nx-all deploy --firebaseToken='${{ secrets.FIREBASE_TOKEN }}'
+      - name: 🚀 Deploy Functions
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only functions
+        env:
+          GCP_SA_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_RABRAGHIB }}
