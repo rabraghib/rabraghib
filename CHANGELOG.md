@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [17.9.2](https://github.com/rabraghib/rabraghib/compare/v17.9.1...v17.9.2) (2022-01-22)
+
+### Features
+
+- :art: add diffrente imgs for avatar & picture ([a115a29](https://github.com/rabraghib/rabraghib/commit/a115a2977c5b4504cd973c84c30b9c2a636e4688))
+- :sparkles: replace placeholders with reel assets ([66c1201](https://github.com/rabraghib/rabraghib/commit/66c120108a4f33ca09bf92616cb5d1495d2ad05f))
+- :tada: change all public assets ([ca568c5](https://github.com/rabraghib/rabraghib/commit/ca568c574844d1e37a6f861d27053ef1b53744a1))
+- init functions app ([15b4d3e](https://github.com/rabraghib/rabraghib/commit/15b4d3e0d98bbe2768253c6e851564376a1aaaf8))
+
+### Bug Fixes
+
+- :bug: add missing firebase confs ([ce0924d](https://github.com/rabraghib/rabraghib/commit/ce0924db4d05f96ed5f83bd74b3e2f34a4a11d20))
+- :bug: correct assets urls ([462d257](https://github.com/rabraghib/rabraghib/commit/462d257c65f8e2443be753eeb6d1e2c899c152e2))
+- functions deployment token ([05da9eb](https://github.com/rabraghib/rabraghib/commit/05da9eb4129c262f9dbbe7faa0fd2433f4d7e935))
+
 ### [17.9.1](https://github.com/rabraghib/rabraghib/compare/v17.9.0...v17.9.1) (2022-01-15)
 
 ## [17.9.0](https://github.com/rabraghib/rabraghib/compare/v17.8.30...v17.9.0) (2022-01-15)
