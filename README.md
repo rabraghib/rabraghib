@@ -20,7 +20,7 @@ To edit this file, make an edit to its template in `content/templates/README.md.
 
 # Hi, I am Rabyâ Raghib 👋
 
-<img width='100%' src='https://raw.githubusercontent.com/rabraghib/rabraghib/main/content/assets/banner.png' />
+<!-- <img width='100%' src='' /> -->
 
 I&#39;m a Morocco-based, self-taught software developer who specializes in building and designing special digital experiences. I am always passionate about learning new things and gaining more knowledge...
 
