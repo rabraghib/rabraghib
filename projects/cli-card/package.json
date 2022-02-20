@@ -1,6 +1,6 @@
 {
   "name": "@rabraghib/cli-card",
-  "version": "17.10.1",
+  "version": "17.10.2",
   "description": "A personal card for Rabyâ Raghib (@rabraghib)",
   "bin": {
     "rabraghib": "./bin/cli.js"
