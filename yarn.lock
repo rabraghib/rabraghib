@@ -1806,6 +1806,17 @@
     yargs "15.4.1"
     yargs-parser "20.0.0"
 
+"@nrwl/cli@13.8.3":
+  version "13.8.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.8.3.tgz#3b8441aa0693cae0e0027700079998c73fe46dbd"
+  integrity sha512-6+OTs9aF5GzZUSmPziCThdPw2yXqhEw6JjYjOU9OUMZP1+6nPv7mCZkl9W2f6LEm9hAWIxHC1DsUjzWhdL1VGQ==
+  dependencies:
+    "@nrwl/tao" "13.8.3"
+    chalk "4.1.0"
+    enquirer "~2.3.6"
+    v8-compile-cache "2.3.0"
+    yargs-parser "20.0.0"
+
 "@nrwl/cypress@13.4.3":
   version "13.4.3"
   resolved "https://registry.yarnpkg.com/@nrwl/cypress/-/cypress-13.4.3.tgz#ddd9b9431b27f238c6c050fdaed7ef44d493df50"
@@ -1995,6 +2006,25 @@
     ignore "^5.0.4"
     jsonc-parser "3.0.0"
     nx "13.4.4"
+    rxjs "^6.5.4"
+    rxjs-for-await "0.0.2"
+    semver "7.3.4"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+    yargs-parser "20.0.0"
+
+"@nrwl/tao@13.8.3":
+  version "13.8.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.8.3.tgz#386e847af28a87850724092f7df75c7dcb53a9e8"
+  integrity sha512-zLM2uP398iLkpuTODfAaA1K7NeTGLrkVCdE7GkasrIg9dzd82Fx6k7kZnGhfVAVgfZpbXo8twKg0vdhxlJNWyA==
+  dependencies:
+    chalk "4.1.0"
+    enquirer "~2.3.6"
+    fast-glob "3.2.7"
+    fs-extra "^9.1.0"
+    ignore "^5.0.4"
+    jsonc-parser "3.0.0"
+    nx "13.8.3"
     rxjs "^6.5.4"
     rxjs-for-await "0.0.2"
     semver "7.3.4"
@@ -4750,7 +4780,7 @@ fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
 
-fast-glob@3.2.7, fast-glob@^3.1.1, fast-glob@^3.2.7:
+fast-glob@3.2.7:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.7.tgz#fd6cb7a2d7e9aa7a7846111e85a196d6b2f766a1"
   integrity sha512-rYGMRwip6lUMvYD3BTScMwT1HtAs2d71SMv66Vrxs0IekGZEjhM0pcMfjQPnknBt2zeCwQMEupiN02ZP4DiT1Q==
@@ -4761,7 +4791,7 @@ fast-glob@3.2.7, fast-glob@^3.1.1, fast-glob@^3.2.7:
     merge2 "^1.3.0"
     micromatch "^4.0.4"
 
-fast-glob@^3.2.9:
+fast-glob@^3.1.1, fast-glob@^3.2.7, fast-glob@^3.2.9:
   version "3.2.9"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.9.tgz#8f55f664b68a236bd29fa165817fc44f2b11faba"
   integrity sha512-MBwILhhD92sziIrMQwpqcuGERF+BH99ei2a3XsGJuqEKcSycAL+w0HWokFenZXona+kjFr82Lf71eTxNRC06XQ==
@@ -7210,6 +7240,13 @@ nx@13.4.4:
   integrity sha512-Q1fYC6zX1bciBmmlQXTPXxhhUR1bEoWSjuic4ZNvgJ5ZR3Tqe/12nm8u3aIZixO75UC0aNSzrgLR++DAgv6yzA==
   dependencies:
     "@nrwl/cli" "13.4.4"
+
+nx@13.8.3:
+  version "13.8.3"
+  resolved "https://registry.yarnpkg.com/nx/-/nx-13.8.3.tgz#2735376b25207be7580b97fdea670973491e0308"
+  integrity sha512-Y0f7xEU1r3NzxfbLiWSgRvH9sk2O4yAW4FLYMb9Bmrw5n/ZUtsofpaRuZAHJlNobhzEv0yXcGSyMYUl8NTQJlw==
+  dependencies:
+    "@nrwl/cli" "13.8.3"
 
 object-hash@^2.2.0:
   version "2.2.0"
