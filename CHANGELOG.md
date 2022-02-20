@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [17.10.1](https://github.com/rabraghib/rabraghib/compare/v17.10.0...v17.10.1) (2022-02-20)
+
+### Features
+
+- optimize project card for both mobile and laptop screens ([411d3e5](https://github.com/rabraghib/rabraghib/commit/411d3e5bd6d288fe1d8f258fdcd83a708f57adc5))
+
 ## [17.10.0](https://github.com/rabraghib/rabraghib/compare/v17.9.2...v17.10.0) (2022-02-20)
 
 ### Features
