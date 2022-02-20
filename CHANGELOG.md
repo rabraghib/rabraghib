@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.10.0](https://github.com/rabraghib/rabraghib/compare/v17.9.2...v17.10.0) (2022-02-20)
+
+### Features
+
+- :sparkles: add necessary SEO related tags ([08e6b72](https://github.com/rabraghib/rabraghib/commit/08e6b72c94b49e32c32266588789e8c6886722c6))
+- update README, avatar & picture ([c0f0b6f](https://github.com/rabraghib/rabraghib/commit/c0f0b6f36d2851e703503b65df17ce62d46f7791))
+
+### Bug Fixes
+
+- correct functions deployment step ([c1b2203](https://github.com/rabraghib/rabraghib/commit/c1b2203237dddf62e46b0d06e7bed9f1438a5fb4))
+
 ### [17.9.2](https://github.com/rabraghib/rabraghib/compare/v17.9.1...v17.9.2) (2022-01-22)
 
 ### Features

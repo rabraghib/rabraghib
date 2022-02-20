@@ -1,6 +1,6 @@
 {
   "name": "@rabraghib/functions",
-  "version": "17.9.2",
+  "version": "17.10.0",
   "private": true,
   "dependencies": {
     "firebase-admin": "",
