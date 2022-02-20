@@ -25,9 +25,6 @@
     "@angular/router": "~13.1.0",
     "@ngaox/icons": "^2.0.1",
     "@nrwl/angular": "13.4.3",
-    "firebase": "^9.6.3",
-    "firebase-admin": "^10.0.1",
-    "firebase-functions": "^3.16.0",
     "rxjs": "~7.4.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"

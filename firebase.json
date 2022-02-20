@@ -31,9 +31,5 @@
         }
       ]
     }
-  ],
-  "functions": {
-    "predeploy": ["yarn build functions"],
-    "source": "dist/projects/functions"
-  }
+  ]
 }

@@ -3,7 +3,6 @@
   "projects": {
     "cli-card": "projects/cli-card",
     "content": "content",
-    "functions": "projects/functions",
     "portfolio": "projects/portfolio"
   }
 }
