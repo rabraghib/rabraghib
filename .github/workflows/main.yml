@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          ref: 'main'
           fetch-depth: 0
       - uses: nrwl/nx-set-shas@v2
       - uses: actions/setup-node@v2
@@ -34,10 +35,10 @@ jobs:
   release:
     needs: build
     runs-on: ubuntu-latest
-    if: ${{ success() }}
     steps:
       - uses: actions/checkout@v2
         with:
+          ref: 'main'
           fetch-depth: 0
       - uses: nrwl/nx-set-shas@v2
       - uses: actions/setup-node@v2

@@ -1,12 +1,42 @@
-<div class="grid grid-cols-12 items-center">
-  <div
-    class="z-10 row-span-full h-full md:h-auto items-center grid md:block p-6 sm:p-10 md:p-0 {{
+<div
+  class="md:grid grid-cols-12 items-center rounded p-6 md:p-0 shadow-md md:shadow-none bg-black md:bg-transparent"
+>
+  <h2 class="text-xl sm:text-2xl font-bold md:hidden mb-5">
+    <a
+      class="hover:text-gray-300 text-gray-50"
+      target="_blank"
+      [href]="project.liveUrl"
+    >
+      {{ project.name }}
+    </a>
+  </h2>
+  <a
+    class="md:row-span-full h-full md:h-auto {{
       switchDirection
-        ? 'md:text-right col-start-1 md:col-start-5 lg:col-start-6 col-end-[-1]'
+        ? 'col-start-1 col-end-[-1] md:col-end-9 lg:col-end-8'
+        : 'col-start-1 col-end-[-1] md:col-start-5 lg:col-start-6'
+    }}"
+    class="block cursor-pointer"
+    [href]="project.liveUrl"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      class="bg-gray-700 rounded shadow-md relative w-full h-full before:bg-cover before:bg-center before:absolute before:bg-primary-900 before:bg-opacity-75 before:w-full before:h-full before:top-0 hover:before:opacity-0 before:transition-opacity before:duration-300 bg-cover"
+      [ngStyle]="{
+        'padding-top': 900 / 16 + '%',
+        'background-image': 'url(' + project.thumbnail + ')'
+      }"
+    ></div>
+  </a>
+  <div
+    class="z-10 md:row-span-full h-full md:h-auto items-center grid md:block {{
+      switchDirection
+        ? 'md:text-right col-start-1 col-end-[-1] md:col-start-5 lg:col-start-6'
         : 'col-start-1 col-end-[-1] md:col-end-9 lg:col-end-8'
     }}"
   >
-    <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold">
+    <h2 class="text-2xl lg:text-3xl font-bold hidden md:block">
       <a
         class="hover:text-gray-300 text-gray-50"
         target="_blank"
@@ -16,7 +46,7 @@
       </a>
     </h2>
     <div
-      class="bg-black text-gray-400 tracking-wide p-6 my-5 rounded shadow-md transition-opacity"
+      class="bg-black text-gray-400 tracking-wide md:p-6 my-5 rounded md:shadow-md transition-opacity"
     >
       {{ project.description }}
       <div class="text-left mt-2">
@@ -54,23 +84,4 @@
       </a>
     </div>
   </div>
-  <a
-    class="row-span-full h-full md:h-auto {{
-      switchDirection
-        ? 'col-start-1 col-end-[-1] md:col-end-9 lg:col-end-8'
-        : 'col-end-[-1] col-start-1 md:col-start-5 lg:col-start-6'
-    }}"
-    class="block cursor-pointer"
-    [href]="project.liveUrl"
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    <div
-      class="bg-gray-700 rounded shadow-md relative w-full h-full before:bg-cover before:bg-center before:absolute before:bg-primary-900 before:bg-opacity-80 md:before:bg-opacity-75 before:w-full before:h-full before:top-0 hover:before:opacity-0 before:transition-opacity before:duration-300"
-      [ngStyle]="{
-        'padding-top': 900 / 16 + '%',
-        'background-image': 'url(' + project.thumbnail + ')'
-      }"
-    ></div>
-  </a>
 </div>

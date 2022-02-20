@@ -1,18 +1,18 @@
 [
   {
-    "name": "Project 1",
-    "thumbnail": "https://picsum.photos/seed/1/1600/900",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit assumenda est sed a ullam quia, molestiae fuga. Omnis ex explicabo, fugiat, consequuntur sit aspernatur, necessitatibus totam nulla cumque vitae aut?",
-    "topics": ["Angular", "Symfony", "Docker"],
-    "liveUrl": "https://github.com/rabraghib/",
-    "sourceUrl": "https://github.com/rabraghib/"
+    "name": "Angular Ngaox",
+    "thumbnail": "/assets/projects/ngaox.png",
+    "description": "Ngaox is a collection of Angular components and utilities designed to make your life easier. We mainly aim at providing solutions for common web needs that are still missing from Angular, such as inlining SVGs, SEO management, and more.",
+    "topics": ["Angular", "Nx", "SEO", "Open-Source"],
+    "liveUrl": "https://ngaox-lab.web.app",
+    "sourceUrl": "https://github.com/ngaox/ngaox"
   },
   {
-    "name": "Cool Project 2",
+    "name": "Chaospad LLC.",
     "thumbnail": "https://picsum.photos/seed/2/1600/900",
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit assumenda est sed a ullam quia, molestiae fuga. Omnis ex explicabo, fugiat, consequuntur sit aspernatur, necessitatibus totam nulla cumque vitae aut?",
     "topics": ["HTML", "CSS", "JS"],
-    "liveUrl": "https://github.com/rabraghib/",
-    "sourceUrl": "https://github.com/rabraghib/"
+    "liveUrl": "https://github.com/chaospad/",
+    "sourceUrl": "https://github.com/chaospad/"
   }
 ]
