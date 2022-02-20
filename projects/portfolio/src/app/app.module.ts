@@ -13,6 +13,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProjectCardComponent } from './projects/card/card.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProfileCardComponent } from './contact/profile-card/profile-card.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ProfileCardComponent } from './contact/profile-card/profile-card.compon
     BrowserModule,
     HttpClientModule,
     LayoutModule,
+    RouterModule.forRoot([{ path: '**', redirectTo: '' }]),
     IconsModule.forRoot('', AppNgaoxIcons),
     SharedModule
   ],

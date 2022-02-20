@@ -15,8 +15,11 @@
         "tsConfig": "projects/portfolio/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "projects/portfolio/src/favicon.ico",
-          "projects/portfolio/src/assets"
+          {
+            "glob": "**/*",
+            "input": "content/assets",
+            "output": "/assets/"
+          }
         ],
         "styles": ["projects/portfolio/src/styles.scss"],
         "scripts": []
