@@ -8,6 +8,14 @@
     "sourceUrl": "https://github.com/ngaox/ngaox"
   },
   {
+    "name": "Moroccan PHPers",
+    "thumbnail": "/assets/projects/moroccan-phpers.png",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit assumenda est sed a ullam quia, molestiae fuga. Omnis ex explicabo, fugiat, consequuntur sit aspernatur, necessitatibus totam nulla cumque vitae aut?",
+    "topics": ["PHP", "Morocco", "Angular"],
+    "liveUrl": "https://moroccan-phpers.web.app",
+    "sourceUrl": "https://github.com/rabraghib/moroccan-phpers"
+  },
+  {
     "name": "Chaospad LLC.",
     "thumbnail": "https://picsum.photos/seed/2/1600/900",
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit assumenda est sed a ullam quia, molestiae fuga. Omnis ex explicabo, fugiat, consequuntur sit aspernatur, necessitatibus totam nulla cumque vitae aut?",
