@@ -10,15 +10,13 @@
 <% }); -%>
 </p>
 
-# Hi, I am <%= AboutData.name %> 👋
+<h1 align="center">Hi, I am <%= AboutData.name %> 👋</h1>
 
 <!-- <img width='100%' src='<%= AboutData.banner %>' /> -->
 
 <%= AboutData.bio %>
 
-<br />
-
-# 🐱‍🏍 Tech Stack
+## 🐱‍🏍 Tech Stack
 
 <p align="center">Here are some of my favorites technologies that I'am comfortable with!</p>
 <p align="center">
@@ -29,10 +27,16 @@
 <% }); -%>
 </p>
 
-<% if (BlogData.posts && BlogData.posts.length > 0) { -%>
-<br />
 
-# 📕 Latest Blog Posts
+## 📊 GitHub Stats
+
+<p align='center'><% GithubStatsCardsUrls.forEach(function(url) { %>
+<img width='47%' src='<%= url %>'/>
+<% }) -%></p>
+
+<% if (BlogData.posts && BlogData.posts.length > 0) { -%>
+
+## 📕 Latest Blog Posts
 
 <% BlogData.posts.sort(function(a,b){
   return new Date(b.date) - new Date(a.date);
@@ -48,15 +52,6 @@
   </a>
 </p>
 <% } -%>
-
-<br />
-
-# 📊 GitHub Stats
-
-<p align='center'><% GithubStatsCardsUrls.forEach(function(url) { %>
-<img width='47%' src='<%= url %>'/>
-<% }) -%></p>
-
 ---
 
 <p align="center">Made with ❤️ by <a href="<%= AboutData.website %>"><%= AboutData.name %></a></p>
