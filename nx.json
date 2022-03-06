@@ -16,7 +16,10 @@
       "dependencies": "*",
       "devDependencies": "*"
     },
-    ".eslintrc.json": "*"
+    ".eslintrc.json": "*",
+    "content/templates/**/*": ["content"],
+    "content/posts/**/*": ["content"],
+    "content/data/**/*": ["content"]
   },
   "tasksRunnerOptions": {
     "default": {
