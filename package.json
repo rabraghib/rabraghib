@@ -83,6 +83,9 @@
     }
   },
   "lint-staged": {
+    "content/*": [
+      "yarn build content"
+    ],
     "*.{js,ts}": [
       "eslint --fix"
     ],
