@@ -1,4 +1,3 @@
-import * as fs from 'fs-extra';
 import { BrandData } from '@rabraghib/content';
 
 export function getColor(colorName: string) {
@@ -22,21 +21,21 @@ export function getBadgeUrl(options: any = {}) {
     options.logo
   )}&logoColor=${logoColor}&labelColor=${labelColor}`;
 }
-export function getAllFilesInTree(root, dir = root, results = []) {
-  fs.readdirSync(dir).forEach(filePath => {
-    filePath = dir + '/' + filePath;
-    const stat = fs.statSync(filePath);
-    if (stat && stat.isDirectory()) {
-      results = [
-        ...results,
-        ...getAllFilesInTree(root, filePath, [...results])
-      ];
-    } else {
-      results.push(filePath);
-    }
-  });
-  return results;
-}
+// export function getAllFilesInTree(root, dir = root, results = []) {
+//   fs.readdirSync(dir).forEach(filePath => {
+//     filePath = dir + '/' + filePath;
+//     const stat = fs.statSync(filePath);
+//     if (stat && stat.isDirectory()) {
+//       results = [
+//         ...results,
+//         ...getAllFilesInTree(root, filePath, [...results])
+//       ];
+//     } else {
+//       results.push(filePath);
+//     }
+//   });
+//   return results;
+// }
 export function getQueryParamsOf(
   type: 'streak-stats' | 'stats',
   handle: string

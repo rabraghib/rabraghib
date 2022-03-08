@@ -14,6 +14,19 @@ jobs:
       artifacts-key: 'release-artifacts'
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'yarn'
+      - run: yarn --frozen-lockfile
+      - name: Build and commit changes
+        run: |
+          yarn build content --skip-nx-cache
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "docs: :memo: build README (ejs template)" || true
+          git push
       - uses: chaospad/releaser@v1
         id: releaser
         with:

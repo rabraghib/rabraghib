@@ -7,7 +7,7 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "commands": [
-          "yarn ts-node --project tools/tsconfig.json -r tsconfig-paths/register -T tools/build-content"
+          "yarn ts-node --project tools/tsconfig.json -r tsconfig-paths/register -T tools/build-readme"
         ]
       }
     },
