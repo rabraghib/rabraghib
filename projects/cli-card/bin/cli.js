@@ -6,5 +6,4 @@
 const fs = require('fs');
 const path = require('path');
 const output = fs.readFileSync(path.join(__dirname, 'output'), 'utf8');
-console.log(output.replace(/<!--.*?-->/gs, ''));
-// 👆 Remove comments from the output
+console.log(output);
