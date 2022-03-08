@@ -1,0 +1,14 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "files": [],
+  "compilerOptions": {
+    "outDir": "../dist/out-tsc/cli-card-builder",
+    // "rootDir": ".",
+    "module": "commonjs",
+    "target": "es5",
+    "types": ["node"],
+    "importHelpers": false,
+    "esModuleInterop": true
+  },
+  "include": ["**/*.ts"]
+}

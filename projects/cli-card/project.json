@@ -4,6 +4,16 @@
   "projectType": "application",
   "targets": {
     "build": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          "yarn ts-node --project projects/cli-card/build/tsconfig.json -r tsconfig-paths/register -T projects/cli-card/build/index.ts",
+          "yarn nx run cli-card:build-app"
+        ],
+        "parallel": false
+      }
+    },
+    "build-app": {
       "executor": "@nrwl/node:package",
       "outputs": ["{options.outputPath}"],
       "options": {
