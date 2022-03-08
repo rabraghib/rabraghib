@@ -25,9 +25,9 @@ jobs:
       - name: 📦 Zip packages
         run: |
           mkdir -p dist/artifacts
-          cd dist/packages
+          cd dist/projects
           for package in */; do
-            zip -r ../artifacts/ngaox-$(basename $package)-${{ inputs.tag_name }}.zip $package;
+            zip -r ../artifacts/rabraghib-$(basename $package)-${{ inputs.tag_name }}.zip $package;
           done
       - uses: actions/upload-artifact@v2
         with:

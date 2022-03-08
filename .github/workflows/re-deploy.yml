@@ -26,7 +26,7 @@ jobs:
           node-version: '16'
           cache: 'yarn'
           registry-url: 'https://npm.pkg.github.com'
-      - name: 🎉 Publish Packages to Github Packages
+      - name: 🎉 Publish CLI-Card to Github Packages
         run: |
           cd dist/projects/cli-card
           npm publish --access public
@@ -36,7 +36,7 @@ jobs:
         with:
           registry-url: 'https://registry.npmjs.org'
           scope: '@rabraghib'
-      - name: 🎉 Publish Packages to npm
+      - name: 🎉 Publish CLI-Card to npm
         run: |
           cd dist/projects/cli-card
           npm publish --access public
