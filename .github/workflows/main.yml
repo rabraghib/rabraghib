@@ -4,120 +4,57 @@ on:
     branches:
       - main
 jobs:
+  changelog:
+    runs-on: ubuntu-20.04
+    outputs:
+      released: ${{ steps.releaser.outputs.released }}
+      tag: ${{ steps.releaser.outputs.tag }}
+      version: ${{ steps.releaser.outputs.version }}
+      release_notes: ${{ steps.releaser.outputs.release_notes }}
+      artifacts-key: 'release-artifacts'
+    steps:
+      - uses: actions/checkout@v2
+      - uses: chaospad/releaser@v1
+        id: releaser
+        with:
+          birthday: '2004-04-13'
+          version: '{years}.{months}.{bump}'
+          bump-files: '**/package.json'
+          output-file: projects/CHANGELOG.md
+
   build:
-    runs-on: ubuntu-latest
+    if: needs.changelog.outputs.released
+    needs: changelog
+    uses: ./.github/workflows/re-build.yml
+    with:
+      artifacts-key: ${{ needs.changelog.outputs.artifacts-key }}
+      tag_name: ${{ needs.changelog.outputs.tag }}
+
+  gh-release:
+    needs: [build, changelog]
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: 'main'
-          fetch-depth: 0
-      - uses: nrwl/nx-set-shas@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-          cache: 'yarn'
-      - run: yarn --frozen-lockfile
-      - name: ⚡ Build ejs templates
-        run: |
-          yarn build content --skip-nx-cache
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "docs: :memo: build content (ejs templates)" || true
-          git push
-      - name: ⚒ Build (Prepare artifacts)
-        run: yarn nx-all build
-      - uses: actions/upload-artifact@v2
-        with:
-          name: projects-dist
-          path: |
-            dist/projects
-  release:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: 'main'
-          fetch-depth: 0
-      - uses: nrwl/nx-set-shas@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-          cache: 'yarn'
-      - run: |
-          yarn --frozen-lockfile
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-      - name: 📃 Changelogs and versions & git tag
-        run: |
-          yarn release && mkdir dist
-          npx extract-changelog-release > dist/RELEASE_BODY.md
+
       - uses: actions/download-artifact@v2
         with:
-          name: projects-dist
-          path: dist/projects
-      - id: post-release
-        run: |
-          git push
-          echo "::set-output name=version::$(node ./tools/get-new-version.js --current)"
-      - name: 📦 Zip each project dist folder
-        run: |
-          cd dist/projects
-          for package in */; do
-            zip -r ../rabraghib-$(basename $package)-${{ steps.post-release.outputs.version }}.zip $package;
-          done
-      - name: Create Github release
-        uses: softprops/action-gh-release@v1
+          name: ${{ needs.changelog.outputs.artifacts-key }}
+          path: dist
+
+      - uses: softprops/action-gh-release@v1
         with:
-          name: 'v${{ steps.post-release.outputs.version }} 🎉'
-          tag_name: v${{ steps.post-release.outputs.version }}
-          files: dist/*.zip
-          body_path: dist/RELEASE_BODY.md
-  publish:
-    needs: release
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: 'main'
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-          cache: 'yarn'
-          registry-url: 'https://registry.npmjs.org'
-          scope: '@rabraghib'
-      - run: yarn --frozen-lockfile && yarn nx-all build
-      - name: 🎉 Publish Packages to npm
-        run: |
-          yarn nx-all publish --access public
-          yarn json -I -f dist/projects/cli-card/package.json -e "this.name='rabraghib'"
-          cd dist/projects/cli-card
-          npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: yarn nx-all build cli-card --skip-nx-cache
-      - uses: actions/setup-node@v2
-        with:
-          registry-url: 'https://npm.pkg.github.com'
-      - name: 🎉 Publish Packages to Github Packages
-        run: yarn nx-all publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          name: '${{ needs.changelog.outputs.tag }} 🎉'
+          tag_name: ${{ needs.changelog.outputs.tag }}
+          body: ${{ needs.changelog.outputs.release_notes }}
+          files: |
+            dist/artifacts/*
+
   deploy:
-    needs: release
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - run: yarn --frozen-lockfile
-      - uses: actions/download-artifact@v2
-        with:
-          name: projects-dist
-          path: dist/projects
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_RABRAGHIB }}'
-          channelId: live
-          projectId: rabraghib
+    needs: [build, changelog]
+    uses: ./.github/workflows/re-deploy.yml
+    with:
+      artifacts-key: ${{ needs.changelog.outputs.artifacts-key }}
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      token: ${{ secrets.GITHUB_TOKEN }}
+      FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_RABRAGHIB }}
