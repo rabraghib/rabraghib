@@ -32,7 +32,9 @@ jobs:
         with:
           birthday: '2004-04-13'
           version: '{years}.{months}.{bump}'
-          bump-files: '**/package.json'
+          bump-files: |
+            projects/**/package.json
+            package.json
           output-file: projects/CHANGELOG.md
 
   build:
