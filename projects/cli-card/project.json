@@ -27,12 +27,6 @@
       "options": {
         "lintFilePatterns": ["projects/cli-card/**/*.ts"]
       }
-    },
-    "publish": {
-      "executor": "ngx-deploy-npm:deploy",
-      "options": {
-        "access": "public"
-      }
     }
   },
   "tags": []

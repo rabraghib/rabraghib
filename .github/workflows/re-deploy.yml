@@ -1,0 +1,68 @@
+name: '[RE] 🚀 Deploy'
+on:
+  workflow_call:
+    inputs:
+      artifacts-key:
+        required: true
+        type: string
+    secrets:
+      NPM_TOKEN:
+        required: true
+      token:
+        required: true
+      FIREBASE_SERVICE_ACCOUNT:
+        required: true
+jobs:
+  publish:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/download-artifact@v2
+        with:
+          name: ${{ inputs.artifacts-key }}
+          path: dist
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'yarn'
+          registry-url: 'https://npm.pkg.github.com'
+      - name: 🎉 Publish Packages to Github Packages
+        run: |
+          cd dist/projects/cli-card
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-node@v2
+        with:
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@rabraghib'
+      - name: 🎉 Publish Packages to npm
+        run: |
+          cd dist/projects/cli-card
+          npm publish --access public
+          npx json@11.0.0 -I -f package.json -e "this.name='rabraghib'"
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: ${{ inputs.artifacts-key }}
+          path: dist
+      - run: yarn --frozen-lockfile
+
+  hosting:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/download-artifact@v2
+        with:
+          name: ${{ inputs.artifacts-key }}
+          path: dist
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.token }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
+          channelId: live
+          projectId: rabraghib

@@ -7,8 +7,6 @@
     "nx-all": "nx run-many --all --target",
     "start": "nx serve",
     "build": "nx build",
-    "release": "standard-version",
-    "get-new-version": "node ./tools/get-new-version.js",
     "postinstall": "node ./tools/decorate-angular-cli.js && ngcc --properties es2015 browser module main",
     "prepare": "husky install tools/.husky"
   },
@@ -63,24 +61,13 @@
     "extract-changelog-release": "^1.0.2",
     "fs-extra": "^10.0.0",
     "husky": "^7.0.4",
-    "json": "^11.0.0",
     "lint-staged": "^12.1.7",
-    "ngx-deploy-npm": "^3.0.10",
     "postcss": "^8.4.5",
     "prettier": "^2.3.1",
-    "standard-version": "^9.3.2",
     "tailwindcss": "^3.0.2",
     "ts-node": "^10.4.0",
     "tsconfig-paths": "^3.12.0",
     "typescript": "~4.4.3"
-  },
-  "standard-version": {
-    "scripts": {
-      "prebump": "node ./tools/get-new-version.js"
-    },
-    "skip": {
-      "tag": true
-    }
   },
   "lint-staged": {
     "content/*": [
