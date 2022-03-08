@@ -1,7 +1,6 @@
 import * as DATA from '@rabraghib/content';
 import { getBrandInfo } from '@rabraghib/content';
-import { createCLICard } from './cli-card-content';
-import { getBadgeUrl, getColor, getQueryParamsOf } from './helpers';
+import { getBadgeUrl, getColor, getQueryParamsOf } from './process';
 
 const ReadmeIncludedProfiles = ['twitter', 'instagram', 'linkedin'];
 const mailBadge = {
@@ -54,6 +53,5 @@ module.exports = {
       'stats',
       DATA.AboutData.handle
     )}`
-  ],
-  CLICardContent: createCLICard(DATA.AboutData, DATA.BrandData)
+  ]
 };

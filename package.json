@@ -58,8 +58,6 @@
     "ejs": "^3.1.6",
     "eslint": "8.2.0",
     "eslint-config-prettier": "8.1.0",
-    "extract-changelog-release": "^1.0.2",
-    "fs-extra": "^10.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.7",
     "postcss": "^8.4.5",
