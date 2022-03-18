@@ -9,9 +9,9 @@
   "bracketSpacing": true,
   "overrides": [
     {
-      "files": "*.md.ejs",
+      "files": "*.ejs",
       "options": {
-        "parser": ""
+        "parser": "markdown"
       }
     }
   ]

@@ -3,12 +3,10 @@
   "sourceRoot": "content/src",
   "projectType": "library",
   "targets": {
-    "build": {
+    "readme": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "commands": [
-          "yarn ts-node --project tools/tsconfig.json -r tsconfig-paths/register -T tools/build-readme"
-        ]
+        "command": "yarn ts-node --project tools/tsconfig.json -r tsconfig-paths/register -T tools/build-readme"
       }
     },
     "lint": {

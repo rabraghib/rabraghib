@@ -27,7 +27,6 @@
 <% }); -%>
 </p>
 
-
 ## 📊 GitHub Stats
 
 <p align='center'><% GithubStatsCardsUrls.forEach(function(url) { %>
@@ -39,9 +38,11 @@
 ## 📕 Latest Blog Posts
 
 <% BlogData.posts.sort(function(a,b){
-  return new Date(b.date) - new Date(a.date);
+return new Date(b.date) - new Date(a.date);
 }).slice(0,5).forEach(function(post) { -%>
+
 - [<%= post.title %>](<%= post.url %>)
+
 <% }); -%>
 
 <br />
