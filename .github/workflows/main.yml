@@ -39,7 +39,7 @@ jobs:
           output-file: projects/CHANGELOG.md
 
   build:
-    if: needs.changelog.outputs.released
+    if: needs.changelog.outputs.released == 'true'
     needs: changelog
     uses: ./.github/workflows/re-build.yml
     with:
@@ -51,12 +51,10 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-
       - uses: actions/download-artifact@v2
         with:
           name: ${{ needs.changelog.outputs.artifacts-key }}
           path: dist
-
       - uses: softprops/action-gh-release@v1
         with:
           name: '${{ needs.changelog.outputs.tag }} 🎉'
