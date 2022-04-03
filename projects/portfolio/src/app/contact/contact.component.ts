@@ -2,7 +2,7 @@ import { Component, HostBinding, Input } from '@angular/core';
 import { IProfile } from '@rabraghib/content';
 
 @Component({
-  selector: 'rabraghib-contact',
+  selector: 'app-contact',
   templateUrl: './contact.component.html',
   styles: []
 })

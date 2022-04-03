@@ -1,7 +1,7 @@
 {
   "name": "@rabraghib/src",
   "version": "17.10.5",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "scripts": {
     "ng": "nx",
     "nx-all": "nx run-many --all --target",

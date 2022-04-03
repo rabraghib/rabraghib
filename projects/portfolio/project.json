@@ -2,7 +2,7 @@
   "projectType": "application",
   "root": "projects/portfolio",
   "sourceRoot": "projects/portfolio/src",
-  "prefix": "rabraghib",
+  "prefix": "app",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",

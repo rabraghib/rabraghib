@@ -15,7 +15,7 @@ import { IAbout } from '@rabraghib/content';
 import { map, Observable, shareReplay } from 'rxjs';
 
 @Component({
-  selector: 'rabraghib-overview',
+  selector: 'app-overview',
   templateUrl: './overview.component.html',
   styles: []
 })

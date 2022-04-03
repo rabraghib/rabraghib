@@ -27,7 +27,7 @@ jobs:
           mkdir -p dist/artifacts
           cd dist/projects
           for package in */; do
-            zip -r ../artifacts/rabraghib-$(basename $package)-${{ inputs.tag_name }}.zip $package;
+            zip -r ../artifacts/$(basename $package)-${{ inputs.tag_name }}.zip $package;
           done
       - uses: actions/upload-artifact@v2
         with:

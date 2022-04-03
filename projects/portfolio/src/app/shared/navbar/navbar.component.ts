@@ -2,7 +2,7 @@ import { Component, HostBinding, Input } from '@angular/core';
 import { IProfile } from '@rabraghib/content';
 
 @Component({
-  selector: 'rabraghib-navbar',
+  selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styles: []
 })

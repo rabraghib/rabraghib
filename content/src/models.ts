@@ -18,10 +18,6 @@ export interface IAbout {
   addresses: string[];
   profiles: IProfile[];
 }
-export interface IBlog {
-  website: string;
-  posts: IPost[];
-}
 export interface IBrand {
   colors: string[];
 }

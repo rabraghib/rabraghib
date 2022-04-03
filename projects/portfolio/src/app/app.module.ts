@@ -29,7 +29,7 @@ import { RouterModule } from '@angular/router';
     HttpClientModule,
     LayoutModule,
     RouterModule.forRoot([{ path: '**', redirectTo: '' }]),
-    IconsModule.forRoot('', AppNgaoxIcons),
+    IconsModule.forRoot(AppNgaoxIcons),
     SharedModule
   ],
   providers: [],

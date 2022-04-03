@@ -2,7 +2,7 @@ import { Component, HostBinding, Input } from '@angular/core';
 import { IProfile } from '@rabraghib/content';
 
 @Component({
-  selector: 'rabraghib-social-links',
+  selector: 'app-social-links',
   templateUrl: './social-links.component.html',
   styles: []
 })

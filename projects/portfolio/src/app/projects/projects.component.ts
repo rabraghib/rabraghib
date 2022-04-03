@@ -2,7 +2,7 @@ import { Component, HostBinding, Input } from '@angular/core';
 import { IProject } from '@rabraghib/content';
 
 @Component({
-  selector: 'rabraghib-projects',
+  selector: 'app-projects',
   templateUrl: './projects.component.html',
   styles: []
 })

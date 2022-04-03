@@ -2,7 +2,7 @@ import { Component, HostBinding } from '@angular/core';
 import { AboutData, getBrandInfo, ProjectsData } from '@rabraghib/content';
 
 @Component({
-  selector: 'rabraghib-root',
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styles: []
 })

@@ -1,7 +1,7 @@
 import { Component, HostBinding, Input } from '@angular/core';
 
 @Component({
-  selector: 'rabraghib-profile-card',
+  selector: 'app-profile-card',
   templateUrl: './profile-card.component.html',
   styles: []
 })

@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'rabraghib-footer',
+  selector: 'app-footer',
   templateUrl: './footer.component.html',
   styles: []
 })
