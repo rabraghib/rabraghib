@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "rabraghib"
+  },
+  "targets": {
+    "rabraghib": {
+      "hosting": {
+        "portfolio": [
+          "rabraghib"
+        ]
+      }
+    }
+  }
+}
