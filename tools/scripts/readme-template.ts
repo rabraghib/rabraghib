@@ -1,7 +1,8 @@
 #!/usr/bin/env ts-node
+
 import * as ejs from 'ejs';
 import * as fs from 'fs';
-import * as DATA from './helpers/prepare-data';
+import * as DATA from './helpers/prepare-readme-data';
 import * as path from 'path';
 
 const templateFile = 'content/README.ejs';

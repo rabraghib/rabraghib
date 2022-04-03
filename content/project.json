@@ -6,7 +6,7 @@
     "readme": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "command": "yarn ts-node --project tools/tsconfig.json -r tsconfig-paths/register -T tools/build-readme"
+        "command": "yarn execute-ts tools/scripts/readme-template.ts"
       }
     },
     "lint": {

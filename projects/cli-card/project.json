@@ -7,14 +7,14 @@
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "commands": [
-          "yarn ts-node --project projects/cli-card/build/tsconfig.json -r tsconfig-paths/register -T projects/cli-card/build/index.ts",
+          "yarn execute-ts tools/scripts/cli-card-output.ts",
           "yarn nx run cli-card:build-app"
         ],
         "parallel": false
       }
     },
     "build-app": {
-      "executor": "@nrwl/node:package",
+      "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/projects/cli-card",
@@ -39,5 +39,5 @@
       }
     }
   },
-  "tags": []
+  "tags": ["node"]
 }

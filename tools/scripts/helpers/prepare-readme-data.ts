@@ -1,6 +1,6 @@
 import * as DATA from '@rabraghib/content';
 import { getBrandInfo } from '@rabraghib/content';
-import { getBadgeUrl, getColor, getQueryParamsOf } from './process';
+import { getBadgeUrl, getColor, getQueryParamsOf } from './readme-branding';
 
 const ReadmeIncludedProfiles = ['twitter', 'instagram', 'linkedin'];
 const mailBadge = {

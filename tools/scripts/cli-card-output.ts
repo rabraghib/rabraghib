@@ -1,3 +1,5 @@
+#!/usr/bin/env ts-node
+
 import boxen from 'boxen';
 import chalk from 'chalk';
 import * as fs from 'fs';
@@ -5,7 +7,10 @@ import * as path from 'path';
 import align from 'align-text';
 import { IAbout, IBrand, AboutData, BrandData } from '@rabraghib/content';
 
-const outputPath = path.resolve(__dirname, '../bin/output');
+const outputPath = path.resolve(
+  __dirname,
+  '../../projects/cli-card/bin/output'
+);
 
 console.log(`Building cli-card output`);
 fs.writeFileSync(outputPath, createCLICard(AboutData, BrandData));
