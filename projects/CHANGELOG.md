@@ -1,3 +1,9 @@
+# [17.11.0](https://github.com/rabraghib/rabraghib/compare/v17.10.5...v17.11.0) (2022-04-03)
+
+### Bug Fixes
+
+- :bug: remove old README.ejs code ([88a964a](https://github.com/rabraghib/rabraghib/commit/88a964a3c0ff7fe077345ca29a7e5dcad729f956))
+
 ## [17.10.5](https://github.com/rabraghib/rabraghib/compare/v17.10.4...v17.10.5) (2022-03-08)
 
 ### Features
