@@ -33,26 +33,6 @@
 <img width='47%' src='<%= url %>'/>
 <% }) -%></p>
 
-<% if (BlogData.posts && BlogData.posts.length > 0) { -%>
-
-## 📕 Latest Blog Posts
-
-<% BlogData.posts.sort(function(a,b){
-return new Date(b.date) - new Date(a.date);
-}).slice(0,5).forEach(function(post) { -%>
-
-- [<%= post.title %>](<%= post.url %>)
-
-<% }); -%>
-
-<br />
-
-<p align="right"> 
-  <a href="<%= BlogData.website %>">
-    <strong>➡️ READ MORE...</strong>
-  </a>
-</p>
-<% } -%>
 ---
 
 <p align="center">Made with ❤️ by <a href="<%= AboutData.website %>"><%= AboutData.name %></a></p>
