@@ -1,13 +1,10 @@
 {
   "colors": {
-    "black": "#0b101a",
-    "primary": "#2D9CDB",
-    "primary-900": "#092433",
+    "black": "#0B101A",
+    "white": "#F8FAFC",
+    "slate-300": "#CBD5E1",
     "slate-900": "#0F172A",
-    "slate-500": "#64748b",
-    "slate-400": "#94a3b8",
-    "slate-300": "#cbd5e1",
-    "slate-200": "#e2e8f0",
-    "slate-50": "#f8fafc"
+    "blue-100": "#2D9CDB",
+    "blue-200": "#4360B5"
   }
 }
