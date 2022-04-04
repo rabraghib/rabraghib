@@ -1,0 +1,23 @@
+<article
+  class="flex flex-col gap-2 p-6 border-blue-100"
+  [ngClass]="[
+    'border-l-4 items-start',
+    'md:group-even:border-l-0',
+    'md:group-even:border-r-4 md:group-even:items-end md:group-even:text-right'
+  ]"
+>
+  <h2
+    class="font-semibold text-xl text-slate-200 {{ circularBubble }}"
+    [ngClass]="[
+      'before:-left-[1.625rem] before:-translate-x-1/2',
+      'md:group-even:before:left-auto md:group-even:before:-right-[1.625rem] md:group-even:before:translate-x-1/2'
+    ]"
+  >
+    Software Developer
+  </h2>
+  <h3 class="font-bold text-sm text-blue-100">2004 - 2005 | Chaospad</h3>
+  <p class="max-w-prose">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+    repellat, iure libero eos ipsa laboriosam.
+  </p>
+</article>

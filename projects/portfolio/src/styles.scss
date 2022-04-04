@@ -4,6 +4,47 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
+.container {
+  @apply w-full sm:max-w-2xl md:max-w-4xl lg:max-w-6xl xl:max-w-7xl;
+  @apply px-4 lg:px-14 xl:px-20 mx-auto;
+}
+
+.section {
+  @apply container relative py-20 lg:py-28;
+  @apply before:absolute before:text-blue-100 before:text-3xl before:top-0 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2;
+  &::before {
+    --tw-content: '✦✧✦✧';
+  }
+}
+
+.float-obj {
+  --float-obj-animation: traverse-up-left;
+  --float-obj-color: #4360b5;
+  --float-obj-duration: 10s;
+  background: radial-gradient(closest-side, var(--float-obj-color), #00000000);
+  animation: var(--float-obj-animation) var(--float-obj-duration) ease-in-out
+    infinite alternate;
+  z-index: -1;
+}
+
+@keyframes traverse-up-left {
+  0% {
+  }
+
+  100% {
+    transform: translateY(-200px) translateX(-350px) rotate(180deg);
+  }
+}
+
+@keyframes traverse-up-right {
+  0% {
+  }
+
+  100% {
+    transform: translateY(-300px) translateX(300px) rotate(360deg);
+  }
+}
+
 @layer base {
   html {
     font-family: 'Roboto', sans-serif;
@@ -21,7 +62,7 @@
 }
 
 .highlight {
-  @apply text-primary;
+  @apply text-blue-100;
 }
 svg {
   height: 100%;

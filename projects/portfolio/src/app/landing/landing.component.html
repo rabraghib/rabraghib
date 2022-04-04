@@ -1,0 +1,60 @@
+<section class="relative overflow-hidden">
+  <div class="absolute top-0 left-0 right-0 opacity-25">
+    <div
+      class="absolute left-16 mix-blend-multiply w-[700px] h-[900px] rounded-[40rem] gradian float-obj"
+    ></div>
+    <div
+      class="absolute top-28 left-1/2 mix-blend-multiply w-[600px] h-[600px] rounded-[40rem] float-obj"
+      style="
+        --float-obj-animation: traverse-up-right;
+        --float-obj-animation-duration: 13s;
+        --float-obj-color: rgb(45, 212, 191);
+      "
+    ></div>
+  </div>
+  <app-overview [about]="about" class="section before:hidden"></app-overview>
+</section>
+
+<section class="bg-slate-900">
+  <app-skills class="block section"></app-skills>
+</section>
+
+<!-- Projects Section -->
+<section class="block section" id="Projects">
+  <app-title
+    overline="Recent Work"
+    title="Latest Projects"
+    class="text-center"
+  ></app-title>
+  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-1 lg:gap-14">
+    <app-project-card
+      *ngFor="let item of projects; let i = index"
+      [project]="item"
+      [switchDirection]="i % 2 === 1"
+    ></app-project-card>
+  </div>
+</section>
+
+<!-- Career Section -->
+<div class="bg-slate-900">
+  <section class="block section">
+    <app-title
+      overline="Career Timeline"
+      title="Experience & Education"
+      class="text-center"
+    ></app-title>
+    <div class="grid">
+      <app-career-card *ngFor="let i of [0, 1, 2, 3, 4]"></app-career-card>
+    </div>
+  </section>
+</div>
+
+<!-- Contact Me Section -->
+<section class="block section">
+  <app-title
+    overline="Contact Me"
+    title="Get In Touch"
+    class="text-center !mb-6 !lg:mb-10"
+  ></app-title>
+  <app-contact class="text-center" email="rabraghib@gmail.com"></app-contact>
+</section>

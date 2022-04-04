@@ -3,7 +3,7 @@ import { IProject } from '@rabraghib/content';
 
 @Component({
   selector: 'app-project-card',
-  templateUrl: './card.component.html',
+  templateUrl: './project-card.component.html',
   styles: []
 })
 export class ProjectCardComponent {
