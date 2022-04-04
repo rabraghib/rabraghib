@@ -8,27 +8,41 @@ import { AppNgaoxIcons } from '@rabraghib/content';
 import { LayoutModule } from '@angular/cdk/layout';
 
 import { AppComponent } from './app.component';
-import { OverviewComponent } from './overview/overview.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { ProjectCardComponent } from './projects/card/card.component';
-import { ContactComponent } from './contact/contact.component';
-import { ProfileCardComponent } from './contact/profile-card/profile-card.component';
+import { LandingComponent } from './landing/landing.component';
+
+import { OverviewComponent } from './landing/overview/overview.component';
+import { ContactComponent } from './landing/contact/contact.component';
 import { RouterModule } from '@angular/router';
+import { SkillsComponent } from './landing/skills/skills.component';
+import { ProjectCardComponent } from './landing/project-card/project-card.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { CareerCardComponent } from './landing/career-card/career-card.component';
+import { SkillCardComponent } from './landing/skill-card/skill-card.component';
+
+const routes = [
+  { path: '', component: LandingComponent },
+  { path: '**', redirectTo: '' }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
+    LandingComponent,
     OverviewComponent,
-    ProjectsComponent,
     ProjectCardComponent,
     ContactComponent,
-    ProfileCardComponent
+    SkillsComponent,
+    NavbarComponent,
+    FooterComponent,
+    CareerCardComponent,
+    SkillCardComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     LayoutModule,
-    RouterModule.forRoot([{ path: '**', redirectTo: '' }]),
+    RouterModule.forRoot(routes),
     IconsModule.forRoot(AppNgaoxIcons),
     SharedModule
   ],

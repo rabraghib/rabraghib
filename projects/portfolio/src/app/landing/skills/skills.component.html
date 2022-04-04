@@ -1,0 +1,19 @@
+<app-title
+  overline="Skills I Master"
+  title="What I Do?"
+  class="text-center"
+></app-title>
+
+<div class="relative max-w-md lg:max-w-none mx-auto">
+  <ngaox-icon
+    name="dots-grid"
+    class="w-20 h-20 text-blue-200 md:w-28 md:h-28 absolute top-0 left-0 -translate-x-1/2 -translate-y-1/4"
+  ></ngaox-icon>
+  <ngaox-icon
+    name="dots-grid"
+    class="w-20 h-20 text-blue-200 md:w-28 md:h-28 absolute bottom-0 right-0 translate-x-1/2 translate-y-1/4"
+  ></ngaox-icon>
+  <div class="relative bg-black px-4 py-6 rounded-xl grid gap-4 lg:grid-cols-3">
+    <app-skill-card *ngFor="let item of [0, 1, 2]"></app-skill-card>
+  </div>
+</div>

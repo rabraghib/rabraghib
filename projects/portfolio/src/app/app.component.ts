@@ -4,12 +4,14 @@ import { AboutData, getBrandInfo, ProjectsData } from '@rabraghib/content';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styles: []
+  styles: [``]
 })
 export class AppComponent {
-  @HostBinding('class') get HostClasses() {
-    return `grid grid-rows-[auto,1fr] h-screen w-full overflow-x-hidden overflow-y-auto relative bg-gray-900 text-gray-200`;
-  }
+  @HostBinding('class') readonly HostClasses = `
+    block h-screen w-full overflow-x-hidden overflow-y-auto relative bg-black text-slate-400
+    scroll-smooth
+  `;
+
   readonly SocialProfiles = AboutData.profiles
     .map(profile => ({
       ...profile,
@@ -20,7 +22,4 @@ export class AppComponent {
     about: AboutData,
     projects: ProjectsData
   };
-  TakeAction(el: HTMLElement) {
-    el.scrollIntoView({ behavior: 'smooth' });
-  }
 }
