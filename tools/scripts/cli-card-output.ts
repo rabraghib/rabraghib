@@ -16,7 +16,7 @@ console.log(`Building cli-card output`);
 fs.writeFileSync(outputPath, createCLICard(AboutData, BrandData));
 
 function createCLICard(AboutData: IAbout, BrandData: IBrand) {
-  return chalk.hex(BrandData.colors['primary'])(
+  return chalk.hex(BrandData.colors['blue-100'])(
     boxen(
       getCardContentSections(AboutData, BrandData)
         .map(item => {
@@ -39,7 +39,7 @@ function getCardContentSections(AboutData: IAbout, BrandData: IBrand) {
       tag: 'to-center',
       section: Highlight(
         '/',
-        BrandData.colors['primary'],
+        BrandData.colors['blue-100'],
         `${AboutData.name} `,
         ` ${AboutData.handle}`,
         BrandData.colors['slate-300']
@@ -83,7 +83,7 @@ function getCLICardItems(AboutData: IAbout, BrandData: IBrand) {
       label: 'Headline',
       value: Highlight(
         '',
-        BrandData.colors['primary'],
+        BrandData.colors['blue-100'],
         AboutData.headline,
         '',
         BrandData.colors['slate-300']
@@ -96,7 +96,7 @@ function getCLICardItems(AboutData: IAbout, BrandData: IBrand) {
         value: HighlightUrl(
           p.url,
           AboutData.handle,
-          BrandData.colors['primary'],
+          BrandData.colors['blue-100'],
           BrandData.colors['slate-300']
         ),
         newLinesNum: 1
@@ -104,14 +104,14 @@ function getCLICardItems(AboutData: IAbout, BrandData: IBrand) {
     }),
     {
       label: 'Web',
-      value: Highlight(AboutData.website, BrandData.colors['primary']),
+      value: Highlight(AboutData.website, BrandData.colors['blue-100']),
       newLinesNum: 2
     },
     {
       label: 'Card',
       value: Highlight(
         'rabraghib',
-        BrandData.colors['primary'],
+        BrandData.colors['blue-100'],
         'npx ',
         '',
         BrandData.colors['slate-300']
