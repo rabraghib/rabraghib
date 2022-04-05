@@ -6,7 +6,7 @@
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "headers": [
         {
-          "source": "*.[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].+(css|js)",
+          "source": "/*.@(js|css)",
           "headers": [
             {
               "key": "Cache-Control",
@@ -26,7 +26,7 @@
       ],
       "rewrites": [
         {
-          "source": "**",
+          "source": "/**/!(*.@(js|ts|html|css|json|svg|png|jpg|jpeg))",
           "destination": "/index.html"
         }
       ]
