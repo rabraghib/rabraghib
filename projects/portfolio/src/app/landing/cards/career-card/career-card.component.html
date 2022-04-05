@@ -6,17 +6,20 @@
   ]"
 >
   <h2
-    class="font-semibold text-xl text-slate-200 {{ circularBubble }}"
+    class="relative font-semibold text-xl text-slate-300"
     [ngClass]="[
+      'before:box-content before:block before:absolute before:top-0 before:rounded-full',
+      'before:w-2 before:h-2 before:bg-slate-900 before:border-blue-100 before:border-4',
       'before:-left-[1.625rem] before:-translate-x-1/2',
       'md:group-even:before:left-auto md:group-even:before:-right-[1.625rem] md:group-even:before:translate-x-1/2'
     ]"
   >
-    Software Developer
+    {{ item.title }}
   </h2>
-  <h3 class="font-bold text-sm text-blue-100">2004 - 2005 | Chaospad</h3>
+  <h3 class="font-bold text-sm text-blue-100">
+    {{ item.period }} | {{ item.corporation }}
+  </h3>
   <p class="max-w-prose">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-    repellat, iure libero eos ipsa laboriosam.
+    {{ item.description }}
   </p>
 </article>

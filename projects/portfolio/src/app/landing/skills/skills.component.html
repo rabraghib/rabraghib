@@ -15,7 +15,8 @@
   ></ngaox-icon>
   <div class="relative bg-black px-4 py-6 rounded-xl grid gap-4 lg:grid-cols-3">
     <app-skill-card
-      *ngFor="let i of [0, 1, 2]"
+      *ngFor="let skill of skills; let i = index"
+      [skill]="skill"
       data-aos="fade-up"
       attr.data-aos-delay="{{ (i + 1) * 200 }}"
     ></app-skill-card>
