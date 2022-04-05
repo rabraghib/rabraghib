@@ -24,6 +24,7 @@
     "@angular/router": "^13.2.7",
     "@ngaox/icons": "^3.0.0",
     "@nrwl/angular": "13.9.6",
+    "aos": "^2.3.4",
     "rxjs": "~7.4.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
@@ -46,6 +47,7 @@
     "@nrwl/nx-cloud": "13.2.2",
     "@nrwl/workspace": "13.9.6",
     "@types/align-text": "^1.0.1",
+    "@types/aos": "^3.0.4",
     "@types/ejs": "^3.1.0",
     "@types/fs-extra": "^9.0.13",
     "@types/node": "14.14.33",

@@ -1,12 +1,13 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component, ElementRef, HostBinding, OnInit } from '@angular/core';
 import { AboutData, getBrandInfo, ProjectsData } from '@rabraghib/content';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styles: [``]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   @HostBinding('class') readonly HostClasses = `
     block h-screen w-full overflow-x-hidden overflow-y-auto relative bg-black text-slate-400
     scroll-smooth
@@ -22,4 +23,16 @@ export class AppComponent {
     about: AboutData,
     projects: ProjectsData
   };
+
+  constructor(private elementRef: ElementRef) {}
+
+  ngOnInit(): void {
+    AOS.init({
+      delay: 150,
+      duration: 1000
+    });
+    (this.elementRef.nativeElement as HTMLElement).onscroll = () => {
+      AOS.refresh();
+    };
+  }
 }

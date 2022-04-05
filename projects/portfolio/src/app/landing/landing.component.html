@@ -20,7 +20,7 @@
 </section>
 
 <!-- Projects Section -->
-<section class="block section" id="Projects">
+<section class="block section">
   <app-title
     overline="Recent Work"
     title="Latest Projects"
@@ -30,7 +30,8 @@
     <app-project-card
       *ngFor="let item of projects; let i = index"
       [project]="item"
-      [switchDirection]="i % 2 === 1"
+      [switchDirection]="i % 2 !== 0"
+      [attr.data-aos]="i % 2 === 0 ? 'fade-right' : 'fade-left'"
     ></app-project-card>
   </div>
 </section>
@@ -44,7 +45,10 @@
       class="text-center"
     ></app-title>
     <div class="grid">
-      <app-career-card *ngFor="let i of [0, 1, 2, 3, 4]"></app-career-card>
+      <app-career-card
+        data-aos="fade-up"
+        *ngFor="let i of [0, 1, 2, 3, 4]"
+      ></app-career-card>
     </div>
   </section>
 </div>

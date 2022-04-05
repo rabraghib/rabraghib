@@ -21,7 +21,10 @@
             "output": "/assets/"
           }
         ],
-        "styles": ["projects/portfolio/src/styles.scss"],
+        "styles": [
+          "node_modules/aos/dist/aos.css",
+          "projects/portfolio/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
