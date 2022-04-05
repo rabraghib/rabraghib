@@ -7,7 +7,6 @@ export interface IAbout {
   headline: string;
   birthday: string;
   bio: string;
-  avatar: string;
   picture: string;
   banner: string;
   email: string;
