@@ -4,7 +4,7 @@
   class="text-center"
 ></app-title>
 
-<div class="relative max-w-md lg:max-w-none mx-auto">
+<div class="relative max-w-lg lg:max-w-none mx-auto">
   <ngaox-icon
     name="dots-grid"
     class="w-20 h-20 text-blue-200 md:w-28 md:h-28 absolute top-0 left-0 -translate-x-1/2 -translate-y-1/4"
@@ -17,7 +17,7 @@
     <app-skill-card
       *ngFor="let i of [0, 1, 2]"
       data-aos="fade-up"
-      attr.data-aos-delay="{{ (i + 1) * 300 }}"
+      attr.data-aos-delay="{{ (i + 1) * 200 }}"
     ></app-skill-card>
   </div>
 </div>

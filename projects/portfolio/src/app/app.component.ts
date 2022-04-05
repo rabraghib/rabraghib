@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init({
-      delay: 150,
+      delay: 100,
       duration: 1000
     });
     (this.elementRef.nativeElement as HTMLElement).onscroll = () => {

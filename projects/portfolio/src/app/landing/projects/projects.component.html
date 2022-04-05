@@ -1,0 +1,14 @@
+<app-title
+  overline="Recent Work"
+  title="Latest Projects"
+  class="text-center"
+></app-title>
+
+<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-1 lg:gap-14">
+  <app-project-card
+    *ngFor="let item of projects; let i = index"
+    [project]="item"
+    [switchDirection]="i % 2 !== 0"
+    [attr.data-aos]="i % 2 === 0 ? 'fade-right' : 'fade-left'"
+  ></app-project-card>
+</div>
