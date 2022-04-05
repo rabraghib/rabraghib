@@ -3,10 +3,12 @@ import { Component, HostBinding, Input } from '@angular/core';
 @Component({
   selector: 'app-title',
   template: `
-    <span class="text-blue-100 text-base font-semibold">{{ overline }}</span>
+    <span class="text-blue-100 text-base font-semibold" data-aos="fade-up">{{
+      overline
+    }}</span>
     <h1
-      data-aos="fade-in"
       class="text-3xl sm:text-4xl md:lg:text-5xl lg:text-6xl mt-1 lg:mt-2"
+      data-aos="fade-up"
     >
       {{ title }}
     </h1>
