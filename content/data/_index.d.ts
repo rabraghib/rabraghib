@@ -1,8 +1,17 @@
-import { IAbout, IBrand, IBrandInfo, IProject } from '../src/models';
+import {
+  IAbout,
+  IBrand,
+  IBrandInfo,
+  ICareer,
+  IProject,
+  ISkills
+} from '../src/models';
 
-export const AboutData: IAbout;
 export const BrandData: IBrand;
+export const AboutData: IAbout;
+export const SkillsData: ISkills;
 export const ProjectsData: IProject[];
+export const CareerData: ICareer;
 export const ReferencedBrandsData: {
   [key: string]: IBrandInfo;
 };

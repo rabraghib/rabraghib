@@ -4,7 +4,10 @@
   class="text-center"
 ></app-title>
 
-<app-career-card
-  data-aos="fade-up"
-  *ngFor="let i of [0, 1, 2, 3, 4]"
-></app-career-card>
+<div>
+  <app-career-card
+    data-aos="fade-up"
+    *ngFor="let item of career"
+    [item]="item"
+  ></app-career-card>
+</div>

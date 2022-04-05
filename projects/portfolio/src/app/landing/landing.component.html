@@ -4,7 +4,7 @@
 </section>
 
 <section class="bg-slate-900">
-  <app-skills class="block section"></app-skills>
+  <app-skills class="block section" [skills]="skills"></app-skills>
 </section>
 
 <!-- Projects Section -->
@@ -14,10 +14,10 @@
 
 <!-- Career Section -->
 <section class="bg-slate-900">
-  <app-career class="block section"></app-career>
+  <app-career class="block section" [career]="career"></app-career>
 </section>
 
 <!-- Contact Me Section -->
 <section>
-  <app-contact class="block section" email="rabraghib@gmail.com"></app-contact>
+  <app-contact class="block section" [email]="about.email"></app-contact>
 </section>

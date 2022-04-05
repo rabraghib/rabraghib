@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { AboutData, ProjectsData } from '@rabraghib/content';
+import {
+  AboutData,
+  CareerData,
+  ProjectsData,
+  SkillsData
+} from '@rabraghib/content';
 
 @Component({
   selector: 'app-landing',
@@ -8,5 +13,7 @@ import { AboutData, ProjectsData } from '@rabraghib/content';
 })
 export class LandingComponent {
   readonly about = AboutData;
+  readonly skills = SkillsData;
   readonly projects = ProjectsData;
+  readonly career = CareerData;
 }

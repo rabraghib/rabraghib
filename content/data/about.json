@@ -4,11 +4,6 @@
   "website": "https://rabraghib.me",
   "headline": "Self-taught Software Developer",
   "birthday": "April 13, 2004",
-  "cli": {
-    "packageName": "rabraghib",
-    "scopedPackageName": "@rabraghib/cli-card",
-    "screenshot": "content/assets/projects/cli-card.png"
-  },
   "bio": "I'm a Morocco-based, self-taught software developer who specializes in building and designing special digital experiences. I am always passionate about learning new things and gaining more knowledge...",
   "avatar": "content/assets/avatar.png",
   "picture": "content/assets/picture.png",

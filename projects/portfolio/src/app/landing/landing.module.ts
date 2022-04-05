@@ -9,9 +9,9 @@ import { ProjectsComponent } from './projects/projects.component';
 import { CareerComponent } from './career/career.component';
 import { ContactComponent } from './contact/contact.component';
 
-import { SkillCardComponent } from './skill-card/skill-card.component';
-import { ProjectCardComponent } from './project-card/project-card.component';
-import { CareerCardComponent } from './career-card/career-card.component';
+import { SkillCardComponent } from './cards/skill-card/skill-card.component';
+import { ProjectCardComponent } from './cards/project-card/project-card.component';
+import { CareerCardComponent } from './cards/career-card/career-card.component';
 
 const EXPORTS = [
   OverviewComponent,
