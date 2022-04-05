@@ -3,7 +3,9 @@
   class="group relative w-48 sm:w-80 bg-gradient-to-tr from-blue-100 rounded-xl"
 >
   <div
-    class="w-full bg-center bg-cover rounded-xl shadow relative pt-[100%] -rotate-12 group-hover:rotate-0 transition-transform duration-500 ease-in-out"
+    data-aos="-rotate-12"
+    data-aos-duration="500"
+    class="w-full bg-center bg-cover rounded-xl shadow relative pt-[100%] -rotate-12 group-hover:rotate-0 transition-transform ease-in-out"
     [ngStyle]="{ 'background-image': 'url(' + about.picture + ')' }"
   ></div>
 </div>
@@ -14,7 +16,7 @@
     [title]="about.name"
     class="!mb-6 !lg:mb-8"
   ></app-title>
-  <p class="max-w-prose" data-aos="fade-up" data-aos-delay="350">
+  <p class="max-w-prose" data-aos="fade-up" data-aos-delay="200">
     {{ about.bio }}
   </p>
 </div>

@@ -1,26 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
 
-import { SharedModule } from './shared/shared.module';
 import { IconsModule } from '@ngaox/icons';
 import { AppNgaoxIcons } from '@rabraghib/content';
-import { LayoutModule } from '@angular/cdk/layout';
+import { LandingModule } from './landing/landing.module';
 
 import { AppComponent } from './app.component';
-import { LandingComponent } from './landing/landing.component';
-
-import { OverviewComponent } from './landing/overview/overview.component';
-import { ContactComponent } from './landing/contact/contact.component';
-import { RouterModule } from '@angular/router';
-import { SkillsComponent } from './landing/skills/skills.component';
-import { ProjectCardComponent } from './landing/project-card/project-card.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { CareerCardComponent } from './landing/career-card/career-card.component';
-import { SkillCardComponent } from './landing/skill-card/skill-card.component';
+import { LandingComponent } from './landing/landing.component';
+import { SharedModule } from './shared/shared.module';
 
-const routes = [
+const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: '**', redirectTo: '' }
 ];
@@ -28,23 +21,17 @@ const routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent,
-    OverviewComponent,
-    ProjectCardComponent,
-    ContactComponent,
-    SkillsComponent,
     NavbarComponent,
     FooterComponent,
-    CareerCardComponent,
-    SkillCardComponent
+    LandingComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    LayoutModule,
+    LandingModule,
+    SharedModule,
     RouterModule.forRoot(routes),
-    IconsModule.forRoot(AppNgaoxIcons),
-    SharedModule
+    IconsModule.forRoot(AppNgaoxIcons)
   ],
   providers: [],
   bootstrap: [AppComponent]
