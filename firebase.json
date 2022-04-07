@@ -3,7 +3,6 @@
     {
       "target": "portfolio",
       "public": "dist/projects/portfolio",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "headers": [
         {
           "source": "/*.@(js|css)",
@@ -11,6 +10,15 @@
             {
               "key": "Cache-Control",
               "value": "public,max-age=31536000,immutable"
+            }
+          ]
+        },
+        {
+          "source": "**/*.@(jpg|jpeg|gif|png|webp|svg)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public,max-age=31536000"
             }
           ]
         },
@@ -26,7 +34,7 @@
       ],
       "rewrites": [
         {
-          "source": "/**/!(*.@(js|ts|html|css|json|svg|png|jpg|jpeg))",
+          "source": "/**/!(*.@(js|ts|html|css|json|svg|png|jpg|jpeg|webp))",
           "destination": "/index.html"
         }
       ]

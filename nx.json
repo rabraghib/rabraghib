@@ -9,7 +9,7 @@
   },
   "workspaceLayout": {
     "appsDir": "projects",
-    "libsDir": "projects/_libs"
+    "libsDir": "projects"
   },
   "implicitDependencies": {
     "package.json": {
