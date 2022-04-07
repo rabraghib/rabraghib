@@ -3,7 +3,7 @@ import {
   AboutData,
   CareerData,
   ProjectsData,
-  SkillsData
+  ServicesData
 } from '@rabraghib/content';
 
 @Component({
@@ -13,7 +13,7 @@ import {
 })
 export class LandingComponent {
   readonly about = AboutData;
-  readonly skills = SkillsData;
+  readonly services = ServicesData;
   readonly projects = ProjectsData;
   readonly career = CareerData;
 }

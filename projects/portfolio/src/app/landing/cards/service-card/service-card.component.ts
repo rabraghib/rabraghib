@@ -1,13 +1,13 @@
 import { Component, HostBinding, Input } from '@angular/core';
-import { ISkill } from '@rabraghib/content';
+import { IService } from '@rabraghib/content';
 
 @Component({
-  selector: 'app-skill-card',
-  templateUrl: './skill-card.component.html',
+  selector: 'app-service-card',
+  templateUrl: './service-card.component.html',
   styles: []
 })
-export class SkillCardComponent {
-  @Input() skill!: ISkill;
+export class ServiceCardComponent {
+  @Input() service!: IService;
   @HostBinding('class') readonly HostClasses = `
     text-center p-4
     flex flex-col items-center gap-2
