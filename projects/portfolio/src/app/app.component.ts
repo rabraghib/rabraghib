@@ -1,4 +1,9 @@
-import { Component, ElementRef, HostBinding, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  HostBinding
+} from '@angular/core';
 import { AboutData, getBrandInfo, ProjectsData } from '@rabraghib/content';
 import * as AOS from 'aos';
 
@@ -7,7 +12,7 @@ import * as AOS from 'aos';
   templateUrl: './app.component.html',
   styles: [``]
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements AfterViewInit {
   @HostBinding('class') readonly HostClasses = `
     block h-screen w-full overflow-x-hidden overflow-y-auto relative bg-black text-slate-400
     scroll-smooth
@@ -26,11 +31,12 @@ export class AppComponent implements OnInit {
 
   constructor(private elementRef: ElementRef) {}
 
-  ngOnInit(): void {
-    AOS.init({
-      delay: 100,
-      duration: 1000
-    });
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      AOS.init({
+        duration: 1000
+      });
+    }, 250);
     (this.elementRef.nativeElement as HTMLElement).onscroll = () => {
       AOS.refresh();
     };
