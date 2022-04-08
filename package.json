@@ -22,6 +22,7 @@
     "@angular/platform-browser": "^13.2.7",
     "@angular/platform-browser-dynamic": "^13.2.7",
     "@angular/router": "^13.2.7",
+    "@ngaox/brands-warehouse": "^1.1.1",
     "@ngaox/icons": "^3.0.0",
     "@nrwl/angular": "13.9.6",
     "aos": "^2.3.4",

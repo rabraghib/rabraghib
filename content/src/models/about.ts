@@ -1,4 +1,4 @@
-import { IBrandInfo } from './brand';
+import { IBrandInfo } from '@ngaox/brands-warehouse';
 
 export interface IAbout {
   name: string;
@@ -17,6 +17,6 @@ export interface IAbout {
 
 export interface IProfile {
   platform: string;
-  brand: IBrandInfo;
+  brand?: IBrandInfo;
   url: string;
 }

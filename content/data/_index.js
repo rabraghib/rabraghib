@@ -3,7 +3,6 @@ const about = require('./about.json');
 const services = require('./services.json');
 const projects = require('./projects.json');
 const career = require('./career.json');
-const referencedBrands = require('./referenced-brands.json');
 
 function getRawFileUrl(filePath) {
   return filePath
@@ -19,6 +18,5 @@ module.exports = {
   },
   ServicesData: services,
   ProjectsData: projects,
-  CareerData: career,
-  ReferencedBrandsData: referencedBrands
+  CareerData: career
 };

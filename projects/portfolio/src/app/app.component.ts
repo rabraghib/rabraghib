@@ -4,7 +4,8 @@ import {
   ElementRef,
   HostBinding
 } from '@angular/core';
-import { AboutData, getBrandInfo, ProjectsData } from '@rabraghib/content';
+import { AboutData, ProjectsData } from '@rabraghib/content';
+import { getBrandInfo } from '@ngaox/brands-warehouse';
 import * as AOS from 'aos';
 
 @Component({
@@ -23,7 +24,7 @@ export class AppComponent implements AfterViewInit {
       ...profile,
       brand: getBrandInfo(profile.platform)
     }))
-    .filter(p => p.brand.labels.includes('social'));
+    .filter(p => p?.brand?.labels?.includes('social'));
   readonly data = {
     about: AboutData,
     projects: ProjectsData

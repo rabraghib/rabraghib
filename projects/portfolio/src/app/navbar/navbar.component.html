@@ -6,14 +6,14 @@
     }"
   >
     <a
-      [title]="link.brand.name"
+      [title]="link.brand?.name ?? link.platform"
       [href]="link.url"
       class="block whitespace-nowrap hover:text-white"
       rel="noopener"
       target="_blank"
     >
       <ngaox-icon
-        [name]="link.brand.icon"
+        [name]="link.brand?.icons?.['simpleicons'] ?? 'link'"
         class="align-middle h-6 w-6"
       ></ngaox-icon>
     </a>
