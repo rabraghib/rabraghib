@@ -1,8 +1,7 @@
 import * as DATA from '@rabraghib/content';
-import { getBrandInfo } from '@rabraghib/content';
+import { getBrandInfo } from '@ngaox/brands-warehouse';
 import { getBadgeUrl, getColor, getQueryParamsOf } from './readme-branding';
 
-const ReadmeIncludedProfiles = ['twitter', 'instagram', 'linkedin'];
 const mailBadge = {
   badge: getBadgeUrl({
     label: 'Mail me!',
@@ -17,13 +16,13 @@ module.exports = {
   ReadmeSocialBadges: [
     mailBadge,
     ...DATA.AboutData.profiles
-      .filter(p => ReadmeIncludedProfiles.includes(p.platform))
+      .filter(p => p.platform !== 'github')
       .map(p => {
         const brand = getBrandInfo(p.platform);
         return {
           badge: getBadgeUrl({
             label: brand?.name ?? p.platform,
-            logo: brand?.SimpleIconsIconName ?? p.platform
+            logo: brand?.icons?.['simpleicons'] ?? p.platform
           }),
           url: p.url,
           alt: `${DATA.AboutData.name} ${p.platform} profile`
@@ -31,11 +30,11 @@ module.exports = {
       })
   ],
   ReadmeTechStackBadges: DATA.AboutData.stack.map(tech => {
-    const brand = getBrandInfo(tech);
+    const brand = getBrandInfo(`tech:${tech}`);
     return {
       badge: getBadgeUrl({
         label: brand?.name ?? tech,
-        logo: brand?.SimpleIconsIconName ?? tech,
+        logo: brand?.['simpleicons'] ?? tech,
         color: getColor('slate-900'),
         logoColor: getColor('slate-50'),
         labelColor: getColor('primary')

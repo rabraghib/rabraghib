@@ -1,17 +1,17 @@
 [
   {
-    "name": "Fullstack Dev",
+    "name": "FullStack Dev",
     "icon": "code",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, alias."
+    "description": "How can you sleep while your MVP isn't up and running on production yet?!"
   },
   {
-    "name": "Fullstack Dev",
+    "name": "DevOps & Scaling",
     "icon": "code",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, alias."
+    "description": "Never down/slow! Continuously test, deliver and monitor well designed system"
   },
   {
-    "name": "Fullstack Dev",
+    "name": "Cross Platform",
     "icon": "code",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, alias."
+    "description": "Deliver fast and consistent experience to your audience wherever they are!"
   }
 ]

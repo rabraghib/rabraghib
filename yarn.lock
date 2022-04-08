@@ -1672,6 +1672,11 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@ngaox/brands-warehouse@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@ngaox/brands-warehouse/-/brands-warehouse-1.1.1.tgz#d5ea2de3f95ad46fd22ea09ea89d2ed931fdba87"
+  integrity sha512-hhzsHtoYX8jJeeJDL+xA0065kdPgnYGGWyi3qSjChw2XfrEG6g7Acv9NnG1LVbrDTcTlNlgTb+VHt9y+Mc/ItQ==
+
 "@ngaox/icons@^3.0.0":
   version "3.5.4"
   resolved "https://registry.yarnpkg.com/@ngaox/icons/-/icons-3.5.4.tgz#646112733fbee31967a9814de8ee72e3ab4d7ad0"
