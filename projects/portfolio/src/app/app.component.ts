@@ -36,7 +36,7 @@ export class AppComponent implements AfterViewInit {
       AOS.init({
         duration: 1000
       });
-    }, 250);
+    }, 150);
     (this.elementRef.nativeElement as HTMLElement).onscroll = () => {
       AOS.refresh();
     };

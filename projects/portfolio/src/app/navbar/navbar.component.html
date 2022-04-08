@@ -1,17 +1,31 @@
-<ul class="flex space-x-8 text-sm font-medium px-10">
-  <li>
+<ul class="flex space-x-6 text-sm font-medium pl-10 pr-2">
+  <li *ngFor="let link of links">
     <a
-      href="#"
-      class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0"
-      aria-current="page"
-      >Home</a
+      [title]="link.brand.name"
+      [href]="link.url"
+      class="block whitespace-nowrap hover:text-white"
+      rel="noopener"
+      target="_blank"
     >
+      <ngaox-icon
+        [name]="link.brand.icon"
+        class="align-middle h-6 w-6"
+      ></ngaox-icon>
+    </a>
   </li>
-  <li *ngFor="let item of ['About', 'Projects', 'Pricing', 'Contact']">
+  <li class="pl-6 border-l-[1px] border-blue-100">
     <a
-      href="#{{ item }}"
-      class="block py-2 pr-4 pl-3 border-b md:border-0 md:p-0 text-slate-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
-      >{{ item }}</a
+      title="Personal Blog"
+      href="https://blog.rabraghib.me/"
+      class="block whitespace-nowrap hover:text-white"
+      rel="noopener"
+      target="_blank"
     >
+      <ngaox-icon
+        name="blog-logo"
+        class="align-middle h-6 w-6 text-blue-100"
+      ></ngaox-icon>
+      <span class="ml-2 text-sm leading-[1px] align-middle">Blog</span>
+    </a>
   </li>
 </ul>
