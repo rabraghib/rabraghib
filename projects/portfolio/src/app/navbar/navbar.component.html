@@ -1,5 +1,10 @@
-<ul class="flex space-x-6 text-sm font-medium pl-10 pr-2">
-  <li *ngFor="let link of links">
+<ul class="flex space-x-6 text-sm font-medium md:pl-10 pr-2">
+  <li
+    *ngFor="let link of links"
+    [ngClass]="{
+      'hidden md:block': link.platform !== 'twitter'
+    }"
+  >
     <a
       [title]="link.brand.name"
       [href]="link.url"
