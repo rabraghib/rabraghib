@@ -6,7 +6,6 @@
   "birthday": "April 13, 2004",
   "bio": "I'm a Morocco-based, self-taught software developer who specializes in building and designing special digital experiences. I am always passionate about learning new things and gaining more knowledge...",
   "picture": "/assets/picture.webp",
-  "banner": "",
   "email": "hello@rabraghib.me",
   "stack": [
     "nx",
@@ -19,7 +18,6 @@
     "typeScript",
     "php"
   ],
-  "addresses": [],
   "profiles": [
     {
       "platform": "twitter",
@@ -35,7 +33,7 @@
     },
     {
       "platform": "linkedin",
-      "url": "https://www.linkedin.com/in/rabraghib"
+      "url": "https://linkedin.com/in/rabraghib"
     }
   ]
 }

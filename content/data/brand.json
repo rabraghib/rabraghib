@@ -2,9 +2,9 @@
   "colors": {
     "black": "#0B101A",
     "white": "#F8FAFC",
-    "slate-300": "#CBD5E1",
+    "slate-400": "#94a3b8",
     "slate-900": "#0F172A",
     "blue-100": "#2D9CDB",
-    "blue-200": "#4360B5"
+    "blue-900": "#1e3a8a"
   }
 }

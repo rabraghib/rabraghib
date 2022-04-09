@@ -8,10 +8,8 @@ export interface IAbout {
   birthday: string;
   bio: string;
   picture: string;
-  banner: string;
   email: string;
   stack: string[];
-  addresses: string[];
   profiles: IProfile[];
 }
 
