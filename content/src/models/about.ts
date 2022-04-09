@@ -9,7 +9,6 @@ export interface IAbout {
   bio: string;
   picture: string;
   email: string;
-  stack: string[];
   profiles: IProfile[];
 }
 

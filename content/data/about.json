@@ -7,17 +7,6 @@
   "bio": "I'm a Morocco-based, self-taught software developer who specializes in building and designing special digital experiences. I am always passionate about learning new things and gaining more knowledge...",
   "picture": "/assets/picture.webp",
   "email": "hello@rabraghib.me",
-  "stack": [
-    "nx",
-    "docker",
-    "angular",
-    "symfony",
-    "tailwindcss",
-    "firebase",
-    "figma",
-    "typeScript",
-    "php"
-  ],
   "profiles": [
     {
       "platform": "twitter",

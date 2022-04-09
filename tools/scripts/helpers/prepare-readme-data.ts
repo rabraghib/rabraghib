@@ -1,6 +1,6 @@
 import * as DATA from '@rabraghib/content';
 import { getBrandInfo } from '@ngaox/brands-warehouse';
-import { getBadgeUrl, getColor, getQueryParamsOf } from './readme-theming';
+import { getBadgeUrl, getQueryParamsOf } from './readme-theming';
 
 const mailBadge = {
   badge: getBadgeUrl({
@@ -29,20 +29,6 @@ module.exports = {
         };
       })
   ],
-  ReadmeTechStackBadges: DATA.AboutData.stack.map(tech => {
-    const brand = getBrandInfo(`tech:${tech}`);
-    return {
-      badge: getBadgeUrl({
-        label: brand?.name ?? tech,
-        logo: brand?.['simpleicons'] ?? tech,
-        color: getColor('slate-900'),
-        logoColor: getColor('white'),
-        labelColor: getColor('blue-100')
-      }),
-      url: brand?.website,
-      alt: `${tech}`
-    };
-  }),
   GithubStatsCardsUrls: [
     `https://github-readme-streak-stats.herokuapp.com/?${getQueryParamsOf(
       'streak-stats',
