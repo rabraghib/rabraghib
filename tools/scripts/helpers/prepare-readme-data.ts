@@ -1,6 +1,6 @@
 import * as DATA from '@rabraghib/content';
 import { getBrandInfo } from '@ngaox/brands-warehouse';
-import { getBadgeUrl, getColor, getQueryParamsOf } from './readme-branding';
+import { getBadgeUrl, getColor, getQueryParamsOf } from './readme-theming';
 
 const mailBadge = {
   badge: getBadgeUrl({
@@ -36,8 +36,8 @@ module.exports = {
         label: brand?.name ?? tech,
         logo: brand?.['simpleicons'] ?? tech,
         color: getColor('slate-900'),
-        logoColor: getColor('slate-50'),
-        labelColor: getColor('primary')
+        logoColor: getColor('white'),
+        labelColor: getColor('blue-100')
       }),
       url: brand?.website,
       alt: `${tech}`

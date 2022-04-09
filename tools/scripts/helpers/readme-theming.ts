@@ -1,15 +1,15 @@
 import { BrandData } from '@rabraghib/content';
 
 export function getColor(colorName: string) {
-  return BrandData.colors[colorName].replace('#', '');
+  return BrandData.colors[colorName]?.replace('#', '') ?? undefined;
 }
 export function getBadgeUrl(options: object = {}) {
   const [style, color, logo, logoColor, label, labelColor, message] = [
     options['style'] ?? 'for-the-badge',
-    options['color'] ?? getColor('primary'),
+    options['color'] ?? getColor('blue-100'),
 
     options['logo'] ?? options['label'] ?? '',
-    options['logoColor'] ?? getColor('slate-50'),
+    options['logoColor'] ?? getColor('white'),
 
     options['label'] ?? '',
     options['labelColor'] ?? getColor('slate-900'),
@@ -30,18 +30,14 @@ export function getQueryParamsOf(
 
   if (type == 'streak-stats') {
     statsCardsParams.user = handle;
+    setValue(statsCardsParams, ['fire', 'ring'], getColor('blue-100'));
     setValue(
       statsCardsParams,
-      ['fire', 'ring', 'currStreakLabel'],
-      getColor('primary')
+      ['currStreakLabel', 'currStreakNum', 'sideNums', 'sideLabels'],
+      getColor('white')
     );
-    setValue(
-      statsCardsParams,
-      ['currStreakNum', 'sideNums', 'sideLabels'],
-      getColor('slate-200')
-    );
-    setValue(statsCardsParams, ['stroke', 'border'], getColor('slate-200'));
-    statsCardsParams.dates = getColor('slate-400');
+    setValue(statsCardsParams, ['stroke', 'border'], getColor('white'));
+    statsCardsParams.dates = getColor('blue-100');
     statsCardsParams.background = getColor('slate-900');
     statsCardsParams.hide_border = 'true';
   } else if (type == 'stats') {
@@ -56,12 +52,12 @@ export function getQueryParamsOf(
     setValue(
       statsCardsParams,
       ['title_color', 'icon_color'],
-      getColor('primary')
+      getColor('blue-100')
     );
     setValue(
       statsCardsParams,
       ['text_color', 'border_color'],
-      getColor('slate-200')
+      getColor('white')
     );
   }
   return new URLSearchParams(statsCardsParams).toString();

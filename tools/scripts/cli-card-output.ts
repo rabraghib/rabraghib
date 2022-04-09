@@ -6,6 +6,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import align from 'align-text';
 import { IAbout, IBrand, AboutData, BrandData } from '@rabraghib/content';
+import { version } from '../../package.json';
 
 const outputPath = path.resolve(
   __dirname,
@@ -42,9 +43,25 @@ function getCardContentSections(AboutData: IAbout, BrandData: IBrand) {
         BrandData.colors['blue-100'],
         `${AboutData.name} `,
         ` ${AboutData.handle}`,
-        BrandData.colors['slate-300']
+        BrandData.colors['white']
       ),
+      newLinesNum: 1
+    },
+    {
+      tag: 'to-center',
+      section: Highlight(`v${version} y.o.`, BrandData.colors['blue-100']),
       newLinesNum: 2
+    },
+    {
+      tag: 'to-center',
+      section: Highlight(
+        '',
+        BrandData.colors['blue-100'],
+        AboutData.headline,
+        '',
+        BrandData.colors['white']
+      ),
+      newLinesNum: 1
     },
     ...cardItems.map(item => {
       return {
@@ -79,17 +96,6 @@ function getCardContentSections(AboutData: IAbout, BrandData: IBrand) {
 }
 function getCLICardItems(AboutData: IAbout, BrandData: IBrand) {
   return [
-    {
-      label: 'Headline',
-      value: Highlight(
-        '',
-        BrandData.colors['blue-100'],
-        AboutData.headline,
-        '',
-        BrandData.colors['slate-300']
-      ),
-      newLinesNum: 1
-    },
     ...AboutData.profiles.map(p => {
       return {
         label: toTitleCase(p.platform),
@@ -97,7 +103,7 @@ function getCLICardItems(AboutData: IAbout, BrandData: IBrand) {
           p.url,
           AboutData.handle,
           BrandData.colors['blue-100'],
-          BrandData.colors['slate-300']
+          BrandData.colors['slate-400']
         ),
         newLinesNum: 1
       };
@@ -114,7 +120,7 @@ function getCLICardItems(AboutData: IAbout, BrandData: IBrand) {
         BrandData.colors['blue-100'],
         'npx ',
         '',
-        BrandData.colors['slate-300']
+        BrandData.colors['slate-400']
       ),
       newLinesNum: 0
     }
