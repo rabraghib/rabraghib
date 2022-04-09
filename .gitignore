@@ -4,7 +4,6 @@
 /dist
 /tmp
 /out-tsc
-projects/cli-card/bin/output
 
 # dependencies
 /node_modules
