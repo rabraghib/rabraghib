@@ -1,6 +1,6 @@
 import { BrandData } from '@rabraghib/content';
 
-export function getColor(colorName: string) {
+function getColor(colorName: string) {
   return BrandData.colors[colorName]?.replace('#', '') ?? undefined;
 }
 export function getBadgeUrl(options: object = {}) {

@@ -22,6 +22,10 @@ jobs:
       - run: yarn --frozen-lockfile
       - name: 📝 Build README template
         run: yarn nx run content:readme
+      - uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          commit_message: 'chore: :sparkles: build README (ejs template)'
+          feed_list: 'https://blog.rabraghib.me/rss.xml'
       - uses: chaospad/releaser@v1
         id: releaser
         with:
