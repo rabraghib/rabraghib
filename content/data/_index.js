@@ -4,18 +4,9 @@ const services = require('./services.json');
 const projects = require('./projects.json');
 const career = require('./career.json');
 
-function getRawFileUrl(filePath) {
-  return filePath
-    ? `https://raw.githubusercontent.com/rabraghib/rabraghib/main/${filePath}`
-    : '';
-}
-
 module.exports = {
   BrandData: brand,
-  AboutData: {
-    ...about,
-    banner: getRawFileUrl(about.banner)
-  },
+  AboutData: about,
   ServicesData: services,
   ProjectsData: projects,
   CareerData: career
