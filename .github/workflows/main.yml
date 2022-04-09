@@ -5,7 +5,7 @@ on:
     branches:
       - main
 jobs:
-  changelog:
+  release:
     runs-on: ubuntu-20.04
     outputs:
       released: ${{ steps.releaser.outputs.released }}
@@ -31,38 +31,45 @@ jobs:
             projects/**/package.json
             package.json
           output-file: projects/CHANGELOG.md
-
-  build:
-    if: needs.changelog.outputs.released == 'true'
-    needs: changelog
-    uses: ./.github/workflows/re-build.yml
-    with:
-      artifacts-key: ${{ needs.changelog.outputs.artifacts-key }}
-      tag_name: ${{ needs.changelog.outputs.tag }}
-
-  gh-release:
-    needs: [build, changelog]
+  build-deploy:
+    if: needs.release.outputs.released == 'true'
+    needs: release
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/download-artifact@v2
         with:
-          name: ${{ needs.changelog.outputs.artifacts-key }}
-          path: dist
+          ref: 'main'
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'yarn'
+          registry-url: 'https://registry.npmjs.org'
+      - run: yarn --frozen-lockfile
+      - name: 🛠 Build everything
+        run: yarn nx-all build
+      - name: 📦 Zip projects dist folders
+        run: |
+          mkdir -p dist/artifacts
+          cd dist/projects
+          for package in */; do
+            zip -r ../artifacts/$(basename $package)-${{ needs.release.outputs.tag }}.zip $package;
+          done
       - uses: softprops/action-gh-release@v1
         with:
-          name: '${{ needs.changelog.outputs.tag }} 🎉'
-          tag_name: ${{ needs.changelog.outputs.tag }}
-          body: ${{ needs.changelog.outputs.release_notes }}
+          name: '${{ needs.release.outputs.tag }} 🎉'
+          tag_name: ${{ needs.release.outputs.tag }}
+          body: ${{ needs.release.outputs.release_notes }}
           files: |
             dist/artifacts/*
-
-  deploy:
-    needs: [build, changelog]
-    uses: ./.github/workflows/re-deploy.yml
-    with:
-      artifacts-key: ${{ needs.changelog.outputs.artifacts-key }}
-    secrets:
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      token: ${{ secrets.GITHUB_TOKEN }}
-      FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_RABRAGHIB }}
+      - name: 🎉 Publish CLI-Card to npm
+        run: |
+          cd dist/projects/cli-card
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_RABRAGHIB }}'
+          channelId: live
+          projectId: rabraghib
