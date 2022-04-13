@@ -4,65 +4,39 @@ To edit this file, make an edit to its template in `content/README.ejs`.
 -->
 
 <p align="right">
-<a href="mailto:hello@rabraghib.me" target="_blank">
-  <img src="https://img.shields.io/badge/Mail%20me!--2D9CDB?style=for-the-badge&amp;logo=mail&amp;logoColor=f8fafc&amp;labelColor=0F172A" alt="Mail me!" />
-</a>
-<a href="https://twitter.com/rabraghib" target="_blank">
-  <img src="https://img.shields.io/badge/Twitter--2D9CDB?style=for-the-badge&amp;logo=twitter&amp;logoColor=f8fafc&amp;labelColor=0F172A" alt="Rabyâ Raghib twitter profile" />
-</a>
-<a href="https://www.instagram.com/rabraghib" target="_blank">
-  <img src="https://img.shields.io/badge/Instagram--2D9CDB?style=for-the-badge&amp;logo=instagram&amp;logoColor=f8fafc&amp;labelColor=0F172A" alt="Rabyâ Raghib instagram profile" />
-</a>
-<a href="https://www.linkedin.com/in/rabraghib" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn--2D9CDB?style=for-the-badge&amp;logo=linkedin&amp;logoColor=f8fafc&amp;labelColor=0F172A" alt="Rabyâ Raghib linkedin profile" />
-</a>
+  <a href="mailto:hello@rabraghib.me" target="_blank">
+    <img src="https://img.shields.io/badge/Mail%20me!--2D9CDB?style=for-the-badge&amp;logo=mail&amp;logoColor=F8FAFC&amp;labelColor=0F172A" alt="Mail me!" />
+  </a>
+  <a href="https://twitter.com/rabraghib" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter--2D9CDB?style=for-the-badge&amp;logo=twitter&amp;logoColor=F8FAFC&amp;labelColor=0F172A" alt="Rabyâ Raghib twitter profile" />
+  </a>
+  <a href="https://www.instagram.com/rabraghib" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram--2D9CDB?style=for-the-badge&amp;logo=instagram&amp;logoColor=F8FAFC&amp;labelColor=0F172A" alt="Rabyâ Raghib instagram profile" />
+  </a>
+  <a href="https://linkedin.com/in/rabraghib" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn--2D9CDB?style=for-the-badge&amp;logo=linkedin&amp;logoColor=F8FAFC&amp;labelColor=0F172A" alt="Rabyâ Raghib linkedin profile" />
+  </a>
 </p>
 
-<h1 align="center">Hi, I am Rabyâ Raghib 👋</h1>
+<img width='100%' alt="Banner" src='https://user-images.githubusercontent.com/49442862/162534630-3cb87acd-6b10-41cb-ac6a-da4fcf03d353.png' />
 
-<!-- <img width='100%' src='' /> -->
+## Hey, I am Rabyâ 👋
 
 I&#39;m a Morocco-based, self-taught software developer who specializes in building and designing special digital experiences. I am always passionate about learning new things and gaining more knowledge...
 
-## 🐱‍🏍 Tech Stack
+Want to know more about me? [Check out my portfolio 💼](https://rabraghib.me/).
 
-<p align="center">Here are some of my favorites technologies that I'am comfortable with!</p>
-<p align="center">
-  <a href="https://nx.dev" target="_blank">
-    <img height="30" src="https://img.shields.io/badge/NX--0F172A?style=for-the-badge&amp;logo=nx&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="nx" />
-  </a>
-  <a href="https://www.docker.com" target="_blank">
-    <img height="30" src="https://img.shields.io/badge/Docker--0F172A?style=for-the-badge&amp;logo=docker&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="docker" />
-  </a>
-  <a href="https://angular.io" target="_blank">
-    <img height="30" src="https://img.shields.io/badge/Angular--0F172A?style=for-the-badge&amp;logo=angular&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="angular" />
-  </a>
-  <a href="https://symfony.com" target="_blank">
-    <img height="30" src="https://img.shields.io/badge/Symfony--0F172A?style=for-the-badge&amp;logo=symfony&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="symfony" />
-  </a>
-  <a href="https://tailwindcss.com" target="_blank">
-    <img height="30" src="https://img.shields.io/badge/Tailwind%20CSS--0F172A?style=for-the-badge&amp;logo=tailwindcss&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="tailwindcss" />
-  </a>
-  <a href="https://firebase.google.com" target="_blank">
-    <img height="30" src="https://img.shields.io/badge/Firebase--0F172A?style=for-the-badge&amp;logo=firebase&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="firebase" />
-  </a>
-  <a href="https://www.figma.com" target="_blank">
-    <img height="30" src="https://img.shields.io/badge/Figma--0F172A?style=for-the-badge&amp;logo=figma&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="figma" />
-  </a>
-  <a href="https://www.typescriptlang.org" target="_blank">
-    <img height="30" src="https://img.shields.io/badge/TypeScript--0F172A?style=for-the-badge&amp;logo=typescript&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="typeScript" />
-  </a>
-  <a href="https://www.php.net" target="_blank">
-    <img height="30" src="https://img.shields.io/badge/PHP--0F172A?style=for-the-badge&amp;logo=php&amp;logoColor=f8fafc&amp;labelColor=2D9CDB" alt="php" />
-  </a>
-</p>
+## 📕 Latest Blog Posts
+
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
 
 ## 📊 GitHub Stats
 
 <p align='center'>
-<img width='47%' src='https://github-readme-streak-stats.herokuapp.com/?user=rabraghib&amp;currStreakLabel=2D9CDB&amp;ring=2D9CDB&amp;fire=2D9CDB&amp;sideLabels=e2e8f0&amp;sideNums=e2e8f0&amp;currStreakNum=e2e8f0&amp;border=e2e8f0&amp;stroke=e2e8f0&amp;dates=94a3b8&amp;background=0F172A&amp;hide_border=true'/>
+<img width='47%' src='https://github-readme-streak-stats.herokuapp.com/?user=rabraghib&amp;ring=2D9CDB&amp;fire=2D9CDB&amp;sideLabels=F8FAFC&amp;sideNums=F8FAFC&amp;currStreakNum=F8FAFC&amp;currStreakLabel=F8FAFC&amp;border=F8FAFC&amp;stroke=F8FAFC&amp;dates=2D9CDB&amp;background=0F172A&amp;hide_border=true'/>
 
-<img width='47%' src='https://github-readme-stats.vercel.app/api?username=rabraghib&amp;custom_title=Overall+Stats&amp;line_height=30&amp;show_icons=true&amp;hide_border=true&amp;hide=stars&amp;bg_color=0F172A&amp;count_private=true&amp;icon_color=2D9CDB&amp;title_color=2D9CDB&amp;border_color=e2e8f0&amp;text_color=e2e8f0'/>
+<img width='47%' src='https://github-readme-stats.vercel.app/api?username=rabraghib&amp;custom_title=Overall+Stats&amp;line_height=30&amp;show_icons=true&amp;hide_border=true&amp;hide=stars&amp;bg_color=0F172A&amp;count_private=true&amp;icon_color=2D9CDB&amp;title_color=2D9CDB&amp;border_color=F8FAFC&amp;text_color=F8FAFC'/>
 </p>
 
 ---

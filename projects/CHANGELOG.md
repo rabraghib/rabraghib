@@ -1,3 +1,21 @@
+# [18.0.0](https://github.com/rabraghib/rabraghib/compare/v17.11.0...v18.0.0) (2022-04-13)
+
+### Features
+
+- :art: new color pallete ([435c56b](https://github.com/rabraghib/rabraghib/commit/435c56b0f4aa038dd2d0ae78e4493d628a6fcd4b))
+- :art: update color palette ([ea97891](https://github.com/rabraghib/rabraghib/commit/ea9789121d81fd96f66f2014cbf8fb242b88ecf3))
+- :sparkles: improve cli-card output ([632b2f6](https://github.com/rabraghib/rabraghib/commit/632b2f60cc298d9ffd0bda95a4ad3bc2d06d22ed))
+- :sparkles: new portfolio design ([336ba81](https://github.com/rabraghib/rabraghib/commit/336ba81e7041fa4ec13ba21c185fdbf880679af4))
+- :zap: add some simple animations ([b4d6e1b](https://github.com/rabraghib/rabraghib/commit/b4d6e1b00c5cca696df32770aae3acdcded160be))
+- :zap: new README ([ba910d4](https://github.com/rabraghib/rabraghib/commit/ba910d487a1696823b883037f2da5fa66a2a6d37))
+- add bmc widget ([ca32346](https://github.com/rabraghib/rabraghib/commit/ca3234639552ace6593634215b875d948a2e3c9e))
+- add social and blog links to the navbar ([9003e9c](https://github.com/rabraghib/rabraghib/commit/9003e9caea448abf96a1eca31791c8b1d4c47704))
+- some simple UI changes ([9953b46](https://github.com/rabraghib/rabraghib/commit/9953b46674182870fdf5ea0b4a6e94b7a7aa0a45))
+
+### Performance Improvements
+
+- :zap: optimize imgs size and format ([3407959](https://github.com/rabraghib/rabraghib/commit/3407959e6c60a2c81f1a2ff3780cd2a277b46daf))
+
 # [17.11.0](https://github.com/rabraghib/rabraghib/compare/v17.10.5...v17.11.0) (2022-04-03)
 
 ### Bug Fixes
