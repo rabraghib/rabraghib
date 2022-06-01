@@ -1654,10 +1654,10 @@
   resolved "https://registry.yarnpkg.com/@ngaox/brands-warehouse/-/brands-warehouse-1.1.2.tgz#1281413dc7f8af11ca94a5ee1c542cd4685153f7"
   integrity sha512-RVaDeXgUtaoF8MuHOWHpHKyzJuo0aVXVsPaGfMee13aEgtk1t5EG/wi9Fq78sK39yprICA36im4eiaArvGlSWQ==
 
-"@ngaox/icons@^3.0.0":
-  version "3.5.4"
-  resolved "https://registry.yarnpkg.com/@ngaox/icons/-/icons-3.5.4.tgz#646112733fbee31967a9814de8ee72e3ab4d7ad0"
-  integrity sha512-lxsXSFrGdGu0ZNVQsWOdKB8No7xJ8Z1Q5yN2ckHII7zuGMX/5IwTVGXZBSem5lO+RfiQp+kIMIR215XVwfj9YQ==
+"@ngaox/icons@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@ngaox/icons/-/icons-4.2.0.tgz#0a580c3fbb30d3361a16781125adf4f4aebec495"
+  integrity sha512-cFuQvA4RXUkorvoo5MWKbRK7sRsgX2vhDK5w1vhan2N3WJxaXVRJRunLh4yGxtfu8MeGJ73LeGTMb+4+T5anDA==
   dependencies:
     tslib "^2.3.0"
 
