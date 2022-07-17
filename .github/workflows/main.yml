@@ -25,7 +25,7 @@ jobs:
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
           commit_message: 'chore: :sparkles: build README (ejs template)'
-          feed_list: 'https://blog.rabraghib.me/rss.xml'
+          feed_list: 'https://rabraghib.hashnode.dev/rss.xml'
       - uses: chaospad/releaser@v1
         id: releaser
         with:
