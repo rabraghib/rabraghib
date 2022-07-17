@@ -1,3 +1,10 @@
+## [18.3.1](https://github.com/rabraghib/rabraghib/compare/v18.0.0...v18.3.1) (2022-07-17)
+
+### Bug Fixes
+
+- correct invalid URls ([#77](https://github.com/rabraghib/rabraghib/issues/77)) ([0375e05](https://github.com/rabraghib/rabraghib/commit/0375e05906f394755ec1c90c7525bd05d172aadc)), closes [#76](https://github.com/rabraghib/rabraghib/issues/76)
+- remove README top section ([98e4ef0](https://github.com/rabraghib/rabraghib/commit/98e4ef0e325779b99e2f1923d64d95ce136dbc99))
+
 # [18.0.0](https://github.com/rabraghib/rabraghib/compare/v17.11.0...v18.0.0) (2022-04-13)
 
 ### Features

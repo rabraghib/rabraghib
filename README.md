@@ -3,8 +3,9 @@
 To edit this file, make an edit to its template in `content/README.ejs`.
 -->
 
+<!--
 <p align="right">
-  <a href="mailto:hello@rabraghib.me" target="_blank">
+  <a href="mailto:rabraghib@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Mail%20me!--2D9CDB?style=for-the-badge&amp;logo=mail&amp;logoColor=F8FAFC&amp;labelColor=0F172A" alt="Mail me!" />
   </a>
   <a href="https://twitter.com/rabraghib" target="_blank">
@@ -17,14 +18,13 @@ To edit this file, make an edit to its template in `content/README.ejs`.
     <img src="https://img.shields.io/badge/LinkedIn--2D9CDB?style=for-the-badge&amp;logo=linkedin&amp;logoColor=F8FAFC&amp;labelColor=0F172A" alt="Rabyâ Raghib linkedin profile" />
   </a>
 </p>
-
-<img width='100%' alt="Banner" src='https://user-images.githubusercontent.com/49442862/162534630-3cb87acd-6b10-41cb-ac6a-da4fcf03d353.png' />
+-->
 
 ## Hey, I am Rabyâ 👋
 
 I&#39;m a Morocco-based, self-taught software developer who specializes in building and designing special digital experiences. I am always passionate about learning new things and gaining more knowledge...
 
-Want to know more about me? [Check out my portfolio 💼](https://rabraghib.me/).
+Want to know more about me? [Check out my portfolio 💼](https://rabraghib.web.app/).
 
 ## 📕 Latest Blog Posts
 
@@ -41,4 +41,4 @@ Want to know more about me? [Check out my portfolio 💼](https://rabraghib.me/)
 
 ---
 
-<p align="center">Made with ❤️ by <a href="https://rabraghib.me">Rabyâ Raghib</a></p>
+<p align="center">Made with ❤️ by <a href="https://rabraghib.web.app">Rabyâ Raghib</a></p>
