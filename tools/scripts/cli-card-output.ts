@@ -13,6 +13,9 @@ const outputPath = path.resolve(
   '../../projects/cli-card/bin/output'
 );
 
+// True-Color support
+chalk.level = 3;
+
 console.log(`Building cli-card output`);
 fs.writeFileSync(outputPath, createCLICard(AboutData, BrandData));
 
