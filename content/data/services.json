@@ -1,17 +1,17 @@
 [
   {
     "name": "FullStack Dev",
-    "icon": "code",
+    "icon": "fullStack-dev",
     "description": "How can you sleep while your MVP isn't up and running on production yet?!"
   },
   {
     "name": "DevOps & Scaling",
-    "icon": "code",
+    "icon": "devops-scaling",
     "description": "Never down/slow! Continuously test, deliver and monitor well designed system"
   },
   {
     "name": "Cross Platform",
-    "icon": "code",
+    "icon": "cross-platform",
     "description": "Deliver fast and consistent experience to your audience wherever they are!"
   }
 ]
