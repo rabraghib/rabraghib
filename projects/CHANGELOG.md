@@ -1,3 +1,11 @@
+## [18.3.2](https://github.com/rabraghib/rabraghib/compare/v18.3.1...v18.3.2) (2022-07-23)
+
+### Bug Fixes
+
+- :bug: ensure cli-card colors are accurate ([ea8538c](https://github.com/rabraghib/rabraghib/commit/ea8538cee1bfaf25a98dec8efef651faaf6cde38))
+- add missing image & icons ([1a61d11](https://github.com/rabraghib/rabraghib/commit/1a61d118e6dfaecf9b4ec22d174ea7cfe27c8f37))
+- remove empty readme sections ([4e7bf6f](https://github.com/rabraghib/rabraghib/commit/4e7bf6f060b93a45e6d034a77efae54cbc3a585a))
+
 ## [18.3.1](https://github.com/rabraghib/rabraghib/compare/v18.0.0...v18.3.1) (2022-07-17)
 
 ### Bug Fixes
