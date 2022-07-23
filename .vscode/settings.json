@@ -1,6 +1,0 @@
-{
-  "conventionalCommits.promptScopes": false,
-  "files.associations": {
-    "*.ejs": "markdown"
-  }
-}
