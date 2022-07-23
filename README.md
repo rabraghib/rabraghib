@@ -26,8 +26,10 @@ I&#39;m a Morocco-based, self-taught software developer who specializes in build
 
 Want to know more about me? [Check out my portfolio 💼](https://rabraghib.web.app/).
 
-<p align='center'>
-<img width='47%' src='https://github-readme-streak-stats.herokuapp.com/?user=rabraghib&amp;ring=2D9CDB&amp;fire=2D9CDB&amp;sideLabels=F8FAFC&amp;sideNums=F8FAFC&amp;currStreakNum=F8FAFC&amp;currStreakLabel=F8FAFC&amp;border=F8FAFC&amp;stroke=F8FAFC&amp;dates=2D9CDB&amp;background=0F172A&amp;hide_border=true'/>
+## 📊 GitHub Stats
 
-<img width='47%' src='https://github-readme-stats.vercel.app/api?username=rabraghib&amp;custom_title=Overall+Stats&amp;line_height=30&amp;show_icons=true&amp;hide_border=true&amp;hide=stars&amp;bg_color=0F172A&amp;count_private=true&amp;icon_color=2D9CDB&amp;title_color=2D9CDB&amp;border_color=F8FAFC&amp;text_color=F8FAFC'/>
+<p align='center'>
+<img width='48%' src='https://github-readme-streak-stats.herokuapp.com/?user=rabraghib&amp;ring=2D9CDB&amp;fire=2D9CDB&amp;sideLabels=F8FAFC&amp;sideNums=F8FAFC&amp;currStreakNum=F8FAFC&amp;currStreakLabel=F8FAFC&amp;border=F8FAFC&amp;stroke=F8FAFC&amp;dates=2D9CDB&amp;background=0F172A&amp;hide_border=true'/>
+
+<img width='48%' src='https://github-readme-stats.vercel.app/api?username=rabraghib&amp;custom_title=Overall+Stats&amp;line_height=30&amp;show_icons=true&amp;hide_border=true&amp;hide=stars&amp;bg_color=0F172A&amp;count_private=true&amp;icon_color=2D9CDB&amp;title_color=2D9CDB&amp;border_color=F8FAFC&amp;text_color=F8FAFC'/>
 </p>
