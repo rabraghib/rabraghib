@@ -22,7 +22,7 @@ jobs:
       - run: yarn --frozen-lockfile
       - name: 📝 Build README template
         run: yarn nx run content:readme
-      - uses: chaospad/releaser@v1
+      - uses: rabraghib/releaser-action@v1
         id: releaser
         with:
           birthday: '2004-04-13'
