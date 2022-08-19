@@ -52,7 +52,10 @@ function getCardContentSections(AboutData: IAbout, BrandData: IBrand) {
     },
     {
       tag: 'to-center',
-      section: Highlight(`v${version} y.o.`, BrandData.colors['blue-100']),
+      section: Highlight(
+        `v${version.split('.', 1)[0]} year-old`,
+        BrandData.colors['blue-100']
+      ),
       newLinesNum: 2
     },
     {
