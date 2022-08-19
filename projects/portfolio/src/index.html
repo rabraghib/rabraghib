@@ -11,9 +11,9 @@
     <meta property="fb:app_id" content="826467561306273" />
     <meta
       property="og:image"
-      content="https://rabraghib.web.app/assets/picture.png"
+      content="https://rabraghib.me/assets/picture.png"
     />
-    <meta property="og:url" content="https://rabraghib.web.app/" />
+    <meta property="og:url" content="https://rabraghib.me/" />
     <meta property="og:type" content="website" />
     <meta property="twitter:site" content="@rabraghib" />
     <meta property="og:site_name" content="Rabyâ Raghib | @rabraghib" />
@@ -25,6 +25,24 @@
   </head>
   <body>
     <app-root></app-root>
+    <div
+      id="cursor"
+      class="fixed pointer-events-none bg-blue-100 w-2.5 h-2.5 -left-1 -top-1 z-50 rounded-full transition-transform ease-out"
+    ></div>
+    <script>
+      let clientX = -100;
+      let clientY = -100;
+      const cursor = document.querySelector('#cursor');
+      document.addEventListener('mousemove', e => {
+        clientX = e.clientX;
+        clientY = e.clientY;
+      });
+      function render() {
+        cursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+        requestAnimationFrame(render);
+      }
+      requestAnimationFrame(render);
+    </script>
     <script
       data-name="BMC-Widget"
       data-cfasync="false"
