@@ -2,6 +2,13 @@ import { INgaoxIcon } from '@ngaox/icons';
 
 export const AppNgaoxIcons: INgaoxIcon[] = [
   {
+    name: 'app:eve',
+    data: {
+      lazy: true,
+      url: 'assets/eve.svg'
+    }
+  },
+  {
     name: 'link',
     data: `
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -10,10 +17,10 @@ export const AppNgaoxIcons: INgaoxIcon[] = [
     `
   },
   {
-    name: 'blog-logo',
+    name: 'resume',
     data: `
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" />
+      <svg viewBox="0 0 30 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.62 14.7C19.3 12.9 19.3 10.62 17.56 9.00004C15.76 7.32004 13.48 7.32004 11.86 9.06004C10.18 10.86 10.18 13.14 11.92 14.76C13.72 16.44 16 16.44 17.62 14.7ZM14.74 25.38C19.3 25.38 21.64 23.82 21.64 20.82V18.78L14.86 18.6C7.66 18.42 7.18 18.6 7.66 21.54C7.96 23.88 10.78 25.38 14.74 25.38ZM25.24 32.58V31.08V29.58L14.86 29.4C6.04 29.28 4.48 29.4 4.18 30.18C3.94 30.66 3.94 31.5 4.18 31.98C4.48 32.76 6.04 32.88 14.86 32.76L25.24 32.58ZM20.44 39.78V38.28V36.78L12.46 36.6C5.8 36.48 4.48 36.6 4.18 37.38C4 37.86 4 38.7 4.18 39.18C4.48 39.96 5.8 40.08 12.46 39.96L20.44 39.78Z"/>
       </svg>
     `
   },

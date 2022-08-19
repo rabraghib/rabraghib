@@ -1,25 +1,20 @@
-<article
-  class="flex flex-col gap-2 p-6 border-blue-100"
-  [ngClass]="[
-    'border-l-4 items-start md:group-even:border-l-0',
-    'md:group-even:border-r-4 md:group-even:items-end md:group-even:text-right'
-  ]"
+<h3
+  class="font-bold w-36 text-sm text-right text-blue-100 hidden lg:block mt-5"
 >
+  {{ item.period }}
+</h3>
+
+<article class="flex flex-col gap-2 px-6 py-4 border-l-2 border-blue-100">
   <h2
-    class="relative font-semibold text-xl text-white"
+    class="relative text-xl text-white"
     [ngClass]="[
       'before:box-content before:block before:absolute before:top-0 before:rounded-full',
       'before:w-2 before:h-2 before:bg-slate-900 before:border-blue-100 before:border-4',
-      'before:-left-[1.625rem] before:-translate-x-1/2',
-      'md:group-even:before:left-auto md:group-even:before:-right-[1.625rem] md:group-even:before:translate-x-1/2'
+      'before:-left-[1.532rem] before:mt-1.5 before:-translate-x-1/2'
     ]"
   >
     {{ item.title }}
   </h2>
-  <h3 class="font-bold text-sm text-blue-100">
-    {{ item.period }} | {{ item.corporation }}
-  </h3>
-  <p class="max-w-prose">
-    {{ item.description }}
-  </p>
+  <h3 class="font-bold text-sm text-blue-100 lg:hidden">{{ item.period }}</h3>
+  <p class="prose lg:max-w-prose" [innerHtml]="item.description"></p>
 </article>

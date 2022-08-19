@@ -7,8 +7,8 @@ import { Component, HostBinding, Input } from '@angular/core';
       overline
     }}</span>
     <h1
-      class="text-3xl sm:text-4xl lg:text-6xl mt-1 lg:mt-2 font-black text-white"
       data-aos="fade-up"
+      class="text-4xl md:text-5xl xl:text-6xl mt-2 lg:mt-2 font-black text-white"
     >
       {{ title }}
     </h1>

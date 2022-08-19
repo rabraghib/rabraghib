@@ -1,20 +1,17 @@
 [
   {
-    "title": "Software Developer",
-    "period": "2004 - 2005",
-    "corporation": "Chaospad",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellat, iure libero eos ipsa laboriosam."
+    "title": "Co-Founder - Me9sous",
+    "period": "Jun 2022 - Present",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Voluptatum repellat.<br>iure libero eos ipsa laboriosam iure libero eos ipsa laboriosam.<br>Hello  iure libero eos ipsa World"
   },
   {
-    "title": "Software Developer",
-    "period": "2004 - 2005",
-    "corporation": "Chaospad",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellat, iure libero eos ipsa laboriosam."
+    "title": "High School - Mohammed V, Ouarzazate",
+    "period": "Oct 2020 - Jun 2022",
+    "description": "Major in Maths-Science, where I learned various Math topics related to Algebra, Calculus, Probability, and more."
   },
   {
-    "title": "Software Developer",
-    "period": "2004 - 2005",
-    "corporation": "Chaospad",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellat, iure libero eos ipsa laboriosam."
+    "title": "Self-Taught Software Engineer",
+    "period": "Birth - Present",
+    "description": "I lived a childhood passionate about technology, electronics, and microcontrollers, which converted over the years into a passion for software development.<br />A passion for learning, creating, and contributing to building the exceptional world of tomorrow via Open-Source!"
   }
 ]

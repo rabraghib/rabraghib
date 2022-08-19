@@ -4,10 +4,27 @@
   class="text-center"
 ></app-title>
 
-<div>
-  <app-career-card
-    data-aos="fade-up"
-    *ngFor="let item of career"
-    [item]="item"
-  ></app-career-card>
+<div class="relative">
+  <div
+    class="absolute h-full -right-6 w-[calc(100%-52rem)] flex items-center content-end"
+  >
+    <div class="hidden xl:block z-10">
+      <ngaox-icon
+        name="app:eve"
+        data-aos="fade-left"
+        class="w-full max-w-[10rem]"
+      ></ngaox-icon>
+    </div>
+    <div
+      class="float-obj absolute hidden lg:block opacity-20 -left-20 !z-0 w-[500px] h-[650px] rounded-[40rem]"
+      style="--float-obj-duration: 8s; --float-obj-animation: traverse-circular"
+    ></div>
+  </div>
+  <div>
+    <app-career-card
+      data-aos="fade-up"
+      *ngFor="let item of career"
+      [item]="item"
+    ></app-career-card>
+  </div>
 </div>

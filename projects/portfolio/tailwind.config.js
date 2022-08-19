@@ -9,9 +9,11 @@ module.exports = {
     ...createGlobPatternsForDependencies(__dirname)
   ],
   theme: {
-    colors: {
-      ...BrandData.colors,
-      transparent: 'transparent'
+    extend: {
+      colors: {
+        ...BrandData.colors,
+        transparent: 'transparent'
+      }
     }
   },
   variants: {

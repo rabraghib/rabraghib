@@ -9,6 +9,6 @@ import { IAbout } from '@rabraghib/content';
 export class OverviewComponent {
   @Input() about!: IAbout;
   @HostBinding('class') HostClasses = `
-    flex justify-between gap-12 lg:gap-16 flex-col md:flex-row-reverse items-center
+    flex justify-between gap-16 flex-col md:flex-row-reverse items-center
   `;
 }

@@ -1,9 +1,9 @@
 [
   {
-    "name": "Angular Ngaox",
+    "name": "Ngaox for Angular",
     "thumbnail": "/assets/projects/ngaox.webp",
     "description": "Ngaox is a collection of Angular components and utilities designed to make your life easier. We mainly aim at providing solutions for common web needs that are still missing from Angular, such as inlining SVGs, SEO management, and more.",
-    "topics": ["Angular", "Nx", "SEO", "Open-Source"],
+    "topics": ["Angular", "Devtools", "OSS"],
     "liveUrl": "https://ngaox-lab.web.app",
     "sourceUrl": "https://github.com/ngaox/ngaox"
   },
@@ -11,7 +11,7 @@
     "name": "Moroccan PHPers",
     "thumbnail": "/assets/projects/moroccan-phpers.webp",
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit assumenda est sed a ullam quia, molestiae fuga. Omnis ex explicabo, fugiat, consequuntur sit aspernatur, necessitatibus totam nulla cumque vitae aut?",
-    "topics": ["PHP", "Morocco", "Angular"],
+    "topics": ["Angular", "Ngaox-Presskit"],
     "liveUrl": "https://moroccan-phpers.web.app",
     "sourceUrl": "https://github.com/rabraghib/moroccan-phpers"
   },

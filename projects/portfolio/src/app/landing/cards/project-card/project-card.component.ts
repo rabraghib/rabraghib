@@ -9,7 +9,4 @@ import { IProject } from '@rabraghib/content';
 export class ProjectCardComponent {
   @Input() project!: IProject;
   @Input() switchDirection = false;
-  JoinTags(tags: string[]) {
-    return tags.join(', ') + '...';
-  }
 }

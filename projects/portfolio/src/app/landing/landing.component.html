@@ -1,23 +1,29 @@
-<section class="relative pt-10 overflow-hidden">
+<section class="relative overflow-hidden">
   <app-floating-objects></app-floating-objects>
-  <app-overview class="section before:hidden" [about]="about"></app-overview>
+  <app-overview
+    class="block container relative pt-32 pb-24 lg:pt-36 lg:pb-30"
+    [about]="about"
+  ></app-overview>
 </section>
 
-<section class="bg-slate-900">
-  <app-services class="block section" [services]="services"></app-services>
+<section class="pb-8 bg-slate-900">
+  <app-services
+    class="block container relative py-20"
+    [services]="services"
+  ></app-services>
 </section>
 
-<!-- Projects Section -->
-<section>
-  <app-projects class="block section" [projects]="projects"></app-projects>
-</section>
+<app-projects
+  class="block container relative py-20"
+  [projects]="projects"
+></app-projects>
 
-<!-- Career Section -->
-<section class="bg-slate-900">
-  <app-career class="block section" [career]="career"></app-career>
-</section>
+<app-career
+  class="block container relative py-20"
+  [career]="career"
+></app-career>
 
-<!-- Contact Me Section -->
-<section>
-  <app-contact class="block section" [email]="about.email"></app-contact>
-</section>
+<app-contact
+  class="block container relative py-20 pb-36"
+  [email]="about.email"
+></app-contact>

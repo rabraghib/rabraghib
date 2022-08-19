@@ -55,20 +55,16 @@
       </a>
     </h2>
     <div
+      [innerHTML]="project.description"
       class="lg:bg-slate-900 text-slate-400 tracking-wide lg:p-6 my-5 rounded lg:shadow-md transition-opacity"
-    >
-      {{ project.description }}
-      <div class="text-left mt-2">
-        <b class="text-gray-300">Tech:</b> {{ JoinTags(project.topics) }}
-      </div>
-    </div>
+    ></div>
     <div
-      class="text-right {{
-        switchDirection ? 'lg:text-right' : 'lg:text-left'
+      class="flex gap-3 {{
+        switchDirection ? 'lg:flex-row-reverse' : 'lg:flex-row'
       }}"
     >
       <a
-        class="hover:text-primary {{ project.sourceUrl ? 'mr-3' : '' }}"
+        class="hover:text-primary"
         target="_blank"
         [href]="project.liveUrl"
         *ngIf="project.liveUrl"
@@ -91,6 +87,13 @@
           alt="Source Code"
         ></ngaox-icon>
       </a>
+      <span>|</span>
+      <a
+        class="!hover:text-primary"
+        target="_blank"
+        *ngFor="let topic of project.topics"
+        >{{ topic }}</a
+      >
     </div>
   </div>
 </article>
