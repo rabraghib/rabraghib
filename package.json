@@ -1,6 +1,6 @@
 {
   "name": "@rabraghib/src",
-  "version": "18.3.2",
+  "version": "18.4.0",
   "license": "GPL-3.0",
   "scripts": {
     "ng": "nx",

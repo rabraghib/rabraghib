@@ -1,3 +1,17 @@
+# [18.4.0](https://github.com/rabraghib/rabraghib/compare/v18.3.2...v18.4.0) (2022-08-19)
+
+### Bug Fixes
+
+- restore redme stats title [skip ci] ([4cd900c](https://github.com/rabraghib/rabraghib/commit/4cd900c1722995d4ac73b7ae3d6be3e00d8c42a3))
+
+### Features
+
+- :sparkles: improve CTA and career section ([7e03609](https://github.com/rabraghib/rabraghib/commit/7e03609787f7e603d1afe65671d425c451df67dd))
+
+### Reverts
+
+- :rewind: restore correct domain and add cursor dot ([395d519](https://github.com/rabraghib/rabraghib/commit/395d519e9b4d4ec91c1f1acfca989cc70fdb0605))
+
 ## [18.3.2](https://github.com/rabraghib/rabraghib/compare/v18.3.1...v18.3.2) (2022-07-23)
 
 ### Bug Fixes

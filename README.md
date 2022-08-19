@@ -5,7 +5,7 @@ To edit this file, make an edit to its template in `content/README.ejs`.
 
 <!--
 <p align="right">
-  <a href="mailto:rabraghib@gmail.com" target="_blank">
+  <a href="mailto:hello@rabraghib.me" target="_blank">
     <img src="https://img.shields.io/badge/Mail%20me!--2D9CDB?style=for-the-badge&amp;logo=mail&amp;logoColor=F8FAFC&amp;labelColor=0F172A" alt="Mail me!" />
   </a>
   <a href="https://twitter.com/rabraghib" target="_blank">
@@ -24,7 +24,7 @@ To edit this file, make an edit to its template in `content/README.ejs`.
 
 I&#39;m a Morocco-based, self-taught software developer who specializes in building and designing special digital experiences. I am always passionate about learning new things and gaining more knowledge...
 
-Want to know more about me? [Check out my portfolio 💼](https://rabraghib.web.app/).
+Want to know more about me? [Check out my portfolio 💼](https://rabraghib.me/).
 
 ## 📊 GitHub Stats
 
