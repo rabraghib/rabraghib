@@ -1,3 +1,9 @@
+# [18.5.0](https://github.com/rabraghib/rabraghib/compare/v18.4.0...v18.5.0) (2022-09-15)
+
+### Features
+
+- improve title and career section content ([83a2a82](https://github.com/rabraghib/rabraghib/commit/83a2a828327d1492cdbda46c637198552fc23db5))
+
 # [18.4.0](https://github.com/rabraghib/rabraghib/compare/v18.3.2...v18.4.0) (2022-08-19)
 
 ### Bug Fixes
