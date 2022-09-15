@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Rabyâ Raghib</title>
-    <meta property="og:title" content="Rabyâ Raghib" />
+    <title>Rabyâ Raghib | Full-Stack Developer</title>
+    <meta property="og:title" content="Rabyâ Raghib | Full-Stack Developer" />
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -30,6 +30,22 @@
       class="fixed pointer-events-none bg-blue-100 w-2.5 h-2.5 -left-1 -top-1 z-50 rounded-full transition-transform ease-out"
     ></div>
     <script>
+      const viewPortMeta = document.querySelector('meta[name="viewport"]');
+      if (viewPortMeta) {
+        if (screen.width < 400) {
+          const newScale = screen.width / 400;
+          viewPortMeta.content =
+            'width=400, minimum-scale=' +
+            newScale +
+            ', maximum-scale=1.0, user-scalable=no, initial-scale=' +
+            newScale +
+            '';
+        } else {
+          viewPortMeta.content =
+            'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+        }
+      }
+      // Cursor dot -------------------------------------------------------------------
       let clientX = -100;
       let clientY = -100;
       const cursor = document.querySelector('#cursor');
