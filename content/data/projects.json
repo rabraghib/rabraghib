@@ -10,17 +10,17 @@
   {
     "name": "Moroccan PHPers",
     "thumbnail": "/assets/projects/moroccan-phpers.webp",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit assumenda est sed a ullam quia, molestiae fuga. Omnis ex explicabo, fugiat, consequuntur sit aspernatur, necessitatibus totam nulla cumque vitae aut?",
-    "topics": ["Angular", "Ngaox-Presskit"],
+    "description": "The Moroccan PHPers is a group of PHP developers and enthusiasts who aim at sharing our knowledge and encourage PHP dev in Morocco. Accelerate your career and skills by participating in our meetups, workshops, talks, challenges...",
+    "topics": ["Angular", "Ngaox-PressKit"],
     "liveUrl": "https://moroccan-phpers.web.app",
     "sourceUrl": "https://github.com/rabraghib/moroccan-phpers"
   },
   {
-    "name": "Chaospad LLC.",
-    "thumbnail": "https://picsum.photos/seed/2/1600/900",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit assumenda est sed a ullam quia, molestiae fuga. Omnis ex explicabo, fugiat, consequuntur sit aspernatur, necessitatibus totam nulla cumque vitae aut?",
-    "topics": ["HTML", "CSS", "JS"],
-    "liveUrl": "https://github.com/chaospad/",
-    "sourceUrl": "https://github.com/chaospad/"
+    "name": "Ngaox Templates",
+    "thumbnail": "/assets/projects/ngaox-templates.webp",
+    "description": "What is better than having a great development framework with a rich collection of libraries that takes all the creepy work? You guessed it! Nice-looking, high-performance templates that can meet your current and future needs!",
+    "topics": ["Angular", "Ngaox"],
+    "liveUrl": "https://github.com/ngaox/ngaox#-templates",
+    "sourceUrl": "https://github.com/ngaox/ngaox/tree/main/templates"
   }
 ]

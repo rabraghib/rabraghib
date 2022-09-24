@@ -45,19 +45,20 @@
             'width=device-width, maximum-scale=1.0, initial-scale=1.0';
         }
       }
-      // Cursor dot -------------------------------------------------------------------
       let clientX = -100;
       let clientY = -100;
       const cursor = document.querySelector('#cursor');
-      document.addEventListener('mousemove', e => {
-        clientX = e.clientX;
-        clientY = e.clientY;
-      });
+      requestAnimationFrame(render);
+      if (matchMedia('(pointer:fine)').matches) {
+        document.addEventListener('mousemove', e => {
+          clientX = e.clientX;
+          clientY = e.clientY;
+        });
+      }
       function render() {
         cursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
         requestAnimationFrame(render);
       }
-      requestAnimationFrame(render);
     </script>
     <script
       data-name="BMC-Widget"
