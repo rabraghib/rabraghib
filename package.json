@@ -1,6 +1,6 @@
 {
   "name": "@rabraghib/src",
-  "version": "18.5.0",
+  "version": "18.5.1",
   "license": "GPL-3.0",
   "scripts": {
     "ng": "nx",
@@ -24,7 +24,7 @@
     "@angular/router": "13.3.2",
     "@ngaox/brands-warehouse": "^1.1.2",
     "@ngaox/icons": "^3.0.0",
-    "@nrwl/angular": "13.10.1",
+    "@nrwl/angular": "14.7.13",
     "aos": "^2.3.4",
     "rxjs": "^7.5.5",
     "tslib": "^2.0.0",
