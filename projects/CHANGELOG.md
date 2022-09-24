@@ -1,3 +1,9 @@
+## [18.5.1](https://github.com/rabraghib/rabraghib/compare/v18.5.0...v18.5.1) (2022-09-24)
+
+### Features
+
+- new content and UI improvements ([964efde](https://github.com/rabraghib/rabraghib/commit/964efde2bc1f82dc09c42fc12ce6e50ff81beca6))
+
 # [18.5.0](https://github.com/rabraghib/rabraghib/compare/v18.4.0...v18.5.0) (2022-09-15)
 
 ### Features
