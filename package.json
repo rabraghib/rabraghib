@@ -27,7 +27,7 @@
     "@nrwl/angular": "13.10.1",
     "aos": "^2.3.4",
     "rxjs": "^7.5.5",
-    "tslib": "^2.0.0",
+    "tslib": "^2.4.1",
     "zone.js": "~0.11.6"
   },
   "devDependencies": {
