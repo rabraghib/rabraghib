@@ -1,17 +1,22 @@
 [
   {
-    "title": "Co-Founder - Me9sous",
+    "title": "Full-Stack Developer - Me9sous",
     "period": "Jun 2022 - Present",
     "description": ""
   },
   {
-    "title": "High School - Mohammed V, Ouarzazate",
-    "period": "Sep 2019 - Jun 2022",
-    "description": "Major in Maths-Science, where I learned various Math topics related to Algebra, Calculus, Probability, and more."
-  },
-  {
     "title": "Self-Taught Software Engineer",
     "period": "Birth - Present",
-    "description": "I lived a childhood passionate about technology, electronics, and microcontrollers, which converted over the years into a passion for software development.<br />A passion for learning, creating, and contributing to building the exceptional world of tomorrow via Open-Source!"
+    "description": "As a passionate and self-motivated learner, I am committed to expanding my computer science, web, and mobile development skills and knowledge. <br />Through continuous learning and practical application, I remain current with industry advancements and innovations and strive to deliver high-quality results."
+  },
+  {
+    "title": "Engineering Student - ENSAM, Casablanca",
+    "period": "Sept 2022 - Jun 2027",
+    "description": ""
+  },
+  {
+    "title": "High School - Mohammed V, Ouarzazate",
+    "period": "Sept 2019 - Jun 2022",
+    "description": "Major in Maths-Science, where I learned various Math topics related to Algebra, Calculus, Probability, and more."
   }
 ]
