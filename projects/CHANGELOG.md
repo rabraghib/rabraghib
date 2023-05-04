@@ -1,3 +1,9 @@
+# [19.0.0](https://github.com/rabraghib/rabraghib/compare/v18.10.0...v19.0.0) (2023-05-04)
+
+### Features
+
+- update content ([9e23611](https://github.com/rabraghib/rabraghib/commit/9e23611ff13dc58a94aa3b35d01d7f6de3f7620b))
+
 # [18.10.0](https://github.com/rabraghib/rabraghib/compare/v18.5.1...v18.10.0) (2023-02-17)
 
 ### Bug Fixes
