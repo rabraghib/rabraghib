@@ -1,6 +1,7 @@
 {
+  "name": "portfolio",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "root": "projects/portfolio",
   "sourceRoot": "projects/portfolio/src",
   "prefix": "app",
   "targets": {
@@ -79,7 +80,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "lintFilePatterns": [
           "projects/portfolio/src/**/*.ts",

@@ -4,49 +4,29 @@
     "defaultBase": "main"
   },
   "cli": {
-    "defaultCollection": "@nrwl/angular",
     "packageManager": "yarn"
   },
   "workspaceLayout": {
     "appsDir": "projects",
     "libsDir": "projects"
   },
-  "implicitDependencies": {
-    "package.json": {
-      "version": "*",
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
-    ".eslintrc.json": "*",
-    "content/templates/**/*": ["content"],
-    "content/posts/**/*": ["content"],
-    "content/data/**/*": ["content"]
-  },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/nx-cloud",
+      "runner": "nx-cloud",
       "options": {
         "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "NjAzMjk1ZjYtYTA5NS00ZmM1LThmODMtODRiNTI4YmM3YzBmfHJlYWQtd3JpdGU="
       }
     }
   },
-  "targetDependencies": {
-    "build": [
-      {
-        "target": "build",
-        "projects": "dependencies"
-      }
-    ]
-  },
   "generators": {
-    "@nrwl/angular:application": {
+    "@nx/angular:application": {
       "style": "scss",
       "linter": "eslint",
       "unitTestRunner": "none",
       "e2eTestRunner": "none"
     },
-    "@nrwl/angular:library": {
+    "@nx/angular:library": {
       "linter": "eslint",
       "unitTestRunner": "none"
     },
@@ -77,5 +57,21 @@
       "strict": true
     }
   },
-  "defaultProject": "portfolio"
+  "defaultProject": "portfolio",
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    },
+    "lint": {
+      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"]
+    }
+  },
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals", "projectSpecificFiles"],
+    "sharedGlobals": [],
+    "production": ["default", "!{projectRoot}/.eslintrc.json"],
+    "projectSpecificFiles": []
+  }
 }

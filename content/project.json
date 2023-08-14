@@ -1,21 +1,29 @@
 {
-  "root": "content",
+  "name": "content",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "content/src",
   "projectType": "library",
   "targets": {
     "readme": {
-      "executor": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "options": {
         "command": "yarn execute-ts tools/scripts/readme-template.ts"
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["content/**/*.ts"]
       }
     }
   },
-  "tags": []
+  "tags": [],
+  "namedInputs": {
+    "projectSpecificFiles": [
+      "{workspaceRoot}/content/templates/**/*",
+      "{workspaceRoot}/content/posts/**/*",
+      "{workspaceRoot}/content/data/**/*"
+    ]
+  }
 }
