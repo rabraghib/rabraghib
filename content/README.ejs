@@ -2,7 +2,6 @@
 <%= DONT_EDIT_WARNING %>
 -->
 
-<!--
 <p align="right">
 <% ReadmeSocialBadges.forEach(function(profile) { -%>
   <a href="<%= profile.url %>" target="_blank">
@@ -10,7 +9,6 @@
   </a>
 <% }); -%>
 </p>
--->
 
 ## Hey, I am Rabyâ 👋
 
@@ -20,6 +18,7 @@ Want to know more about me? [Check out my portfolio 💼](https://rabraghib.me/)
 
 ## 📊 GitHub Stats
 
-<p align='center'><% GithubStatsCardsUrls.forEach(function(url) { %>
-<img width='48%' src='<%= url %>'/>
-<% }) -%></p>
+<p align='center'>
+  <img width='50%' src='<%= GithubStatsCardsUrls[0] %>'/>
+  <img width='47%' src='<%= GithubStatsCardsUrls[1] %>'/>
+</p>

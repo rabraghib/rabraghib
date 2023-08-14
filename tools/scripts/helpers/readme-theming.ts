@@ -26,7 +26,7 @@ export function getQueryParamsOf(
   type: 'streak-stats' | 'stats',
   handle: string
 ) {
-  const statsCardsParams: any = {};
+  const statsCardsParams: Record<string, string> = {};
 
   if (type == 'streak-stats') {
     statsCardsParams.user = handle;
@@ -43,12 +43,12 @@ export function getQueryParamsOf(
   } else if (type == 'stats') {
     statsCardsParams.username = handle;
     statsCardsParams.custom_title = 'Overall Stats';
-    statsCardsParams.line_height = 30;
+    statsCardsParams.line_height = '30';
     statsCardsParams.show_icons = 'true';
     statsCardsParams.hide_border = 'true';
     statsCardsParams.hide = 'stars';
     statsCardsParams.bg_color = getColor('slate-900');
-    statsCardsParams.count_private = true;
+    statsCardsParams.count_private = 'true';
     setValue(
       statsCardsParams,
       ['title_color', 'icon_color'],
