@@ -1,3 +1,10 @@
+## [19.4.1](https://github.com/rabraghib/rabraghib/compare/v19.0.0...v19.4.1) (2023-08-14)
+
+### Features
+
+- :sparkles: restore README social links ([f6f64f8](https://github.com/rabraghib/rabraghib/commit/f6f64f8839321cd75e36fd7c52f37c0d9fcb7b84))
+- some small updates & fixes ([51fb86c](https://github.com/rabraghib/rabraghib/commit/51fb86c6d160295f71e9e889f17728abf9e8b443))
+
 # [19.0.0](https://github.com/rabraghib/rabraghib/compare/v18.10.0...v19.0.0) (2023-05-04)
 
 ### Features
