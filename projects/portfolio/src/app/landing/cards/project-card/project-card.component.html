@@ -9,7 +9,7 @@
     <a
       class="hover:text-slate-400 text-white"
       target="_blank"
-      [href]="project.liveUrl"
+      [href]="project.liveUrl ?? project.sourceUrl"
     >
       {{ project.name }}
     </a>
@@ -21,7 +21,7 @@
         : 'col-start-1 col-end-[-1] lg:col-start-6'
     }}"
     class="block cursor-pointer"
-    [href]="project.liveUrl"
+    [href]="project.liveUrl ?? project.sourceUrl"
     rel="noopener noreferrer"
     target="_blank"
   >
@@ -49,7 +49,7 @@
       <a
         class="hover:text-slate-400 text-white"
         target="_blank"
-        [href]="project.liveUrl"
+        [href]="project.liveUrl ?? project.sourceUrl"
       >
         {{ project.name }}
       </a>

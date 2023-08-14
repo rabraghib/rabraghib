@@ -3,6 +3,6 @@ export interface IProject {
   thumbnail: string;
   description: string;
   topics: string[];
-  liveUrl: string;
+  liveUrl?: string;
   sourceUrl: string;
 }

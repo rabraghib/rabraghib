@@ -35,6 +35,7 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     setTimeout(() => {
       AOS.init({
+        once: true,
         duration: 1000
       });
       (this.elementRef.nativeElement as HTMLElement).onscroll = () => {
