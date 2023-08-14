@@ -15,6 +15,7 @@
         "polyfills": "projects/portfolio/src/polyfills.ts",
         "tsConfig": "projects/portfolio/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
+        "allowedCommonJsDependencies": ["@ngaox/brands-warehouse", "aos"],
         "assets": [
           {
             "glob": "**/*",
