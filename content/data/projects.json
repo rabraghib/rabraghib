@@ -1,5 +1,21 @@
 [
   {
+    "name": "EnsamienHub",
+    "thumbnail": "/assets/projects/ensamien-hub.webp",
+    "description": "Enhancing Student Experience at ENSAMC. EnsamienHub is a comprehensive solution designed exclusively for ENSAM Casablanca students. It provides organized course materials, section-specific timetables, and timely announcements regarding class updates and assignments, ensuring a seamless academic experience.",
+    "topics": ["Angular", "Firebase", "NestJs"],
+    "liveUrl": "https://ensamien.com",
+    "sourceUrl": "https://github.com/rabraghib/ensamien-hub"
+  },
+  {
+    "name": "DarijaScript",
+    "thumbnail": "/assets/projects/DarijaScript.webp",
+    "description": "DarijaScript is a programming language inspired by the Moroccan Arabic language. It aims to make programming more accessible to Arabic speakers by providing a familiar syntax and vocabulary.",
+    "topics": ["Programming Language", "LSP", "GoLang", "NextJs"],
+    "liveUrl": "https://darijascript.rabraghib.me",
+    "sourceUrl": "https://github.com/rabraghib/darijascript"
+  },
+  {
     "name": "Ngaox for Angular",
     "thumbnail": "/assets/projects/ngaox.webp",
     "description": "Toolset for speeding and facilitating Angular apps development by providing solutions for common web needs with Angular, such as SVG icons inlining, SEO management, content integration, and more.",
@@ -8,20 +24,20 @@
     "sourceUrl": "https://github.com/ngaox/ngaox"
   },
   {
-    "name": "Moroccan PHPers",
-    "thumbnail": "/assets/projects/moroccan-phpers.webp",
-    "description": "The Moroccan PHPers is a group of PHP developers and enthusiasts who aim at sharing our knowledge and encourage PHP dev in Morocco. Accelerate your career and skills by participating in our meetups, workshops, talks, challenges...",
-    "topics": ["Angular", "@ngaox/press"],
-    "liveUrl": "https://moroccan-phpers.web.app",
-    "sourceUrl": "https://github.com/rabraghib/moroccan-phpers"
-  },
-  {
     "name": "Ngaox Templates",
     "thumbnail": "/assets/projects/ngaox-templates.webp",
     "description": "Collection of open-source website templates built using Ngaox that showcase the capabilities and flexibility of Ngaox and can be used as a starting point for your own projects.",
     "topics": ["Angular", "Ngaox"],
     "liveUrl": "https://github.com/ngaox/ngaox#-templates",
     "sourceUrl": "https://github.com/ngaox/ngaox/tree/main/templates"
+  },
+  {
+    "name": "Moroccan PHPers",
+    "thumbnail": "/assets/projects/moroccan-phpers.webp",
+    "description": "The Moroccan PHPers is a group of PHP developers and enthusiasts who aim at sharing our knowledge and encourage PHP dev in Morocco. Accelerate your career and skills by participating in our meetups, workshops, talks, challenges...",
+    "topics": ["Angular", "@ngaox/press"],
+    "liveUrl": "https://moroccan-phpers.web.app",
+    "sourceUrl": "https://github.com/rabraghib/moroccan-phpers"
   },
   {
     "name": "Vibration Analyzer",

@@ -1,0 +1,15 @@
+name: 🎉 HBD!
+on:
+  schedule:
+    - cron: '0 0 13 4 *'
+jobs:
+  hbd:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Commit and push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit --allow-empty -m "🎉 Happy Birthday @rabraghib! 🎂"
+          git push

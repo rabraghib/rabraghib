@@ -1,6 +1,6 @@
 import { BrandData } from '@rabraghib/content';
 
-function getColor(colorName: string) {
+export function getColor(colorName: string) {
   return BrandData.colors[colorName]?.replace('#', '') ?? undefined;
 }
 export function getBadgeUrl(options: object = {}) {
@@ -16,11 +16,13 @@ export function getBadgeUrl(options: object = {}) {
 
     options['message'] ?? ''
   ];
-  return `https://img.shields.io/badge/${encodeURI(
-    label
-  )}-${message}-${color}?style=${style}&logo=${encodeURI(
+  const endpoint =
+    options['endpoint'] || `badge/${encodeURI(label)}-${message}-${color}`;
+  return `https://img.shields.io/${endpoint}?style=${style}&logo=${encodeURI(
     logo
-  )}&logoColor=${logoColor}&labelColor=${labelColor}`;
+  )}&logoColor=${logoColor}&labelColor=${labelColor}&label=${encodeURI(
+    label
+  )}&color=${color}`;
 }
 export function getQueryParamsOf(
   type: 'streak-stats' | 'stats',
