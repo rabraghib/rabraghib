@@ -4,17 +4,17 @@ To edit this file, edit its template in `content/README.ejs`.
 -->
 
 <p align="right">
+  <a href="https://github.com/rabraghib/rabraghib" target="_blank">
+    <img src="https://img.shields.io/github/v/release/rabraghib/rabraghib?style=for-the-badge&amp;logo=&amp;logoColor=F8FAFC&amp;labelColor=0F172A&amp;label=&amp;color=0F172A" alt="GitHub Release Version" />
+  </a>
   <a href="mailto:hello@rabraghib.me" target="_blank">
-    <img src="https://img.shields.io/badge/Mail%20me!--2D9CDB?style=for-the-badge&amp;logo=mail&amp;logoColor=F8FAFC&amp;labelColor=0F172A" alt="Mail me!" />
+    <img src="https://img.shields.io/badge/Mail%20me!--2D9CDB?style=for-the-badge&amp;logo=mail&amp;logoColor=F8FAFC&amp;labelColor=0F172A&amp;label=Mail%20me!&amp;color=2D9CDB" alt="Mail me!" />
   </a>
   <a href="https://twitter.com/rabraghib" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter--2D9CDB?style=for-the-badge&amp;logo=twitter&amp;logoColor=F8FAFC&amp;labelColor=0F172A" alt="Rabyâ Raghib twitter profile" />
-  </a>
-  <a href="https://www.instagram.com/rabraghib" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram--2D9CDB?style=for-the-badge&amp;logo=instagram&amp;logoColor=F8FAFC&amp;labelColor=0F172A" alt="Rabyâ Raghib instagram profile" />
+    <img src="https://img.shields.io/badge/Twitter--2D9CDB?style=for-the-badge&amp;logo=twitter&amp;logoColor=F8FAFC&amp;labelColor=0F172A&amp;label=Twitter&amp;color=2D9CDB" alt="Rabyâ Raghib twitter profile" />
   </a>
   <a href="https://linkedin.com/in/rabraghib" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn--2D9CDB?style=for-the-badge&amp;logo=linkedin&amp;logoColor=F8FAFC&amp;labelColor=0F172A" alt="Rabyâ Raghib linkedin profile" />
+    <img src="https://img.shields.io/badge/LinkedIn--2D9CDB?style=for-the-badge&amp;logo=linkedin&amp;logoColor=F8FAFC&amp;labelColor=0F172A&amp;label=LinkedIn&amp;color=2D9CDB" alt="Rabyâ Raghib linkedin profile" />
   </a>
 </p>
 
@@ -30,3 +30,98 @@ Want to know more about me? [Check out my portfolio 💼](https://rabraghib.me/)
   <img width='50%' src='https://github-readme-streak-stats.herokuapp.com/?user=rabraghib&amp;ring=2D9CDB&amp;fire=2D9CDB&amp;sideLabels=F8FAFC&amp;sideNums=F8FAFC&amp;currStreakNum=F8FAFC&amp;currStreakLabel=F8FAFC&amp;border=F8FAFC&amp;stroke=F8FAFC&amp;dates=2D9CDB&amp;background=0F172A&amp;hide_border=true'/>
   <img width='47%' src='https://github-readme-stats.vercel.app/api?username=rabraghib&amp;custom_title=Overall+Stats&amp;line_height=30&amp;show_icons=true&amp;hide_border=true&amp;hide=stars&amp;bg_color=0F172A&amp;count_private=true&amp;icon_color=2D9CDB&amp;title_color=2D9CDB&amp;border_color=F8FAFC&amp;text_color=F8FAFC'/>
 </p>
+
+<!-- ## 🚀 Projects
+
+
+- ### [EnsamienHub](https://github.com/rabraghib/ensamien-hub)
+
+  Enhancing Student Experience at ENSAMC. EnsamienHub is a comprehensive solution designed exclusively for ENSAM Casablanca students. It provides organized course materials, section-specific timetables, and timely announcements regarding class updates and assignments, ensuring a seamless academic experience.
+
+  <a href="https://ensamien.com">
+  <img
+      width="100%"
+      alt="EnsamienHub"
+      src="https://rabraghib.me//assets/projects/ensamien-hub.webp"
+    />
+  </a>
+  <br />
+
+
+- ### [DarijaScript](https://github.com/rabraghib/darijascript)
+
+  DarijaScript is a programming language inspired by the Moroccan Arabic language. It aims to make programming more accessible to Arabic speakers by providing a familiar syntax and vocabulary.
+
+  <a href="https://darijascript.rabraghib.me">
+  <img
+      width="100%"
+      alt="DarijaScript"
+      src="https://rabraghib.me//assets/projects/DarijaScript.webp"
+    />
+  </a>
+  <br />
+
+
+- ### [Ngaox for Angular](https://github.com/ngaox/ngaox)
+
+  Toolset for speeding and facilitating Angular apps development by providing solutions for common web needs with Angular, such as SVG icons inlining, SEO management, content integration, and more.
+
+  <a href="https://ngaox-lab.web.app">
+  <img
+      width="100%"
+      alt="Ngaox for Angular"
+      src="https://rabraghib.me//assets/projects/ngaox.webp"
+    />
+  </a>
+  <br />
+
+
+- ### [Ngaox Templates](https://github.com/ngaox/ngaox/tree/main/templates)
+
+  Collection of open-source website templates built using Ngaox that showcase the capabilities and flexibility of Ngaox and can be used as a starting point for your own projects.
+
+  <a href="https://github.com/ngaox/ngaox#-templates">
+  <img
+      width="100%"
+      alt="Ngaox Templates"
+      src="https://rabraghib.me//assets/projects/ngaox-templates.webp"
+    />
+  </a>
+  <br />
+
+
+- ### [Moroccan PHPers](https://github.com/rabraghib/moroccan-phpers)
+
+  The Moroccan PHPers is a group of PHP developers and enthusiasts who aim at sharing our knowledge and encourage PHP dev in Morocco. Accelerate your career and skills by participating in our meetups, workshops, talks, challenges...
+
+  <a href="https://moroccan-phpers.web.app">
+  <img
+      width="100%"
+      alt="Moroccan PHPers"
+      src="https://rabraghib.me//assets/projects/moroccan-phpers.webp"
+    />
+  </a>
+  <br />
+
+
+- ### [Vibration Analyzer](https://github.com/rabraghib/vibration-analyzer)
+
+  Flutter-based application designed to help users quickly detect and address vibration-related issues. It communicates with an ESP32 device programmed to collect machine vibrations using a GY-521 sensor.
+
+  <a href="https://github.com/rabraghib/vibration-analyzer">
+  <img
+      width="100%"
+      alt="Vibration Analyzer"
+      src="https://rabraghib.me//assets/projects/vibration-analyzer.webp"
+    />
+  </a>
+  <br />
+
+
+## ❤️ Support
+
+If you like what I do, maybe consider buying me a coffee/tea 🥺👉👈
+
+<a href="https://www.buymeacoffee.com/rabraghib" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50" width="210" />
+</a> -->

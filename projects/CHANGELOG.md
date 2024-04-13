@@ -1,3 +1,9 @@
+# [20.0.0](https://github.com/rabraghib/rabraghib/compare/v19.4.1...v20.0.0) (2024-04-13)
+
+### Features
+
+- :sparkles: update data & readme [skip ci] ([12c2407](https://github.com/rabraghib/rabraghib/commit/12c24072e75cf2ad80e2f256c8e8f27b962b0bf2))
+
 ## [19.4.1](https://github.com/rabraghib/rabraghib/compare/v19.0.0...v19.4.1) (2023-08-14)
 
 ### Features
