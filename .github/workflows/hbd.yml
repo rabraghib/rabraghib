@@ -1,5 +1,6 @@
 name: 🎉 HBD!
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 0 13 4 *'
 jobs:
