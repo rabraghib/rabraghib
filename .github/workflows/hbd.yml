@@ -3,6 +3,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 13 4 *'
+      timezone: "Africa/Casablanca"
 jobs:
   hbd:
     runs-on: ubuntu-20.04
