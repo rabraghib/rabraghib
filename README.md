@@ -7,7 +7,7 @@ To edit this file, edit its template in `content/README.ejs`.
   <a href="https://github.com/rabraghib/rabraghib" target="_blank">
     <img src="https://img.shields.io/github/v/release/rabraghib/rabraghib?style=for-the-badge&amp;logo=&amp;logoColor=F8FAFC&amp;labelColor=0F172A&amp;label=&amp;color=0F172A" alt="GitHub Release Version" />
   </a>
-  <a href="mailto:hello@rabraghib.me" target="_blank">
+  <a href="mailto:hello@rabraghib.com" target="_blank">
     <img src="https://img.shields.io/badge/Mail%20me!--2D9CDB?style=for-the-badge&amp;logo=mail&amp;logoColor=F8FAFC&amp;labelColor=0F172A&amp;label=Mail%20me!&amp;color=2D9CDB" alt="Mail me!" />
   </a>
   <a href="https://twitter.com/rabraghib" target="_blank">
@@ -22,7 +22,9 @@ To edit this file, edit its template in `content/README.ejs`.
 
 I&#39;m a Morocco-based, self-taught software developer specializing in building and designing exceptional digital experiences. I am always passionate about learning new things and gaining more knowledge...
 
-Want to know more about me? [Check out my portfolio 💼](https://rabraghib.me/).
+Want to know more about me? [Check out my portfolio 💼](https://rabraghib.com/).
+
+<!-- TEMPORARILY HIDDEN CONTENT
 
 ## 📊 GitHub Stats
 
@@ -31,7 +33,7 @@ Want to know more about me? [Check out my portfolio 💼](https://rabraghib.me/)
   <img width='47%' src='https://github-readme-stats.vercel.app/api?username=rabraghib&amp;custom_title=Overall+Stats&amp;line_height=30&amp;show_icons=true&amp;hide_border=true&amp;hide=stars&amp;bg_color=0F172A&amp;count_private=true&amp;icon_color=2D9CDB&amp;title_color=2D9CDB&amp;border_color=F8FAFC&amp;text_color=F8FAFC'/>
 </p>
 
-<!-- ## 🚀 Projects
+## 🚀 Projects
 
 
 - ### [EnsamienHub](https://github.com/rabraghib/ensamien-hub)
@@ -42,7 +44,7 @@ Want to know more about me? [Check out my portfolio 💼](https://rabraghib.me/)
   <img
       width="100%"
       alt="EnsamienHub"
-      src="https://rabraghib.me//assets/projects/ensamien-hub.webp"
+      src="https://rabraghib.com//assets/projects/ensamien-hub.webp"
     />
   </a>
   <br />
@@ -52,11 +54,11 @@ Want to know more about me? [Check out my portfolio 💼](https://rabraghib.me/)
 
   DarijaScript is a programming language inspired by the Moroccan Arabic language. It aims to make programming more accessible to Arabic speakers by providing a familiar syntax and vocabulary.
 
-  <a href="https://darijascript.rabraghib.me">
+  <a href="https://ds.rabraghib.com">
   <img
       width="100%"
       alt="DarijaScript"
-      src="https://rabraghib.me//assets/projects/DarijaScript.webp"
+      src="https://rabraghib.com//assets/projects/DarijaScript.webp"
     />
   </a>
   <br />
@@ -70,7 +72,7 @@ Want to know more about me? [Check out my portfolio 💼](https://rabraghib.me/)
   <img
       width="100%"
       alt="Ngaox for Angular"
-      src="https://rabraghib.me//assets/projects/ngaox.webp"
+      src="https://rabraghib.com//assets/projects/ngaox.webp"
     />
   </a>
   <br />
@@ -84,7 +86,7 @@ Want to know more about me? [Check out my portfolio 💼](https://rabraghib.me/)
   <img
       width="100%"
       alt="Ngaox Templates"
-      src="https://rabraghib.me//assets/projects/ngaox-templates.webp"
+      src="https://rabraghib.com//assets/projects/ngaox-templates.webp"
     />
   </a>
   <br />
@@ -98,7 +100,7 @@ Want to know more about me? [Check out my portfolio 💼](https://rabraghib.me/)
   <img
       width="100%"
       alt="Moroccan PHPers"
-      src="https://rabraghib.me//assets/projects/moroccan-phpers.webp"
+      src="https://rabraghib.com//assets/projects/moroccan-phpers.webp"
     />
   </a>
   <br />
@@ -112,7 +114,7 @@ Want to know more about me? [Check out my portfolio 💼](https://rabraghib.me/)
   <img
       width="100%"
       alt="Vibration Analyzer"
-      src="https://rabraghib.me//assets/projects/vibration-analyzer.webp"
+      src="https://rabraghib.com//assets/projects/vibration-analyzer.webp"
     />
   </a>
   <br />
@@ -124,4 +126,6 @@ If you like what I do, maybe consider buying me a coffee/tea 🥺👉👈
 
 <a href="https://www.buymeacoffee.com/rabraghib" target="_blank">
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50" width="210" />
-</a> -->
+</a>
+
+END TEMPORARILY HIDDEN CONTENT -->

@@ -1,3 +1,9 @@
+# [22.2.0](https://github.com/rabraghib/rabraghib/compare/v20.0.0...v22.2.0) (2026-07-06)
+
+### Features
+
+- some adjustments ([0ba670f](https://github.com/rabraghib/rabraghib/commit/0ba670f069fa24ae2ac85edd3644c8a0a4580458))
+
 # [20.0.0](https://github.com/rabraghib/rabraghib/compare/v19.4.1...v20.0.0) (2024-04-13)
 
 ### Features
