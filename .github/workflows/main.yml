@@ -46,7 +46,6 @@ jobs:
         with:
           node-version: "22"
           cache: "yarn"
-          registry-url: "https://registry.npmjs.org"
       - run: yarn --frozen-lockfile
       - name: 🛠 Build everything
         run: yarn nx-all build
@@ -64,6 +63,8 @@ jobs:
           body: ${{ needs.release.outputs.release_notes }}
           files: |
             dist/artifacts/*
+      - name: ⚡️ Update npm
+        run: npm install -g npm@latest
       - name: 🎉 Publish CLI-Card to npm
         run: |
           cd dist/projects/cli-card
