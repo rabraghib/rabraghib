@@ -35,6 +35,9 @@ jobs:
     if: needs.release.outputs.released == 'true'
     needs: release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
     steps:
       - uses: actions/checkout@v7
         with:
@@ -64,9 +67,7 @@ jobs:
       - name: 🎉 Publish CLI-Card to npm
         run: |
           cd dist/projects/cli-card
-          npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          npm publish --access public --provenance
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
