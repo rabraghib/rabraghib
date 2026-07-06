@@ -1,3 +1,9 @@
+## [22.2.1](https://github.com/rabraghib/rabraghib/compare/v22.2.0...v22.2.1) (2026-07-06)
+
+### Bug Fixes
+
+- switch to npm Trusted Publishers ([a7d933b](https://github.com/rabraghib/rabraghib/commit/a7d933bbedd6d48a9251892f9c55d5710cd63c6d))
+
 # [22.2.0](https://github.com/rabraghib/rabraghib/compare/v20.0.0...v22.2.0) (2026-07-06)
 
 ### Features
