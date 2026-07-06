@@ -12,7 +12,7 @@
     "thumbnail": "/assets/projects/DarijaScript.webp",
     "description": "DarijaScript is a programming language inspired by the Moroccan Arabic language. It aims to make programming more accessible to Arabic speakers by providing a familiar syntax and vocabulary.",
     "topics": ["Programming Language", "LSP", "GoLang", "NextJs"],
-    "liveUrl": "https://darijascript.rabraghib.me",
+    "liveUrl": "https://ds.rabraghib.com",
     "sourceUrl": "https://github.com/rabraghib/darijascript"
   },
   {

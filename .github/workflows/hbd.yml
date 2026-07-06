@@ -2,13 +2,13 @@ name: 🎉 HBD!
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 13 4 *'
+    - cron: "0 0 13 4 *"
       timezone: "Africa/Casablanca"
 jobs:
   hbd:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v7
       - name: Commit and push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
