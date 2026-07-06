@@ -20,7 +20,7 @@ To edit this file, edit its template in `content/README.ejs`.
 
 ## Hey, I am Rabyâ 👋
 
-I&#39;m a Morocco-based, self-taught software developer specializing in building and designing exceptional digital experiences. I am always passionate about learning new things and gaining more knowledge...
+I&#39;m a Morocco-based Software Engineer specializing in building robust systems and exploring AI/ML technologies. I am always passionate about learning new things and gaining more knowledge...
 
 Want to know more about me? [Check out my portfolio 💼](https://rabraghib.com/).
 

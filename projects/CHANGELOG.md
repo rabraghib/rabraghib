@@ -1,3 +1,9 @@
+## [22.2.3](https://github.com/rabraghib/rabraghib/compare/v22.2.2...v22.2.3) (2026-07-06)
+
+### Features
+
+- adjust content ([15ff608](https://github.com/rabraghib/rabraghib/commit/15ff608034881e20e4abd8bc6efac9df304012a2))
+
 ## [22.2.2](https://github.com/rabraghib/rabraghib/compare/v22.2.1...v22.2.2) (2026-07-06)
 
 ### Bug Fixes
